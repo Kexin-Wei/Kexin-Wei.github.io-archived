@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>computer vision on 無極</title>
+    <link>https://Vacationwkx.github.io/tags/computer-vision/</link>
+    <description>Recent content in computer vision on 無極</description>
+    <image>
+      <url>https://Vacationwkx.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://Vacationwkx.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 03 Sep 2021 22:44:41 +0800</lastBuildDate><atom:link href="https://Vacationwkx.github.io/tags/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Self Driving Car</title>
+      <link>https://Vacationwkx.github.io/posts/learn/self-driving-car/</link>
+      <pubDate>Fri, 03 Sep 2021 22:44:41 +0800</pubDate>
+      
+      <guid>https://Vacationwkx.github.io/posts/learn/self-driving-car/</guid>
+      <description>Intro Reading SAE J3016: Autonomous Car Level source 1
+all human adaptive cruise control, anti-lock braking system, electronic stabilty control hazard-minimizing longitudinal/ lateral control, emergency braking full autonomy under certain condition, but human take control when in danger full autonomy under certain condition, can replace human at some cases fully autonomous  Decision making   On-board sensors
+ LIDAR camera GPS/INS odometry(angle)    Hierachical Decision Making System     Route Planning</description>
+    </item>
+    
+  </channel>
+</rss>

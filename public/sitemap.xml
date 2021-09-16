@@ -2,58 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://Vacationwkx.github.io/posts/rustylake/</loc>
-    <lastmod>2020-10-29T10:25:43+08:00</lastmod>
+    <loc>https://Vacationwkx.github.io/posts/learn/self-driving-car/</loc>
+    <lastmod>2021-09-03T22:44:41+08:00</lastmod>
   </url><url>
-    <loc>https://Vacationwkx.github.io/posts/a-short-poem/</loc>
-    <lastmod>2021-04-30T00:25:15+08:00</lastmod>
+    <loc>https://Vacationwkx.github.io/categories/ai/</loc>
+    <lastmod>2021-09-03T22:44:41+08:00</lastmod>
   </url><url>
     <loc>https://Vacationwkx.github.io/categories/</loc>
-    <lastmod>2021-04-30T00:25:15+08:00</lastmod>
+    <lastmod>2021-09-16T21:55:38+08:00</lastmod>
+  </url><url>
+    <loc>https://Vacationwkx.github.io/tags/computer-vision/</loc>
+    <lastmod>2021-09-03T22:44:41+08:00</lastmod>
   </url><url>
     <loc>https://Vacationwkx.github.io/posts/</loc>
-    <lastmod>2021-04-30T00:25:15+08:00</lastmod>
+    <lastmod>2021-09-16T21:55:38+08:00</lastmod>
   </url><url>
-    <loc>https://Vacationwkx.github.io/categories/thinkofchaos/</loc>
-    <lastmod>2021-04-30T00:25:15+08:00</lastmod>
-  </url><url>
-    <loc>https://Vacationwkx.github.io/</loc>
-    <lastmod>2021-04-30T00:25:15+08:00</lastmod>
-  </url><url>
-    <loc>https://Vacationwkx.github.io/posts/ai/</loc>
-    <lastmod>2021-04-21T17:38:25+08:00</lastmod>
-  </url><url>
-    <loc>https://Vacationwkx.github.io/categories/computertech/</loc>
-    <lastmod>2021-04-21T21:55:38+08:00</lastmod>
-  </url><url>
-    <loc>https://Vacationwkx.github.io/tags/machine-learning/</loc>
-    <lastmod>2021-04-21T17:38:25+08:00</lastmod>
+    <loc>https://Vacationwkx.github.io/tags/self-driving-car/</loc>
+    <lastmod>2021-09-03T22:44:41+08:00</lastmod>
   </url><url>
     <loc>https://Vacationwkx.github.io/tags/</loc>
-    <lastmod>2021-04-21T21:55:38+08:00</lastmod>
+    <lastmod>2021-09-16T21:55:38+08:00</lastmod>
+  </url><url>
+    <loc>https://Vacationwkx.github.io/</loc>
+    <lastmod>2021-09-16T21:55:38+08:00</lastmod>
+  </url><url>
+    <loc>https://Vacationwkx.github.io/categories/book/</loc>
+    <lastmod>2021-08-16T23:34:23+08:00</lastmod>
+  </url><url>
+    <loc>https://Vacationwkx.github.io/tags/book/</loc>
+    <lastmod>2021-08-16T23:34:23+08:00</lastmod>
+  </url><url>
+    <loc>https://Vacationwkx.github.io/tags/economics/</loc>
+    <lastmod>2021-08-16T23:34:23+08:00</lastmod>
+  </url><url>
+    <loc>https://Vacationwkx.github.io/posts/books/principles-of-microeconomics/</loc>
+    <lastmod>2021-08-16T23:34:23+08:00</lastmod>
+  </url><url>
+    <loc>https://Vacationwkx.github.io/posts/learn/front-end/</loc>
+    <lastmod>2021-07-08T23:07:37+08:00</lastmod>
+  </url><url>
+    <loc>https://Vacationwkx.github.io/tags/front-end/</loc>
+    <lastmod>2021-09-16T21:55:38+08:00</lastmod>
+  </url><url>
+    <loc>https://Vacationwkx.github.io/categories/it/</loc>
+    <lastmod>2021-09-16T21:55:38+08:00</lastmod>
+  </url><url>
+    <loc>https://Vacationwkx.github.io/posts/learn/ai/</loc>
+    <lastmod>2021-07-08T17:38:25+08:00</lastmod>
+  </url><url>
+    <loc>https://Vacationwkx.github.io/tags/machine-learning/</loc>
+    <lastmod>2021-07-08T17:38:25+08:00</lastmod>
+  </url><url>
+    <loc>https://Vacationwkx.github.io/posts/books/simple-europe-history/</loc>
+    <lastmod>2021-06-13T23:25:31+08:00</lastmod>
+  </url><url>
+    <loc>https://Vacationwkx.github.io/tags/history/</loc>
+    <lastmod>2021-06-13T23:25:31+08:00</lastmod>
+  </url><url>
+    <loc>https://Vacationwkx.github.io/posts/books/my-first-book/</loc>
+    <lastmod>2021-05-01T21:01:15+08:00</lastmod>
+  </url><url>
+    <loc>https://Vacationwkx.github.io/categories/writing/</loc>
+    <lastmod>2021-05-01T21:01:15+08:00</lastmod>
   </url><url>
     <loc>https://Vacationwkx.github.io/tags/reinforcement-learning/</loc>
     <lastmod>2020-12-08T08:47:38+08:00</lastmod>
   </url><url>
-    <loc>https://Vacationwkx.github.io/posts/rl-notes/</loc>
+    <loc>https://Vacationwkx.github.io/posts/achv/rl-notes/</loc>
     <lastmod>2020-12-08T08:47:38+08:00</lastmod>
   </url><url>
-    <loc>https://Vacationwkx.github.io/posts/nn-notes/</loc>
+    <loc>https://Vacationwkx.github.io/posts/achv/nn-notes/</loc>
     <lastmod>2020-12-07T08:55:38+08:00</lastmod>
+  </url><url>
+    <loc>https://Vacationwkx.github.io/tags/jupyter/</loc>
+    <lastmod>2020-12-05T22:18:34+08:00</lastmod>
   </url><url>
     <loc>https://Vacationwkx.github.io/tags/linux/</loc>
     <lastmod>2020-12-05T22:18:34+08:00</lastmod>
   </url><url>
-    <loc>https://Vacationwkx.github.io/posts/ssh-jupyter/</loc>
+    <loc>https://Vacationwkx.github.io/tags/ssh/</loc>
     <lastmod>2020-12-05T22:18:34+08:00</lastmod>
   </url><url>
-    <loc>https://Vacationwkx.github.io/posts/rl-epsilon-policy/</loc>
+    <loc>https://Vacationwkx.github.io/posts/achv/ssh-jupyter/</loc>
+    <lastmod>2020-12-05T22:18:34+08:00</lastmod>
+  </url><url>
+    <loc>https://Vacationwkx.github.io/posts/achv/rl-epsilon-policy/</loc>
     <lastmod>2020-11-30T11:35:49+08:00</lastmod>
   </url><url>
-    <loc>https://Vacationwkx.github.io/posts/rl-update-equation/</loc>
+    <loc>https://Vacationwkx.github.io/posts/achv/rl-update-equation/</loc>
     <lastmod>2020-11-30T11:13:00+08:00</lastmod>
   </url><url>
-    <loc>https://Vacationwkx.github.io/posts/rl-comparsion/</loc>
+    <loc>https://Vacationwkx.github.io/posts/achv/rl-comparsion/</loc>
     <lastmod>2020-11-28T21:47:38+08:00</lastmod>
   </url><url>
     <loc>https://Vacationwkx.github.io/categories/game/</loc>
@@ -62,37 +101,37 @@
     <loc>https://Vacationwkx.github.io/tags/rusty-lake/</loc>
     <lastmod>2020-10-29T10:25:43+08:00</lastmod>
   </url><url>
+    <loc>https://Vacationwkx.github.io/posts/achv/rustylake/</loc>
+    <lastmod>2020-10-29T10:25:43+08:00</lastmod>
+  </url><url>
     <loc>https://Vacationwkx.github.io/tags/blog/</loc>
-    <lastmod>2021-04-21T21:55:38+08:00</lastmod>
+    <lastmod>2021-09-16T21:55:38+08:00</lastmod>
   </url><url>
     <loc>https://Vacationwkx.github.io/tags/hugo/</loc>
-    <lastmod>2021-04-21T21:55:38+08:00</lastmod>
+    <lastmod>2021-09-16T21:55:38+08:00</lastmod>
   </url><url>
-    <loc>https://Vacationwkx.github.io/posts/new-on-hugo/</loc>
-    <lastmod>2021-04-21T21:55:38+08:00</lastmod>
+    <loc>https://Vacationwkx.github.io/posts/achv/new-on-hugo/</loc>
+    <lastmod>2021-09-16T21:55:38+08:00</lastmod>
   </url><url>
     <loc>https://Vacationwkx.github.io/tags/jekyll/</loc>
     <lastmod>2020-04-01T21:55:38+08:00</lastmod>
   </url><url>
-    <loc>https://Vacationwkx.github.io/posts/learn-jekyll/</loc>
+    <loc>https://Vacationwkx.github.io/posts/achv/learn-jekyll/</loc>
     <lastmod>2020-04-01T21:55:38+08:00</lastmod>
   </url><url>
     <loc>https://Vacationwkx.github.io/tags/society/</loc>
     <lastmod>2019-04-17T21:55:38+08:00</lastmod>
   </url><url>
+    <loc>https://Vacationwkx.github.io/categories/thinkofchaos/</loc>
+    <lastmod>2019-04-17T21:55:38+08:00</lastmod>
+  </url><url>
     <loc>https://Vacationwkx.github.io/tags/thinkofchaos/</loc>
     <lastmod>2019-04-17T21:55:38+08:00</lastmod>
   </url><url>
-    <loc>https://Vacationwkx.github.io/posts/thoughts-in-2019/</loc>
+    <loc>https://Vacationwkx.github.io/posts/diary_thoughts/thoughts-in-2019/</loc>
     <lastmod>2019-04-17T21:55:38+08:00</lastmod>
   </url><url>
-    <loc>https://Vacationwkx.github.io/posts/the-crowd/</loc>
-    <lastmod>2019-03-22T21:55:38+08:00</lastmod>
-  </url><url>
-    <loc>https://Vacationwkx.github.io/categories/book/</loc>
-    <lastmod>2019-03-22T21:55:38+08:00</lastmod>
-  </url><url>
-    <loc>https://Vacationwkx.github.io/tags/book/</loc>
+    <loc>https://Vacationwkx.github.io/posts/books/the-crowd/</loc>
     <lastmod>2019-03-22T21:55:38+08:00</lastmod>
   </url><url>
     <loc>https://Vacationwkx.github.io/tags/psychology/</loc>
@@ -104,10 +143,10 @@
     <loc>https://Vacationwkx.github.io/categories/language/</loc>
     <lastmod>2019-03-12T21:55:38+08:00</lastmod>
   </url><url>
-    <loc>https://Vacationwkx.github.io/posts/gre/</loc>
+    <loc>https://Vacationwkx.github.io/posts/achv/gre/</loc>
     <lastmod>2019-03-12T21:55:38+08:00</lastmod>
   </url><url>
-    <loc>https://Vacationwkx.github.io/posts/antifragile/</loc>
+    <loc>https://Vacationwkx.github.io/posts/books/antifragile/</loc>
     <lastmod>2019-01-15T21:55:38+08:00</lastmod>
   </url><url>
     <loc>https://Vacationwkx.github.io/tags/probability/</loc>
@@ -119,7 +158,7 @@
     <loc>https://Vacationwkx.github.io/tags/2017/</loc>
     <lastmod>2017-12-02T21:55:38+08:00</lastmod>
   </url><url>
-    <loc>https://Vacationwkx.github.io/posts/tour2/</loc>
+    <loc>https://Vacationwkx.github.io/posts/diary_thoughts/tour2/</loc>
     <lastmod>2017-12-02T21:55:38+08:00</lastmod>
   </url><url>
     <loc>https://Vacationwkx.github.io/categories/diary/</loc>
@@ -128,22 +167,24 @@
     <loc>https://Vacationwkx.github.io/tags/trip/</loc>
     <lastmod>2017-12-02T21:55:38+08:00</lastmod>
   </url><url>
-    <loc>https://Vacationwkx.github.io/posts/tour/</loc>
+    <loc>https://Vacationwkx.github.io/posts/diary_thoughts/tour/</loc>
     <lastmod>2017-12-01T21:55:38+08:00</lastmod>
   </url><url>
     <loc>https://Vacationwkx.github.io/tags/de/</loc>
     <lastmod>2017-10-14T21:55:38+08:00</lastmod>
   </url><url>
-    <loc>https://Vacationwkx.github.io/posts/csf/</loc>
+    <loc>https://Vacationwkx.github.io/posts/diary_thoughts/csf/</loc>
     <lastmod>2017-10-14T21:55:38+08:00</lastmod>
   </url><url>
     <loc>https://Vacationwkx.github.io/tags/deutsch/</loc>
     <lastmod>2017-10-14T21:55:38+08:00</lastmod>
   </url><url>
-    <loc>https://Vacationwkx.github.io/posts/saenger/</loc>
+    <loc>https://Vacationwkx.github.io/posts/diary_thoughts/saenger/</loc>
     <lastmod>2017-09-14T21:55:38+08:00</lastmod>
   </url><url>
     <loc>https://Vacationwkx.github.io/archives/</loc>
+  </url><url>
+    <loc>https://Vacationwkx.github.io/tags/learning.../</loc>
   </url><url>
     <loc>https://Vacationwkx.github.io/search/</loc>
   </url><url>
