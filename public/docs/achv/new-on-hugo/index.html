@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Starting from hexo, changing to jekyll, now i am on HUGO">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="New on Hugo🤺" />
+<meta property="og:description" content="Starting from hexo, changing to jekyll, now i am on HUGO" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/docs/achv/new-on-hugo/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2020-10-22T21:55:38+08:00" />
+<meta property="article:modified_time" content="2021-09-16T21:55:38+08:00" />
+
+<title>New on Hugo🤺 | 無極</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.95d69eb6bad8b9707ff2b5d8d9e31ce70a1b84f2ed7ffaf665ffcf00aa7993bd.css" integrity="sha256-ldaetrrYuXB/8rXY2eMc5wobhPLtf/r2Zf/PAKp5k70=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.4ac964f991a32eddea693121c643f3f6ee8ab06e61631b51107b4c1266e49107.js" integrity="sha256-Sslk&#43;ZGjLt3qaTEhxkPz9u6KsG5hYxtREHtMEmbkkQc=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/favicon.ico" alt="Logo" /><span>無極</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+  
+
+
+
+  
+    
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="https://example.com/ru/">
+          Deutsch
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://example.com/zh/">
+          Chinese
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li>
+<p>
+  <a href="/posts/">Working&hellip;</a></p>
+</li>
+<li>
+<p>
+  <a href="/docs/">The Book</a></p>
+</li>
+</ul>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/alex-shpak/hugo-book" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://themes.gohugo.io/hugo-book/" target="_blank" rel="noopener">
+        Hugo Themes
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>New on Hugo🤺</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#my-steps-to-hugo">My Steps to HUGO</a>
+      <ul>
+        <li><a href="#something-you-may-want-to-pay-attention-to">something you may want to pay attention to</a>
+          <ul>
+            <li><a href="#images">images</a></li>
+            <li><a href="#youtube">youtube</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#theme-configuration---hugo-papermodhttpsadityatelangegithubiohugo-papermod">Theme Configuration - <a href="https://adityatelange.github.io/hugo-PaperMod/">hugo-PaperMod</a></a>
+      <ul>
+        <li><a href="#archive--tags">Archive / Tags</a></li>
+        <li><a href="#faviconpng">favicon.png</a></li>
+      </ul>
+    </li>
+    <li><a href="#adding-more">Adding more&hellip;</a>
+      <ul>
+        <li><a href="#mathjax">Mathjax</a>
+          <ul>
+            <li><a href="#small-problems-fix">Small problems fix:</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#hugo-0820">Hugo 0.82.0</a></li>
+    <li><a href="#new">[New] Notes may useful</a>
+      <ul>
+        <li><a href="#links">Links</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><p>
+  <a href="#new">Updated on 2021.09.16</a></p>
+<h1 id="my-steps-to-hugo">
+  My Steps to HUGO
+  <a class="anchor" href="#my-steps-to-hugo">#</a>
+</h1>
+<ol>
+<li>Follow the official website 
+  <a href="https://gohugo.io/getting-started/quick-start/">basic installation</a>;</li>
+<li>Find a great (better stable) theme at 
+  <a href="https://themes.gohugo.io/">official theme library</a></li>
+<li>Config the <code>config.yml</code> or <code>config.toml</code> by instruction from the theme producer.</li>
+</ol>
+<h2 id="something-you-may-want-to-pay-attention-to">
+  something you may want to pay attention to
+  <a class="anchor" href="#something-you-may-want-to-pay-attention-to">#</a>
+</h2>
+<h3 id="images">
+  images
+  <a class="anchor" href="#images">#</a>
+</h3>
+<p>In hugos, the post use image from <code>static</code> folder, you can insert a image in a markdown method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">![<span style="color:#f92672">some caption</span>](<span style="color:#a6e22e">/static/image.jpg</span>)
+![<span style="color:#f92672">some caption</span>](<span style="color:#a6e22e">/static/folder/image2.jpg</span>)
+</code></pre></div><p>In this condition the folder is like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">contents
+|  |
+|  --- posts
+|       |
+|       ---- example.md
+static
+   |
+   --- folder
+   |     |
+   |     ---- image2.jpg
+   ---- image.jpg
+</code></pre></div><h3 id="youtube">
+  youtube
+  <a class="anchor" href="#youtube">#</a>
+</h3>
+<p>A embedded youtube video in post can be simple add as a 
+  <a href="https://gohugo.io/content-management/shortcodes/">shortcode</a>:</p>
+<pre tabindex="0"><code>  {{&lt; youtube w7Ft2ymGmfc &gt;}}
+</code></pre><p>For a youtube video from link 
+  <a href="https://www.youtube.com/watch?v=w7Ft2ymGmfc">https://www.youtube.com/watch?v=w7Ft2ymGmfc</a></p>
+<ul>
+<li>if you also want to display shortcode in .md check 
+  <a href="https://liatas.com/posts/escaping-hugo-shortcodes/">this website</a> from 
+  <a href="https://liatas.com/">Chris Liatas</a>.</li>
+</ul>
+Theme Configuration - <h1 id="theme-configuration---hugo-papermodhttpsadityatelangegithubiohugo-papermod">
+  
+  <a href="https://adityatelange.github.io/hugo-PaperMod/">hugo-PaperMod</a>
+  <a class="anchor" href="#theme-configuration---hugo-papermodhttpsadityatelangegithubiohugo-papermod">#</a>
+</h1>
+<p>Most of the parameter can be changed simply in <code>config.yml</code> or <code>config.toml</code>, like <code>title</code>, <code>author</code>. To use emoji in the <code>config.yml</code> go straight to the 
+  <a href="http://unicode.org/emoji/charts/full-emoji-list.html">emoji website</a>, find one :smile: with code <code>U+1F604</code> , replace the +1 with 000, namely insert <code>\U000F604</code>.</p>
+<p>PS: in the .md file, <code>:simle:</code> is a emoji, but the <code>\U000F604</code> is also d</p>
+<h2 id="archive--tags">
+  Archive / Tags
+  <a class="anchor" href="#archive--tags">#</a>
+</h2>
+<p>To tiggle the archive and tags do cost me some time. The answer is in the <code>config.yml</code> for the 
+  <a href="https://github.com/adityatelange/hugo-PaperMod/blob/exampleSite/config.yml">theme temple website</a>, where</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">menu</span>:
+  <span style="color:#f92672">main</span>:
+    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Archives</span>
+      <span style="color:#f92672">url</span>: <span style="color:#ae81ff">/archives/</span>
+      <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">5</span>
+    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Tags</span>
+      <span style="color:#f92672">url</span>: <span style="color:#ae81ff">/tags/</span>
+      <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">10</span>
+
+<span style="color:#f92672">taxonomies</span>:
+  <span style="color:#f92672">category</span>: <span style="color:#ae81ff">categories</span>
+  <span style="color:#f92672">tag</span>: <span style="color:#ae81ff">tags</span>
+  <span style="color:#f92672">series</span>: <span style="color:#ae81ff">series</span>
+
+...
+</code></pre></div><p>is needed to add at the end of your <code>config.yml</code>.</p>
+<h2 id="faviconpng">
+  favicon.png
+  <a class="anchor" href="#faviconpng">#</a>
+</h2>
+<p>Chose the logo you want to use, go to 
+  <a href="https://favicon.io/">favicon.io</a> to generate the icon, replace the ones in the <code>themes/hugo-PaperMod/static</code>.</p>
+<p>In case you find no changes, may be the browser still has cache, clear it or switch another one will work.</p>
+<h1 id="adding-more">
+  Adding more&hellip;
+  <a class="anchor" href="#adding-more">#</a>
+</h1>
+<h2 id="mathjax">
+  Mathjax
+  <a class="anchor" href="#mathjax">#</a>
+</h2>
+<p>Only simple 3 changing separately in <code>css</code>, <code>layout/.html</code> and <code>head.html</code> or <code>header.html</code>. The tutorial you can find 
+  <a href="https://bwaycer.github.io/hugo_tutorial.hugo/tutorials/mathjax/">here</a>.</p>
+<p>if you find multiline flattened into one line (check 
+  <a href="https://bwaycer.github.io/hugo_tutorial.hugo/tutorials/mathjax/">this issue</a> ) change all <code>\\</code> at end to <code>\\\\\\</code>.</p>
+<h3 id="small-problems-fix">
+  Small problems fix:
+  <a class="anchor" href="#small-problems-fix">#</a>
+</h3>
+<ul>
+<li>infinity symbol in MathJax $\infty$ code is <code>\infty</code> .</li>
+</ul>
+<h1 id="hugo-0820">
+  Hugo 0.82.0
+  <a class="anchor" href="#hugo-0820">#</a>
+</h1>
+<p>has been a long time not update my blog, life got boring, but i barely realized it, until recent. Refeeling the vivid daily time is long lasting, but i did it again.</p>
+<p>So, new hugo add some more settings, like <code>description</code>  in front matters. We can have a auto github page with the 
+  <a href="https://github.com/marketplace/actions/hugo-setup">Github Action</a> said in the 
+  <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">official doc</a>. The magic code will build a branch in the github repository called <code>gh-pages</code>.</p>
+<p>
+  <img src="/general/hugo_github_action.png#center" alt="gh-page branch" />
+All you should do is go to <strong>Setting &raquo; Pages &raquo; Source</strong> and change the branch to <code>gh-pages</code>.</p>
+<p>The paperMod theme i used also updated. You can find 
+  <a href="https://adityatelange.github.io/hugo-PaperMod/">here</a>. Following some new instructions i rebuilt my blog, add search and comment block.</p>
+<h1 id="new">
+  [New] Notes may useful
+  <a class="anchor" href="#new">#</a>
+</h1>
+<h2 id="links">
+  Links
+  <a class="anchor" href="#links">#</a>
+</h2>
+<ul>
+<li>anchor in the same file
+<ul>
+<li>anchor <code>{#anchor}</code></li>
+<li>go to anchor <code>#anchor</code></li>
+</ul>
+</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#my-steps-to-hugo">My Steps to HUGO</a>
+      <ul>
+        <li><a href="#something-you-may-want-to-pay-attention-to">something you may want to pay attention to</a>
+          <ul>
+            <li><a href="#images">images</a></li>
+            <li><a href="#youtube">youtube</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#theme-configuration---hugo-papermodhttpsadityatelangegithubiohugo-papermod">Theme Configuration - <a href="https://adityatelange.github.io/hugo-PaperMod/">hugo-PaperMod</a></a>
+      <ul>
+        <li><a href="#archive--tags">Archive / Tags</a></li>
+        <li><a href="#faviconpng">favicon.png</a></li>
+      </ul>
+    </li>
+    <li><a href="#adding-more">Adding more&hellip;</a>
+      <ul>
+        <li><a href="#mathjax">Mathjax</a>
+          <ul>
+            <li><a href="#small-problems-fix">Small problems fix:</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#hugo-0820">Hugo 0.82.0</a></li>
+    <li><a href="#new">[New] Notes may useful</a>
+      <ul>
+        <li><a href="#links">Links</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="State Representation #   state vector ( obey Markov Property) observation →knowledge→ state  Partially observable Markov decision process &ldquo;learning or classification algorithms to &ldquo;learn&rdquo; those states&rdquo;  A simple linear regression A more complex non-linear function approximator, such as a multi-layer neural network.    The Atari DQN work by DeepMind team used a combination of feature engineering and relying on deep neural network to achieve its results.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Reinforcement Learning Notes" />
+<meta property="og:description" content="State Representation #   state vector ( obey Markov Property) observation →knowledge→ state  Partially observable Markov decision process &ldquo;learning or classification algorithms to &ldquo;learn&rdquo; those states&rdquo;  A simple linear regression A more complex non-linear function approximator, such as a multi-layer neural network.    The Atari DQN work by DeepMind team used a combination of feature engineering and relying on deep neural network to achieve its results." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/docs/ai/rl-notes/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2020-12-08T08:47:38+08:00" />
+<meta property="article:modified_time" content="2020-12-08T08:47:38+08:00" />
+
+<title>Reinforcement Learning Notes | 無極</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.95d69eb6bad8b9707ff2b5d8d9e31ce70a1b84f2ed7ffaf665ffcf00aa7993bd.css" integrity="sha256-ldaetrrYuXB/8rXY2eMc5wobhPLtf/r2Zf/PAKp5k70=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.4ac964f991a32eddea693121c643f3f6ee8ab06e61631b51107b4c1266e49107.js" integrity="sha256-Sslk&#43;ZGjLt3qaTEhxkPz9u6KsG5hYxtREHtMEmbkkQc=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/favicon.ico" alt="Logo" /><span>無極</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+  
+
+
+
+  
+    
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="https://example.com/ru/">
+          Deutsch
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://example.com/zh/">
+          Chinese
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li>
+<p>
+  <a href="/posts/">Working&hellip;</a></p>
+</li>
+<li>
+<p>
+  <a href="/docs/">The Book</a></p>
+</li>
+</ul>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/alex-shpak/hugo-book" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://themes.gohugo.io/hugo-book/" target="_blank" rel="noopener">
+        Hugo Themes
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Reinforcement Learning Notes</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#state-representationhttpsaistackexchangecomquestions7763how-to-define-states-in-reinforcement-learning"><a href="https://ai.stackexchange.com/questions/7763/how-to-define-states-in-reinforcement-learning">State Representation</a></a></li>
+        <li><a href="#policy-gradients">Policy Gradients</a></li>
+        <li><a href="#deep-reinforcement-learning">Deep Reinforcement Learning</a>
+          <ul>
+            <li><a href="#vdqn">VDQN</a></li>
+            <li><a href="#double-dqnhttpsmediumcomanalytics-vidhyabuilding-a-powerful-dqn-in-tensorflow-2-0-explanation-tutorial-d48ea8f3177a"><a href="https://medium.com/analytics-vidhya/building-a-powerful-dqn-in-tensorflow-2-0-explanation-tutorial-d48ea8f3177a">Double DQN</a></a></li>
+            <li><a href="#duelingdqnhttpstowardsdatasciencecomdueling-deep-q-networks-81ffab672751"><a href="https://towardsdatascience.com/dueling-deep-q-networks-81ffab672751">DuelingDQN</a></a></li>
+            <li><a href="#dqn-parameter-adjustment">DQN Parameter Adjustment</a></li>
+            <li><a href="#a3c">A3C</a></li>
+            <li><a href="#a2c">A2C</a></li>
+            <li><a href="#ppo">PPO</a></li>
+          </ul>
+        </li>
+        <li><a href="#material">Material</a>
+          <ul>
+            <li></li>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#drl">DRL</a></li>
+            <li><a href="#api-for-vrep">API for Vrep</a></li>
+            <li><a href="#david-silver---410">David Silver - 4/10</a></li>
+            <li><a href="#the-book---ch5">The Book - Ch5</a></li>
+            <li><a href="#paper">Paper</a></li>
+            <li><a href="#training-software">Training Software</a></li>
+            <li><a href="#open-cv">Open cv</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="state-representationhttpsaistackexchangecomquestions7763how-to-define-states-in-reinforcement-learning">
+  
+  <a href="https://ai.stackexchange.com/questions/7763/how-to-define-states-in-reinforcement-learning">State Representation</a>
+  <a class="anchor" href="#state-representationhttpsaistackexchangecomquestions7763how-to-define-states-in-reinforcement-learning">#</a>
+</h2>
+<ul>
+<li>state vector ( obey Markov Property)</li>
+<li>observation →knowledge→ state</li>
+<li>
+  <a href="https://en.wikipedia.org/wiki/Partially_observable_Markov_decision_process">Partially observable Markov decision process</a></li>
+<li>&ldquo;learning or classification algorithms to &ldquo;learn&rdquo; those states&rdquo;
+<ul>
+<li>A simple linear regression</li>
+<li>A more complex non-linear function approximator, such as a multi-layer neural network.</li>
+</ul>
+</li>
+</ul>
+<p>The Atari DQN work by DeepMind team used a combination of feature engineering and relying on deep neural network to achieve its results. The feature engineering included downsampling the image, reducing it to grey-scale and - importantly for the Markov Property - using four consecutive frames to represent a single state, so that information about velocity of objects was present in the state representation. The DNN then processed the images into higher-level features that could be used to make predictions about state values.</p>
+<h2 id="policy-gradients">
+  Policy Gradients
+  <a class="anchor" href="#policy-gradients">#</a>
+</h2>
+<p>
+  <a href="https://spinningup.openai.com/en/latest/algorithms/ddpg.html">Deep Deterministic Policy Gradient - Spinning Up documentation</a></p>
+<p>
+  <a href="https://danieltakeshi.github.io/2017/03/28/going-deeper-into-reinforcement-learning-fundamentals-of-policy-gradients/">Mathe Funda</a></p>
+<h2 id="deep-reinforcement-learning">
+  Deep Reinforcement Learning
+  <a class="anchor" href="#deep-reinforcement-learning">#</a>
+</h2>
+<h3 id="vdqn">
+  VDQN
+  <a class="anchor" href="#vdqn">#</a>
+</h3>
+<p>
+  <img src="/rl/dqn.png" alt="DQN" /></p>
+<p>DeepMind used atari environment for DQN test, even through all the return <code>observation</code> for preprocessing:</p>
+<h4 id="preprocessing">
+  Preprocessing
+  <a class="anchor" href="#preprocessing">#</a>
+</h4>
+<ul>
+<li>Observation
+<ol>
+<li>rgb $\rightarrow$ gray, i.e. image shape (210,160,3)$\rightarrow$ (210,160)</li>
+<li>down sample: (210,160) $\rightarrow$ (110,84)</li>
+<li>crop: (110,84) $\rightarrow$ (84,84)</li>
+</ol>
+</li>
+<li>Observation :arrow_right: state:
+<ol>
+<li>4 history frames to 1 $\rightarrow$ (84,84,4)</li>
+</ol>
+</li>
+</ul>
+<h4 id="cnn">
+  CNN
+  <a class="anchor" href="#cnn">#</a>
+</h4>
+<p>
+  <img src="/rl/atari_cnn.png" alt="CNN of DQN" /></p>
+<ul>
+<li>
+<p>architecture</p>
+<ul>
+<li>Conv2D: 32, 8x8, strides=4, input_shape=(84,84,4)</li>
+<li>Conv2D: 64, 4x4, strides=2</li>
+<li>Conv2D: 64, 3x3, strides=1</li>
+<li>Dense: 256</li>
+<li>Dens: outputshape</li>
+</ul>
+</li>
+<li>
+<p>comple</p>
+<ul>
+<li>RMSProp</li>
+</ul>
+</li>
+</ul>
+<h4 id="replay-buffer">
+  Replay Buffer
+  <a class="anchor" href="#replay-buffer">#</a>
+</h4>
+<ul>
+<li>fix length</li>
+<li>every time feed: (state, action, reward, next_state, done)</li>
+<li>once reach L length: start training</li>
+<li>length: 1million</li>
+</ul>
+<h4 id="target-model-update">
+  Target model update
+  <a class="anchor" href="#target-model-update">#</a>
+</h4>
+<ul>
+<li>every C step</li>
+<li>Epsilon: 1$\rightarrow$0.1 (1 million frame for total 50 milion)</li>
+</ul>
+<h4 id="frame-skipping">
+  Frame skipping
+  <a class="anchor" href="#frame-skipping">#</a>
+</h4>
+<p>
+  <img src="/rl/frame_skip.png" alt="Frame skip" /></p>
+<p>
+  <a href="https://danieltakeshi.github.io/2016/11/25/frame-skipping-and-preprocessing-for-deep-q-networks-on-atari-2600-games/">great explanation</a></p>
+<ul>
+<li>chose at kth frame</li>
+<li>last k-1 frame</li>
+<li>k=4</li>
+</ul>
+<p>Speed up for atari, use <code>info['ale.lives'] &lt; 5</code> for terminating the episode</p>
+<h4 id="clip">
+  Clip
+  <a class="anchor" href="#clip">#</a>
+</h4>
+<ul>
+<li>reward: -1,0,1</li>
+<li>Error: $|Q(s,a,\theta)-Q(s',a',\theta^-)\le1$</li>
+</ul>
+<p>NOTES:</p>
+<p>change RMSprop parameter</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">tf<span style="color:#f92672">.</span>keras<span style="color:#f92672">.</span>optimizers<span style="color:#f92672">.</span>RMSprop(
+    learning_rate<span style="color:#f92672">=</span><span style="color:#ae81ff">0.00025</span>,
+    rho<span style="color:#f92672">=</span><span style="color:#ae81ff">0.9</span>,
+    momentum<span style="color:#f92672">=</span><span style="color:#ae81ff">0.95</span>,
+    epsilon<span style="color:#f92672">=</span><span style="color:#ae81ff">1e-07</span>,
+    centered<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;RMSprop&#34;</span>,
+    <span style="color:#f92672">**</span>kwargs
+)
+</code></pre></div><h4 id="random-gym-run">
+  Random Gym Run
+  <a class="anchor" href="#random-gym-run">#</a>
+</h4>
+<ul>
+<li>Frame:10,000</li>
+<li>Reward: 4-2, 5-0</li>
+</ul>
+<h3 id="double-dqnhttpsmediumcomanalytics-vidhyabuilding-a-powerful-dqn-in-tensorflow-2-0-explanation-tutorial-d48ea8f3177a">
+  
+  <a href="https://medium.com/analytics-vidhya/building-a-powerful-dqn-in-tensorflow-2-0-explanation-tutorial-d48ea8f3177a">Double DQN</a>
+  <a class="anchor" href="#double-dqnhttpsmediumcomanalytics-vidhyabuilding-a-powerful-dqn-in-tensorflow-2-0-explanation-tutorial-d48ea8f3177a">#</a>
+</h3>
+<ul>
+<li>main: choose action</li>
+<li>target: update Q in Bellman as Q_max</li>
+<li>model fit: fit the main with target value output</li>
+<li>after same iterations, copy main weights and biases to target</li>
+</ul>
+<h3 id="duelingdqnhttpstowardsdatasciencecomdueling-deep-q-networks-81ffab672751">
+  
+  <a href="https://towardsdatascience.com/dueling-deep-q-networks-81ffab672751">DuelingDQN</a>
+  <a class="anchor" href="#duelingdqnhttpstowardsdatasciencecomdueling-deep-q-networks-81ffab672751">#</a>
+</h3>
+<p>maybe drop DQN</p>
+<p>
+  <img src="/rl/drl_compare.png" alt="Perform on atari" /></p>
+<p>
+  <a href="https://www.toptal.com/machine-learning/deep-dive-into-reinforcement-learning">source</a></p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> DDQN Architecture</li>
+<li><input checked="" disabled="" type="checkbox"> <del>custom model fit for weights</del> too complicated</li>
+<li><input checked="" disabled="" type="checkbox"> Priorited Replay
+<ul>
+<li><input checked="" disabled="" type="checkbox"> paper</li>
+<li><input checked="" disabled="" type="checkbox"> code</li>
+<li><input checked="" disabled="" type="checkbox"> test</li>
+</ul>
+</li>
+<li><input checked="" disabled="" type="checkbox"> Agent</li>
+<li><input checked="" disabled="" type="checkbox"> Train Main</li>
+</ul>
+<h3 id="dqn-parameter-adjustment">
+  DQN Parameter Adjustment
+  <a class="anchor" href="#dqn-parameter-adjustment">#</a>
+</h3>
+<p>
+  <a href="https://github.com/dennybritz/reinforcement-learning/issues/30">https://github.com/dennybritz/reinforcement-learning/issues/30</a></p>
+<p>
+  <a href="https://www.reddit.com/r/reinforcementlearning/comments/7kwcb5/need_help_how_to_debug_deep_rl_algorithms/">https://www.reddit.com/r/reinforcementlearning/comments/7kwcb5/need_help_how_to_debug_deep_rl_algorithms/</a></p>
+<h3 id="a3c">
+  A3C
+  <a class="anchor" href="#a3c">#</a>
+</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> David Sliver</li>
+<li><input checked="" disabled="" type="checkbox"> 
+  <a href="https://medium.com/@thechrisyoon/deriving-policy-gradients-and-implementing-reinforce-f887949bd63">Policy Gradient Mathe</a></li>
+<li><input checked="" disabled="" type="checkbox"> Paper review</li>
+<li><input disabled="" type="checkbox"> <del>Example threading Pytorch</del></li>
+<li><input disabled="" type="checkbox"> <del>Code for Pendulum</del></li>
+</ul>
+<h3 id="a2c">
+  A2C
+  <a class="anchor" href="#a2c">#</a>
+</h3>
+<p>
+  <a href="https://github.com/ikostrikov/pytorch-a3c">Why A2C not A3C</a></p>
+<ul>
+<li>
+  <a href="https://www.datahubbs.com/two-headed-a2c-network-in-pytorch/">Two head Network</a></li>
+<li><strong>Why Entropy</strong>: 
+  <a href="https://awjuliani.medium.com/maximum-entropy-policies-in-reinforcement-learning-everyday-life-f5a1cc18d32d#:~:text=Because%20RL%20is%20all%20about,the%20actions%20an%20agent%20takes.&amp;text=In%20RL%2C%20the%20goal%20is,term%20sum%20of%20discounted%20rewards">https://awjuliani.medium.com/maximum-entropy-policies-in-reinforcement-learning-everyday-life-f5a1cc18d32d#:~:text=Because%20RL%20is%20all%20about,the%20actions%20an%20agent%20takes.&text=In%20RL%2C%20the%20goal%20is,term%20sum%20of%20discounted%20rewards</a>
+<ul>
+<li>Entropy is great, but you might be wondering what that has to do with reinforcement learning and this A2C algorithm we discussed. The idea here is to use entropy to encourage further exploration of the model</li>
+<li>to prevent premature convergence</li>
+</ul>
+</li>
+<li>Negative Loss:
+<ul>
+<li>TensorFlow and PyTorch currently don’t have the ability to maximize a function, we then minimize the negative of our loss</li>
+</ul>
+</li>
+<li>
+  <a href="https://discuss.pytorch.org/t/how-to-implement-accumulated-gradient/3822">Accumulated gradient</a></li>
+</ul>
+<h3 id="ppo">
+  PPO
+  <a class="anchor" href="#ppo">#</a>
+</h3>
+<ul>
+<li>
+<p>debug for sub optimal:</p>
+<ul>
+<li>
+<p>
+  <a href="https://www.reddit.com/r/reinforcementlearning/comments/d3wym2/catastrophic_unlearning_in_ppo_a_plausible_cause/">possible solutions</a></p>
+<ul>
+<li>decrease lr</li>
+<li>decrease lambda during program</li>
+</ul>
+</li>
+<li>
+<p>It would be helpful to output more metrics, such as losses, norms of the gradients, KL divergence between your old and new policies after a number of PPO updates.
+  <a href="https://www.reddit.com/r/reinforcementlearning/comments/bqh01v/having_trouble_with_ppo_rewards_crashing/?utm_source=share&amp;utm_medium=web2x">source</a></p>
+</li>
+<li>
+<p>change algo</p>
+<blockquote>
+<p>It depends on the environment. Something like ball balancing might just tend to destabilize with PPO, vs. something like half cheetah that is less finicky balance wise. You might try using td3 or sac, but with ppo you might just have to early stop. There might be some perfect combo of lr and clip param that leaves it stabilized&hellip; maybe with using another optimizer as well like classic momentum or adagrad.</p>
+<p>
+  <a href="https://www.reddit.com/r/reinforcementlearning/comments/bqh01v/having_trouble_with_ppo_rewards_crashing/?utm_source=share&amp;utm_medium=web2x">source</a></p>
+</blockquote>
+</li>
+<li></li>
+</ul>
+</li>
+</ul>
+<h2 id="material">
+  Material
+  <a class="anchor" href="#material">#</a>
+</h2>
+<h4 id="powerup-knowledge">
+  Powerup Knowledge
+  <a class="anchor" href="#powerup-knowledge">#</a>
+</h4>
+<ul>
+<li>
+  <a href="https://towardsdatascience.com/a-short-introduction-to-go-explore-c61c2ef201f0">How to Exploration</a></li>
+<li>
+  <a href="https://www.alexirpan.com/2018/02/14/rl-hard.html">Why RL Hard</a></li>
+<li>
+  <a href="https://www.reddit.com/r/MachineLearning/comments/bdgxin/d_any_papers_that_criticize_deep_reinforcement/">DRL Sucks</a></li>
+</ul>
+<h3 id="intro">
+  Intro
+  <a class="anchor" href="#intro">#</a>
+</h3>
+<p>
+  <a href="https://thomassimonini.medium.com/an-introduction-to-deep-reinforcement-learning-17a565999c0c">An Introduction to Deep Reinforcement Learning</a></p>
+<h3 id="drl">
+  DRL
+  <a class="anchor" href="#drl">#</a>
+</h3>
+<h4 id="reward-shaping">
+  Reward shaping
+  <a class="anchor" href="#reward-shaping">#</a>
+</h4>
+<p>
+  <a href="https://www.youtube.com/watch?v=0R3PnJEisqk&amp;ab_channel=Bonsai">reference</a></p>
+<h4 id="code-for-model">
+  Code for model
+  <a class="anchor" href="#code-for-model">#</a>
+</h4>
+<ul>
+<li>
+  <a href="https://github.com/marload/DeepRL-TensorFlow2">Tensorflow</a></li>
+<li>
+  <a href="https://github.com/bentrevett/pytorch-rl">Pytorch</a>
+<ul>
+<li>
+  <a href="https://github.com/FrancescoSaverioZuppichini/Pytorch-how-and-when-to-use-Module-Sequential-ModuleList-and-ModuleDict">Simple to create Model</a></li>
+<li>
+  <a href="https://github.com/ikostrikov/pytorch-a2c-ppo-acktr-gail">PPO</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="course">
+  Course
+  <a class="anchor" href="#course">#</a>
+</h4>
+<ul>
+<li>
+<p>
+  <a href="http://rail.eecs.berkeley.edu/deeprlcourse/">CS 285</a></p>
+</li>
+<li>
+<p>
+  <a href="http://videolectures.net/rldm2015_silver_reinforcement_learning/">Deep Reinforcement Learning</a></p>
+</li>
+</ul>
+<h4 id="blog">
+  Blog
+  <a class="anchor" href="#blog">#</a>
+</h4>
+<ul>
+<li>
+  <a href="https://neuro.cs.ut.ee/demystifying-deep-reinforcement-learning/">Atari</a></li>
+<li>
+  <a href="https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-0-q-learning-with-tables-and-neural-networks-d195264329d0">Medium</a></li>
+<li>
+  <a href="https://github.com/marload/DeepRL-TensorFlow2">Tensorflow Code</a></li>
+<li>
+  <a href="https://towardsdatascience.com/tutorial-double-deep-q-learning-with-dueling-network-architectures-4c1b3fb7f756">Start from PONG</a></li>
+<li>
+  <a href="https://danieltakeshi.github.io">Nice Dude</a></li>
+</ul>
+<h4 id="atari">
+  Atari
+  <a class="anchor" href="#atari">#</a>
+</h4>
+<ul>
+<li>
+  <a href="https://hub.packtpub.com/openai-gym-environments-wrappers-and-monitors-tutorial/">Monitor / Video using X11</a></li>
+<li>
+  <a href="https://rubenfiszel.github.io/posts/rl4j/2016-08-24-Reinforcement-Learning-and-DQN.html">Recap</a></li>
+</ul>
+<h4 id="cnn-1">
+  CNN
+  <a class="anchor" href="#cnn-1">#</a>
+</h4>
+<ul>
+<li>parameter calculation : 
+  <a href="https://medium.com/@iamvarman/how-to-calculate-the-number-of-parameters-in-the-cnn-5bd55364d7ca#:~:text=To%20calculate%20it%2C%20we%20have,3%E2%80%931%29%29%20%3D%2048">https://medium.com/@iamvarman/how-to-calculate-the-number-of-parameters-in-the-cnn-5bd55364d7ca#:~:text=To%20calculate%20it%2C%20we%20have,3%E2%80%931))%20%3D%2048</a></li>
+<li>
+  <a href="https://cs231n.github.io/convolutional-networks/#pool">output shape calculation</a></li>
+</ul>
+<h3 id="api-for-vrep">
+  API for Vrep
+  <a class="anchor" href="#api-for-vrep">#</a>
+</h3>
+<p>
+  <a href="https://www.coppeliarobotics.com/helpFiles/en/legacyRemoteApiOverview.htm">Legacy remote API</a></p>
+<p>
+  <a href="https://www.coppeliarobotics.com/helpFiles/en/remoteApiFunctionsPython.htm">Remote API functions (Python)</a></p>
+<h3 id="david-silver---410">
+  David Silver - 4/10
+  <a class="anchor" href="#david-silver---410">#</a>
+</h3>
+<p>
+  <a href="https://www.davidsilver.uk/teaching/">Teaching - David Silver</a></p>
+<h3 id="the-book---ch5">
+  The Book - Ch5
+  <a class="anchor" href="#the-book---ch5">#</a>
+</h3>
+<p>
+  <a href="http://incompleteideas.net/book/the-book.html">Reinforcement Learning: An Introduction</a></p>
+<p>
+  <a href="http://incompleteideas.net/book/code/code2nd.html">Code for it:</a></p>
+<p>
+  <a href="https://waxworksmath.com/Authors/N_Z/Sutton/RLAI_1st_Edition/sutton.html">Reinforcement Learning: An Introduction</a></p>
+<h3 id="paper">
+  Paper
+  <a class="anchor" href="#paper">#</a>
+</h3>
+<p>
+  <a href="https://spinningup.openai.com/en/latest/spinningup/keypapers.html">Keypaper</a></p>
+<h3 id="training-software">
+  Training Software
+  <a class="anchor" href="#training-software">#</a>
+</h3>
+<p>
+  <a href="https://gym.openai.com/">Gym: A toolkit for developing and comparing reinforcement learning algorithms</a></p>
+<h3 id="open-cv">
+  Open cv
+  <a class="anchor" href="#open-cv">#</a>
+</h3>
+<ul>
+<li>
+  <a href="https://chadrick-kwag.net/cv2-resize-interpolation-methods/">resize</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#state-representationhttpsaistackexchangecomquestions7763how-to-define-states-in-reinforcement-learning"><a href="https://ai.stackexchange.com/questions/7763/how-to-define-states-in-reinforcement-learning">State Representation</a></a></li>
+        <li><a href="#policy-gradients">Policy Gradients</a></li>
+        <li><a href="#deep-reinforcement-learning">Deep Reinforcement Learning</a>
+          <ul>
+            <li><a href="#vdqn">VDQN</a></li>
+            <li><a href="#double-dqnhttpsmediumcomanalytics-vidhyabuilding-a-powerful-dqn-in-tensorflow-2-0-explanation-tutorial-d48ea8f3177a"><a href="https://medium.com/analytics-vidhya/building-a-powerful-dqn-in-tensorflow-2-0-explanation-tutorial-d48ea8f3177a">Double DQN</a></a></li>
+            <li><a href="#duelingdqnhttpstowardsdatasciencecomdueling-deep-q-networks-81ffab672751"><a href="https://towardsdatascience.com/dueling-deep-q-networks-81ffab672751">DuelingDQN</a></a></li>
+            <li><a href="#dqn-parameter-adjustment">DQN Parameter Adjustment</a></li>
+            <li><a href="#a3c">A3C</a></li>
+            <li><a href="#a2c">A2C</a></li>
+            <li><a href="#ppo">PPO</a></li>
+          </ul>
+        </li>
+        <li><a href="#material">Material</a>
+          <ul>
+            <li></li>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#drl">DRL</a></li>
+            <li><a href="#api-for-vrep">API for Vrep</a></li>
+            <li><a href="#david-silver---410">David Silver - 4/10</a></li>
+            <li><a href="#the-book---ch5">The Book - Ch5</a></li>
+            <li><a href="#paper">Paper</a></li>
+            <li><a href="#training-software">Training Software</a></li>
+            <li><a href="#open-cv">Open cv</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

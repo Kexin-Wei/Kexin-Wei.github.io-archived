@@ -2,107 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>無極</title>
-    <link>https://Vacationwkx.github.io/</link>
+    <link>https://example.com/</link>
     <description>Recent content on 無極</description>
-    <image>
-      <url>https://Vacationwkx.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://Vacationwkx.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 03 Sep 2021 22:44:41 +0800</lastBuildDate><atom:link href="https://Vacationwkx.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Sep 2021 22:44:41 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Self Driving Car</title>
-      <link>https://Vacationwkx.github.io/posts/learn/self-driving-car/</link>
+      <link>https://example.com/posts/self-driving-car/</link>
       <pubDate>Fri, 03 Sep 2021 22:44:41 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/learn/self-driving-car/</guid>
-      <description>Intro Reading SAE J3016: Autonomous Car Level source 1
-all human adaptive cruise control, anti-lock braking system, electronic stabilty control hazard-minimizing longitudinal/ lateral control, emergency braking full autonomy under certain condition, but human take control when in danger full autonomy under certain condition, can replace human at some cases fully autonomous  Decision making   On-board sensors
+      <guid>https://example.com/posts/self-driving-car/</guid>
+      <description>Intro #  Reading #  SAE J3016: Autonomous Car Level #  source 1
+all human adaptive cruise control, anti-lock braking system, electronic stabilty control hazard-minimizing longitudinal/ lateral control, emergency braking full autonomy under certain condition, but human take control when in danger full autonomy under certain condition, can replace human at some cases fully autonomous  Decision making #    On-board sensors
  LIDAR camera GPS/INS odometry(angle)    Hierachical Decision Making System     Route Planning</description>
     </item>
     
     <item>
       <title>Principles of Microeconomics</title>
-      <link>https://Vacationwkx.github.io/posts/books/principles-of-microeconomics/</link>
+      <link>https://example.com/docs/books/principles-of-microeconomics/</link>
       <pubDate>Mon, 16 Aug 2021 23:34:23 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/books/principles-of-microeconomics/</guid>
-      <description>Ch.1 Ten Principles of Economics  Economists normally assume that people are rational. Rational people systemati- cally and purposefully do the best they can to achieve their objectives, given the available opportunities. Rational people know that decisions in life are rarely black and white but usu- ally involve shades of gray most policies aim either to enlarge the economic pie or to change how the pie is divided market failure to refer to a situation in which the market on its own fails to produce an efficient allocation of resources.</description>
+      <guid>https://example.com/docs/books/principles-of-microeconomics/</guid>
+      <description>Ch.1 Ten Principles of Economics #   Economists normally assume that people are rational. Rational people systemati- cally and purposefully do the best they can to achieve their objectives, given the available opportunities. Rational people know that decisions in life are rarely black and white but usu- ally involve shades of gray most policies aim either to enlarge the economic pie or to change how the pie is divided market failure to refer to a situation in which the market on its own fails to produce an efficient allocation of resources.</description>
     </item>
     
     <item>
       <title>Front End</title>
-      <link>https://Vacationwkx.github.io/posts/learn/front-end/</link>
+      <link>https://example.com/docs/learn/front-end/</link>
       <pubDate>Thu, 08 Jul 2021 23:07:37 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/learn/front-end/</guid>
-      <description>Fundamental  Web Architecture  Flow  learn at developer-roadmap  Internet Node.js local server HTML&amp;amp; CSS &amp;amp; JS   cop with roadmap Firefox web develop  HTML &amp;amp; CSS  code at freecodecamp  HTML CSS Java Project    JS  Book: Eloquent JavaScript Book: You Don&amp;rsquo;t Know JS Yet  Reference  W3C  </description>
+      <guid>https://example.com/docs/learn/front-end/</guid>
+      <description>Fundamental #   Web Architecture  Flow #   learn at developer-roadmap  Internet Node.js local server HTML&amp;amp; CSS &amp;amp; JS   cop with roadmap Firefox web develop  HTML &amp;amp; CSS #   code at freecodecamp  HTML CSS Java Project    JS #   Book: Eloquent JavaScript Book: You Don&amp;rsquo;t Know JS Yet  Reference #    W3C  </description>
     </item>
     
     <item>
       <title>AI</title>
-      <link>https://Vacationwkx.github.io/posts/learn/ai/</link>
+      <link>https://example.com/docs/learn/AI/</link>
       <pubDate>Thu, 08 Jul 2021 17:38:25 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/learn/ai/</guid>
-      <description>Artificial Intelligent Thought Sparks</description>
+      <guid>https://example.com/docs/learn/AI/</guid>
+      <description>Reinforcement Learninng #   check probability is correct replay reuse, not always interacting, split into stages, or types  Computer Vision #   build 3d for object classification position for area + class label power up classification for multiple objects in one scene parameter tuning under reinforcement learning: link accuracy as reward, parameter as actions  Natural Language Processing #   from language to video building voice control to programming  voice control to logica, puls add or minus more complicated logic    Learning at Udemy S1 - Introduction S2 - Python Text Basics S3 - Natural Language Processing Basics S4 - &amp;hellip;</description>
     </item>
     
     <item>
       <title>[Book]The Shortest History of Europe</title>
-      <link>https://Vacationwkx.github.io/posts/books/simple-europe-history/</link>
+      <link>https://example.com/docs/books/simple-europe-history/</link>
       <pubDate>Sun, 13 Jun 2021 23:25:31 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/books/simple-europe-history/</guid>
-      <description>Ch.1 从希腊说起，讲到日耳曼&amp;ndash;古典时期到中世纪  日耳曼与希腊学术   Ch.5 有国王的民主，没国王的极权  我们现今的祈祷姿势是模仿世俗领主宣誓顺从的动作 军队 &amp;amp; 政治 &amp;amp; 礼仪   Ch.6 皇帝和教皇到底谁大？  罗马历史   Ch.7 语言：从两种变几十种  语言政策是最容易自取其败的公共政策。在某个地区压制本土语言以另一套取而代之简直难如登天，在古代，从来没人想过要这样做。 英国语言发展   Ch.8 平民百姓的生活面貌  你一定会喜欢这些平民百姓。他们很脏很臭，看来很不讨喜，因为他们一年到头无分寒暑地日夜操劳，形容憔悴、伤痕累累、营养不良、疾病缠身。那为什么你还会喜欢他们？因为他们的命运很容易追踪；百年复百年，他们做的都是同样的事，几乎所有的人都在耕种。 经济发展并不是罗马人推动革新的重点，以一套法典及一种效率卓越的军事组织将整个帝国维系于不坠，才是他们的治国精神所在。 谈天气不是为了没话找话，而是一群人在忧心自己的命运。 对当时的农民来说，他们是真的自给自足。在他们看来，政府和教会纯然只是负担，伸手要钱就和抢劫没什么两样。 休耕法   </description>
+      <guid>https://example.com/docs/books/simple-europe-history/</guid>
+      <description>Ch.1 从希腊说起，讲到日耳曼&amp;ndash;古典时期到中世纪 #   日耳曼与希腊学术   Ch.5 有国王的民主，没国王的极权 #   我们现今的祈祷姿势是模仿世俗领主宣誓顺从的动作 军队 &amp;amp; 政治 &amp;amp; 礼仪   Ch.6 皇帝和教皇到底谁大？ #   罗马历史   Ch.7 语言：从两种变几十种 #   语言政策是最容易自取其败的公共政策。在某个地区压制本土语言以另一套取而代之简直难如登天，在古代，从来没人想过要这样做。 英国语言发展   Ch.8 平民百姓的生活面貌 #   你一定会喜欢这些平民百姓。他们很脏很臭，看来很不讨喜，因为他们一年到头无分寒暑地日夜操劳，形容憔悴、伤痕累累、营养不良、疾病缠身。那为什么你还会喜欢他们？因为他们的命运很容易追踪；百年复百年，他们做的都是同样的事，几乎所有的人都在耕种。 经济发展并不是罗马人推动革新的重点，以一套法典及一种效率卓越的军事组织将整个帝国维系于不坠，才是他们的治国精神所在。 谈天气不是为了没话找话，而是一群人在忧心自己的命运。 对当时的农民来说，他们是真的自给自足。在他们看来，政府和教会纯然只是负担，伸手要钱就和抢劫没什么两样。 休耕法   </description>
     </item>
     
     <item>
       <title>My First Book</title>
-      <link>https://Vacationwkx.github.io/posts/books/my-first-book/</link>
+      <link>https://example.com/docs/books/my-first-book/</link>
       <pubDate>Sat, 01 May 2021 21:01:15 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/books/my-first-book/</guid>
-      <description>Temporal chapter name in chinese</description>
+      <guid>https://example.com/docs/books/my-first-book/</guid>
+      <description>榮譽與爸爸 #  納稅與點石成金 #  全球與英雄 #  祠堂與國家 #  </description>
     </item>
     
     <item>
       <title>Reinforcement Learning Notes</title>
-      <link>https://Vacationwkx.github.io/posts/achv/rl-notes/</link>
+      <link>https://example.com/docs/ai/rl-notes/</link>
       <pubDate>Tue, 08 Dec 2020 08:47:38 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/achv/rl-notes/</guid>
-      <description>State Representation  state vector ( obey Markov Property) observation →knowledge→ state Partially observable Markov decision process &amp;ldquo;learning or classification algorithms to &amp;ldquo;learn&amp;rdquo; those states&amp;rdquo;  A simple linear regression A more complex non-linear function approximator, such as a multi-layer neural network.    The Atari DQN work by DeepMind team used a combination of feature engineering and relying on deep neural network to achieve its results. The feature engineering included downsampling the image, reducing it to grey-scale and - importantly for the Markov Property - using four consecutive frames to represent a single state, so that information about velocity of objects was present in the state representation.</description>
+      <guid>https://example.com/docs/ai/rl-notes/</guid>
+      <description>State Representation #   state vector ( obey Markov Property) observation →knowledge→ state  Partially observable Markov decision process &amp;ldquo;learning or classification algorithms to &amp;ldquo;learn&amp;rdquo; those states&amp;rdquo;  A simple linear regression A more complex non-linear function approximator, such as a multi-layer neural network.    The Atari DQN work by DeepMind team used a combination of feature engineering and relying on deep neural network to achieve its results.</description>
     </item>
     
     <item>
       <title>NNN notes</title>
-      <link>https://Vacationwkx.github.io/posts/achv/nn-notes/</link>
+      <link>https://example.com/docs/ai/nn-notes/</link>
       <pubDate>Mon, 07 Dec 2020 08:55:38 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/achv/nn-notes/</guid>
+      <guid>https://example.com/docs/ai/nn-notes/</guid>
       <description>In any case, you will need to get started with reading up on machine learning. i would suggest you first briefly start with neural networks, followed by deep convolutional neural networks just to get used to the idea of deep learning and subsequently focus on picking up reinforcement learning. As this machine learning field heavily requires you to be able to do programming, I would suggest that you try to implement the models you learnt and get familiar with the various packages of pytorch, tensorflow, fastai.</description>
     </item>
     
     <item>
       <title>Use Jupiter Notebook by ssh</title>
-      <link>https://Vacationwkx.github.io/posts/achv/ssh-jupyter/</link>
+      <link>https://example.com/docs/achv/ssh-jupyter/</link>
       <pubDate>Sat, 05 Dec 2020 22:18:34 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/achv/ssh-jupyter/</guid>
+      <guid>https://example.com/docs/achv/ssh-jupyter/</guid>
       <description>This blog shows up a way to ssh a ubuntu computer (as Jupyter Notebook server) from mac.
-Prerequirements Ubuntu / Remote Setting SSH Setting run the following command to enable the ssh on ubuntu(18.04)
-$ sudo apt-get install openssh-server Jupyter Notebook Setting(optional) using jupyter notebook may require the token or password, you may refer to the jupyter notebook official site for details.
-  Token
-take note of the resultjupyter notebook command, the token is inside the link after token=, e.</description>
+Prerequirements #  Ubuntu / Remote Setting #  SSH Setting #  run the following command to enable the ssh on ubuntu(18.04)
+$ sudo apt-get install openssh-server Jupyter Notebook Setting(optional) #  using jupyter notebook may require the token or password, you may refer to the jupyter notebook official site for details.</description>
     </item>
     
     <item>
       <title>epsilon-Greedy vs epsilon-Soft</title>
-      <link>https://Vacationwkx.github.io/posts/achv/rl-epsilon-policy/</link>
+      <link>https://example.com/docs/ai/rl-epsilon-policy/</link>
       <pubDate>Mon, 30 Nov 2020 11:35:49 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/achv/rl-epsilon-policy/</guid>
+      <guid>https://example.com/docs/ai/rl-epsilon-policy/</guid>
       <description>In reinforcement learning, we can&amp;rsquo;t run infinite times to update the whole $Q$ - value table or $V$ - value table, efficient update choices must be made.
 Generally thinking, which $s$ or $(s,a)$ has more opportunity to get $R$ (high value), should be updated more to converge to the optimal. But stochastic exploring is also required to jump out of sub-optimal. The simple idea to implement is $\epsilon$ -greedy.
 Tips:</description>
@@ -110,25 +104,25 @@ Tips:</description>
     
     <item>
       <title>Value Update Comparsion among Basical RL</title>
-      <link>https://Vacationwkx.github.io/posts/achv/rl-update-equation/</link>
+      <link>https://example.com/docs/ai/rl-update-equation/</link>
       <pubDate>Mon, 30 Nov 2020 11:13:00 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/achv/rl-update-equation/</guid>
+      <guid>https://example.com/docs/ai/rl-update-equation/</guid>
       <description>In this post, we will compare the state value update or state-action value update equation in fundamental rl methods.
-Monte Carlo $$V(s)\leftarrow V(s)+\frac{1}{N}[G_t-V(s)]$$
+Monte Carlo #  $$V(s)\leftarrow V(s)+\frac{1}{N}[G_t-V(s)]$$
 recall that, monte carlo update use average $V(s)=\sum G_t/N$. After simple transformation, we will have the error form equation:point_up_2:.
 and the corresponding state-action value update is:
 $$Q(s,a)\leftarrow Q(s,a)+\frac{1}{N}[G_t-Q(s,a)]$$
-Temporal Difference TD is driven from $\alpha$ - Monte Carlo, but replace the $G_t$ with $R_t+\gamma V(s&#39;)$, since we want a instant update per step rather than till terminal.</description>
+Temporal Difference #  TD is driven from $\alpha$ - Monte Carlo, but replace the $G_t$ with $R_t+\gamma V(s&#39;)$, since we want a instant update per step rather than till terminal.</description>
     </item>
     
     <item>
       <title>Monte Carlo vs TD vs Q-learning</title>
-      <link>https://Vacationwkx.github.io/posts/achv/rl-comparsion/</link>
+      <link>https://example.com/docs/ai/rl-comparsion/</link>
       <pubDate>Sat, 28 Nov 2020 21:47:38 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/achv/rl-comparsion/</guid>
-      <description>Basic Recap Reinforcement learning bases on $V(s),Q(s,a),\pi(a|s),R,G$:
+      <guid>https://example.com/docs/ai/rl-comparsion/</guid>
+      <description>Basic Recap #  Reinforcement learning bases on $V(s),Q(s,a),\pi(a|s),R,G$:
   $V(s)$ : state value, often used in model-based method;
   $Q(s,a)$ : state-action value, often used in model-free method;
  why state-action: $s\rightarrow a$ is defined partly in $\pi(a|s)$, and $V(s,a),\pi(a|s)$ are all parameters inside agent, consequently, $Q(s,a)$ is a combination of $V(s)$ and $\pi(a|s)$.    $\pi(a|s)$ : the policy of a agent, chose a $a$ (action) at a $s$ state;</description>
@@ -136,72 +130,62 @@ Temporal Difference TD is driven from $\alpha$ - Monte Carlo, but replace the $G
     
     <item>
       <title>Rusty lake - Game Timeline &amp; Secrets</title>
-      <link>https://Vacationwkx.github.io/posts/achv/rustylake/</link>
+      <link>https://example.com/docs/achv/rustylake/</link>
       <pubDate>Thu, 29 Oct 2020 10:25:43 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/achv/rustylake/</guid>
-      <description>Rusty Lake Rusty lake is a thrilling game series with many secrets in them. Animal characters, shadow person, religious elements, murders&amp;hellip; A thriller is too less to cover the topic of rusty lake, and what I am intent to do, is to reveal the prossible secrest hidden behind the screen&amp;hellip;
-Cubes Collection The Lake The lake&amp;rsquo;s goal is to find the 5 objects:
- apple coin gem shell eye  and attach them all on the tree at corresponding position.</description>
+      <guid>https://example.com/docs/achv/rustylake/</guid>
+      <description>Rusty Lake #  Rusty lake is a thrilling game series with many secrets in them. Animal characters, shadow person, religious elements, murders&amp;hellip; A thriller is too less to cover the topic of rusty lake, and what I am intent to do, is to reveal the prossible secrest hidden behind the screen&amp;hellip;
+ Cubes Collection #  The Lake #   The lake&amp;rsquo;s goal is to find the 5 objects:</description>
     </item>
     
     <item>
       <title>New on Hugo🤺</title>
-      <link>https://Vacationwkx.github.io/posts/achv/new-on-hugo/</link>
+      <link>https://example.com/docs/achv/new-on-hugo/</link>
       <pubDate>Thu, 22 Oct 2020 21:55:38 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/achv/new-on-hugo/</guid>
-      <description>Starting from hexo, changing to jekyll, now i am on HUGO</description>
+      <guid>https://example.com/docs/achv/new-on-hugo/</guid>
+      <description>Updated on 2021.09.16
+My Steps to HUGO #   Follow the official website basic installation; Find a great (better stable) theme at official theme library Config the config.yml or config.toml by instruction from the theme producer.  something you may want to pay attention to #  images #  In hugos, the post use image from static folder, you can insert a image in a markdown method:</description>
     </item>
     
     <item>
       <title>Note Learn Jekyll</title>
-      <link>https://Vacationwkx.github.io/posts/achv/learn-jekyll/</link>
+      <link>https://example.com/docs/achv/Learn-Jekyll/</link>
       <pubDate>Wed, 01 Apr 2020 21:55:38 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/achv/learn-jekyll/</guid>
+      <guid>https://example.com/docs/achv/Learn-Jekyll/</guid>
       <description>Note of learning creating Blog in Jekyll
-Guide / Tutorial For Jekyll  Quick Start - Official Tutorial Official one is the most basis and reliabel. What is Jekyll? and How it works? - Jekyll Bootstrap Better first go though the official one to understand what is Variables Front Matter .. Sinple guides of jekyll from CarlBoettiger Pure Guide, what do first, what next. Fast guide for those, who know htmlCloudCannon  For HTML  No Base No Building: What is HTML / HTML5 und CSS Basic Knowledge in Mozilla Basic Example &amp;amp; Code Training HTML - W3School and JS -W3School  Front Matter --- title: Antigragile - Book Review layout: post author: Vac categories: [Book] tags: [Probability] --- Front Matter default default your font matters in _config.</description>
+Guide / Tutorial #  For Jekyll #    Quick Start - Official Tutorial Official one is the most basis and reliabel.  What is Jekyll? and How it works? - Jekyll Bootstrap Better first go though the official one to understand what is Variables Front Matter .. Sinple guides of jekyll from CarlBoettiger Pure Guide, what do first, what next. Fast guide for those, who know html CloudCannon  For HTML #   No Base No Building: What is HTML / HTML5 und CSS Basic Knowledge in Mozilla Basic Example &amp;amp; Code Training HTML - W3School and JS -W3School  Front Matter #  --- title: Antigragile - Book Review layout: post author: Vac categories: [Book] tags: [Probability] --- Front Matter default #  default your font matters in _config.</description>
     </item>
     
     <item>
       <title>Thoughts in 2019</title>
-      <link>https://Vacationwkx.github.io/posts/diary_thoughts/thoughts-in-2019/</link>
+      <link>https://example.com/docs/diary_thoughts/Thoughts-In-2019/</link>
       <pubDate>Wed, 17 Apr 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/diary_thoughts/thoughts-in-2019/</guid>
+      <guid>https://example.com/docs/diary_thoughts/Thoughts-In-2019/</guid>
       <description>Personal daily thinking splitted by categories.
-Thoughts this year 懶社會 2019.4.13 社會價值觀的單壹變態到理所當然了，錢能做到壹切，沒有錢什麽都困難重重。懶勁和怕麻煩如此，不惜不去反思這樣的道路是否可行合理。人的因素被大大弱化，只是眾多經驗的合集，固然各個人的不同努力被忽視只能得出錢的重要性。
-2019.4.7 極端主義、完美主義和懶都有聯系，不願去接受世界上的多樣和復雜化，費腦子。和以神經網絡擼所有模型沒有差別，與不想思考更多的可能性壹樣，與人物單壹臉譜化類似
-教育和個人發展 2019.4.10 虛假的公平是不是殘忍，教會妳做夢，卻沒有揭示每個人的能力不壹，實現的難度根本不能比
+Thoughts this year #  懶社會 #  2019.4.13 #  社會價值觀的單壹變態到理所當然了，錢能做到壹切，沒有錢什麽都困難重重。懶勁和怕麻煩如此，不惜不去反思這樣的道路是否可行合理。人的因素被大大弱化，只是眾多經驗的合集，固然各個人的不同努力被忽視只能得出錢的重要性。
+2019.4.7 #  極端主義、完美主義和懶都有聯系，不願去接受世界上的多樣和復雜化，費腦子。和以神經網絡擼所有模型沒有差別，與不想思考更多的可能性壹樣，與人物單壹臉譜化類似
+教育和個人發展 #  2019.4.10 #  虛假的公平是不是殘忍，教會妳做夢，卻沒有揭示每個人的能力不壹，實現的難度根本不能比
 教育是階級保質。對於階級較低，卻仍然把大部分希望投建於教育，無異於耗本賭博，和籌碼豐厚且熟悉遊戲規則的人對賭，且賭局壓力延伸到作為底牌的孩子上。應試教育進壹步模糊了籌碼顯示表。降低門檻，是開始行動的小秘訣。
 跑步不用專門天氣不熱不涼，壹身裝備齊全，水備好，包背上，毛巾帶上。想就去做就行了，其他的都是提高舒適感的。現在不想學習，先看看雜誌，靜下來進入持續專註狀態，看到壹定時間就有想去學的心。狀態的突變阻力很大，壹步步轉換讓自己也更容易接受。
-2019.4.2 打破馬太效應的關鍵在於如何界定優勢劣勢。若是以正態分布來看，大多數是出於中間地帶，比上為馬太劣勢比下馬太優勢。如果以二八定律，妳總能在八裏面找到自己二的位置。所以很簡單，自信壹點，認定自己處於馬太優勢，充分利用壹些資源，以榨幹的形式。服務界教育界，購買的不僅是產品，也有人際關系，前者理所當然，後者購買附送的潛在價值。機構如大學，越龐大越復雜潛在價值越多，不僅是人更有很多平臺。（公司待考
-2019.3.28 作為人就是註定普通，有對手和同類就是妳的非唯壹體現，而唯壹是壟斷的，極易被新產生的對手削弱唯壹性的，而無法長久（相對於人的生命）
-語言和信息表達 2019.4.7 語言和詞語作為交流的工具，為了使大家都能理解且快速理解，免不了使用固定的代指。對於實體的代指往往沒有爭議，如蘋果，對於抽象詞語，比如帶有社會屬性的男人女人，或者長大好看的人，往往有以大部份代小部分或者是以舊定義為主，也就是這部分詞語意思也會隨著社會而變化。 固然人如何使用詞語和語言種類無關，重要的是內容的表達。對於詞語不同的理解也可以通過進壹步拆分內涵來化解矛盾歧義，如男性是生理還是心理上的。
-2019.3.28 對於單個觀點很容易被攻擊，但作為系統推出卻很容易被忽視，而當作大整體的壹部分被容納
-真實 2019.4.16 新聞的反轉引發人們的懷疑，沖擊漫畫敷衍式政府報告
-2019.4.4 史記跨越千年真的沒有壹點偏移嗎？即便有不同史料相互佐證，但每個撰寫者都是司馬遷嗎？不排除群體有私下討論的可能嗎？從單個撰寫者來說，容易陷入幸存者偏差，如果不是四處行走，壞的不會抹去但可能簡述，美好也可能被誇張
-慣性思維和平等 2019.4.4 關於政治正確，是否是我們被填鴨慣了，主觀否認了對方由內到外的真心的關註。
-2019.3.28 女性的物化隨著擴大宗族部落的需求而發展也隨著新型社會的建立而廢除。人作為生命體，雖然神聖，但作為社會計劃目標壹部分，免不了納入規劃，而易被物化。
-群體和個性 2019.4.13 關於反大眾，大家都說好的，妳能說出好在哪裏，好的地方和別人的有什麽不同，能具體化和其他同類對比種種，而不是大家都說好，妳就說不好，妳不好的地方就在於別人都說他好
-2019.4.4 群體成立的根本在於至少持有同壹觀點。理解力參差不壹，為了向同壹觀點妥協，必然向最低看齊群體間恐怖和謠言的發布可以從源頭滅絕，以發現惡性變異體並排出群體之外的方式。即妳背叛了國軍，不配擁有軍裝
-2019.3.25 如果大群體是需要智慧的，那麽群體內必須有階級之分，舍棄低等群體的直接話語權也是必然
-旅行如果是由他人的感受起意，這樣的感覺很難在自己的旅途中重現，即妳看到的旅行日記沒有任何主觀上的參考價值，加工後的照片也帶著拍攝者的理解和表達
-2019.3.23 絕對中庸等於毫無意義，最好的是在各種群體裏旗幟鮮明的表達自己，不管是正向10%還是負向100%
-社會發展 2019.4.2 由維生物質產品工廠演變為科技代碼產品工廠關於整治、環保，都是now or never 的問題
-2019.3.30 受制於記者來報道，何不人人記者，記者也是人身前往記錄，身處於這個地方直接發表不是更好。缺乏的是平臺，任何壹個平臺如果有實體，也會被打擊，人腦網絡就是趨勢
-2019.3.28 人治是需要物質前提的，但達到物質富裕的標準是模糊的，不界定清楚便是永久地排擠和壓迫
-Old thoughts from Weibo Year 2018 2018-2-5 除了免除自身騷擾，舉報的人和打小報告的心理壹不壹樣呢？
-2018-1-30 網絡對自主獨立性考驗很大啊，人越來越像，長的化的妝，發型穿著。真的stand alone complex了嗎？</description>
+2019.4.2 #  打破馬太效應的關鍵在於如何界定優勢劣勢。若是以正態分布來看，大多數是出於中間地帶，比上為馬太劣勢比下馬太優勢。如果以二八定律，妳總能在八裏面找到自己二的位置。所以很簡單，自信壹點，認定自己處於馬太優勢，充分利用壹些資源，以榨幹的形式。服務界教育界，購買的不僅是產品，也有人際關系，前者理所當然，後者購買附送的潛在價值。機構如大學，越龐大越復雜潛在價值越多，不僅是人更有很多平臺。（公司待考
+2019.3.28 #  作為人就是註定普通，有對手和同類就是妳的非唯壹體現，而唯壹是壟斷的，極易被新產生的對手削弱唯壹性的，而無法長久（相對於人的生命）
+語言和信息表達 #  2019.4.7 #  語言和詞語作為交流的工具，為了使大家都能理解且快速理解，免不了使用固定的代指。對於實體的代指往往沒有爭議，如蘋果，對於抽象詞語，比如帶有社會屬性的男人女人，或者長大好看的人，往往有以大部份代小部分或者是以舊定義為主，也就是這部分詞語意思也會隨著社會而變化。 固然人如何使用詞語和語言種類無關，重要的是內容的表達。對於詞語不同的理解也可以通過進壹步拆分內涵來化解矛盾歧義，如男性是生理還是心理上的。
+2019.3.28 #  對於單個觀點很容易被攻擊，但作為系統推出卻很容易被忽視，而當作大整體的壹部分被容納
+真實 #  2019.4.16 #  新聞的反轉引發人們的懷疑，沖擊漫畫敷衍式政府報告
+2019.4.4 #  史記跨越千年真的沒有壹點偏移嗎？即便有不同史料相互佐證，但每個撰寫者都是司馬遷嗎？不排除群體有私下討論的可能嗎？從單個撰寫者來說，容易陷入幸存者偏差，如果不是四處行走，壞的不會抹去但可能簡述，美好也可能被誇張
+慣性思維和平等 #  2019.4.4 #  關於政治正確，是否是我們被填鴨慣了，主觀否認了對方由內到外的真心的關註。
+2019.3.28 #  女性的物化隨著擴大宗族部落的需求而發展也隨著新型社會的建立而廢除。人作為生命體，雖然神聖，但作為社會計劃目標壹部分，免不了納入規劃，而易被物化。</description>
     </item>
     
     <item>
       <title>[Book]The Crowd - A Study of the Popular Mind</title>
-      <link>https://Vacationwkx.github.io/posts/books/the-crowd/</link>
+      <link>https://example.com/docs/books/The-Crowd/</link>
       <pubDate>Fri, 22 Mar 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/books/the-crowd/</guid>
+      <guid>https://example.com/docs/books/The-Crowd/</guid>
       <description>A Chinese version book note, mostly cited directly from the book.
   群體只有很普通的品質。
 群體只有很普通的智慧。
@@ -231,29 +215,29 @@ Old thoughts from Weibo Year 2018 2018-2-5 除了免除自身騷擾，舉報的�
     
     <item>
       <title>Personal GRE Summary</title>
-      <link>https://Vacationwkx.github.io/posts/achv/gre/</link>
+      <link>https://example.com/docs/achv/GRE/</link>
       <pubDate>Tue, 12 Mar 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/achv/gre/</guid>
+      <guid>https://example.com/docs/achv/GRE/</guid>
       <description>personal experience of gre.
-Verbal Reasoning Good video suggested from Youtube: GRE Verbal Section Walkthrough: How I take the test (Part 1)
-   等號 強詞 逆向思維 浮動思維  Verbal Time Arrangement  word,2 min short essay :1.5:1 middle essay: 2.5:1 long essay: 4.5:1  閱讀   內容
+Verbal Reasoning #  Good video suggested from Youtube: GRE Verbal Section Walkthrough: How I take the test (Part 1)
+   等號 強詞 逆向思維 浮動思維  Verbal Time Arrangement #   word,2 min short essay :1.5:1 middle essay: 2.5:1 long essay: 4.5:1  閱讀 #    內容
  3s  句子 段 篇   句間關系  同 反  but, yet,however,nevertheless 換對象 否定含義單詞       criticize, oppose, deny, reject</description>
     </item>
     
     <item>
       <title>[Book]Antigragile</title>
-      <link>https://Vacationwkx.github.io/posts/books/antifragile/</link>
+      <link>https://example.com/docs/books/antifragile/</link>
       <pubDate>Tue, 15 Jan 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/books/antifragile/</guid>
+      <guid>https://example.com/docs/books/antifragile/</guid>
       <description>A chinese vision book note.
- Foreword   從隨機事件（或壹定沖擊）中獲得的有利結果大於不利結果的就是反脆弱的，反之則是脆弱的
+ Foreword #    從隨機事件（或壹定沖擊）中獲得的有利結果大於不利結果的就是反脆弱的，反之則是脆弱的
   人造的復雜系統往往會引發失控的連鎖反應，它會減少甚至消除可預測性，並導致特大事件。因此，現代世界的技術性知識可能會不斷地增加，但矛盾的是，它也會使事情變得更加不可預測。現在，由於人為因素的增加，以及我們逐漸地遠離了先祖和自然的模式，加上林林總總的設計復雜性削弱了強韌性，以至於“黑天鵝”的影響在進壹步增加。此外，我們成為壹種新型疾病的受害者，即新事物狂熱癥，它使我們建立起面對“黑天鵝”事件時會表現得極其脆弱的系統，卻自以為實現了所謂的“進步”。
   當妳尋求秩序，妳得到的不過是表面的秩序；而當妳擁抱隨機性，妳卻能把握秩序、掌控局面
   “黑天鵝”問題有壹個惱人方面，實際上也是壹個很核心的並在很大程度上被忽略的問題，即罕見事件的發生概率根本是不可計算的
   脆弱推手往往陷入蘇聯–哈佛派謬見，即（不科學地）高估科學知識的能量。秉持這種謬見的人就是所謂的天真的理性主義者、合理化者，或有時被叫作合理理性主義者，因為他認為事情背後的原因是可以自動顯現的。我們不要混淆**“合理化”與“理性”**這兩個概念——它們幾乎完全**相反**。
-  2. 隨處可見的過度補償和過度反應   巴爾紮克曾講述女星如何賄賂記者（常用實物賄賂）來撰寫吹捧她們的評論，但聰明的女星往往讓記者寫些負面評論，因為這會讓觀眾對她們更有興趣。
+  2. 隨處可見的過度補償和過度反應 #    巴爾紮克曾講述女星如何賄賂記者（常用實物賄賂）來撰寫吹捧她們的評論，但聰明的女星往往讓記者寫些負面評論，因為這會讓觀眾對她們更有興趣。
  Negative anecdote arrests people and will be superseded by good repute.
    很多人，像偉大的羅馬政治家監察官老加圖[4]，就將安逸——幾乎任何形式的安逸——視為通向墮落的道路。他不喜歡所有輕易就能獲得的東西，因為他擔心這樣會削弱意誌。
  深有體會
@@ -263,17 +247,16 @@ Verbal Reasoning Good video suggested from Youtube: GRE Verbal Section Walkthrou
    那些了解生物領域細菌耐藥性的人，卻完全不理解塞內加在《寬恕》壹書中就處罰的反效應所寫下的格言。他寫道：“重復處罰雖然打擊了某些人的仇恨，卻激起了所有人的仇恨……就像樹木修剪後將再抽出無數新的枝條壹樣。”事實上，革命正是在壓迫中孕育的，殺害幾名示威者只會讓更多的人站起來反抗。壹首愛爾蘭的革命歌曲就飽含了這層寓意：
 妳的堡壘築得越高，我們就越有力量。
   政治運動和叛亂具有高度的反脆弱性，愚蠢的行為就是試圖用暴力壓制它們，而不是想辦法操控它們、以退為進，或找到更精明的策略，就像赫拉克勒斯殺死九頭蛇怪壹樣。
-  信息是具有反脆弱性的，湮滅信息的努力比宣傳信息的努力更能增強信息的力量。壹個典型的例子是，許多人越是為自己辯解，越會越描越黑。
-  告訴別人壹個秘密，並強調說這是壹個秘密，懇請對方“千萬不要告訴任何人”，妳越是強調這是壹個秘密，它傳播得就越快</description>
+  信息是具有反脆弱性的，湮滅信息的努力比宣傳信息的努力更能增強信息的力量。壹個典型的例子是，許多人越是為自己辯解，越會越描越黑。</description>
     </item>
     
     <item>
       <title>2017-12-01(2)-Not a serious Diary</title>
-      <link>https://Vacationwkx.github.io/posts/diary_thoughts/tour2/</link>
+      <link>https://example.com/docs/diary_thoughts/tour2/</link>
       <pubDate>Sat, 02 Dec 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/diary_thoughts/tour2/</guid>
-      <description> 游记 上
+      <guid>https://example.com/docs/diary_thoughts/tour2/</guid>
+      <description>  游记 上
  青旅有常住客，人很和善，本以為都是如我壹般的，其他人似乎都是結伴而行，有的看著比我小，但似乎也是大學生，但也有十分社會。各位都是夜貓子，十二點都還開著燈，床簾惘然虛設。我對光可謂十分敏，有點過強，就不要想睡了。無奈掙紮到1、2點，爬起來關了大燈，才睡去。要知道這個時候已經設置好第二天的起床鬧鐘了，還能睡3個半小時吧。睡前搜索了看日出的景點，講了好幾個，觀景臺和大石頭，還有若幹等等，兩個月過去實在是記不清了。初步定在某壹個近壹點的地方，看了看地點，騎自行車過去便趕得上，畢竟前壹晚騎了不下4次，周圍早已輕車熟路。
 第二天鬧鐘壹響就起，旅店內壹人沒有，就我壹人。說起來有個尷尬的事，我忘了帶牙膏，只有牙刷。前壹晚回來的晚，沒處去買，早上起得又早，店也沒開門，就幹刷牙。長教訓了！
 下來到前臺，就只有我壹人的腳步聲。前臺也只有壹個人，和昨日不壹樣，昨天的小妹應該是去睡覺了。退了房，把東西寄存在小隔間，拿上相機和手機就出發了，當然還有錢。其實錢並不是必須，杭州在馬爸爸的鼎力幫助下，誰誰都有二維碼。
@@ -285,72 +268,88 @@ Verbal Reasoning Good video suggested from Youtube: GRE Verbal Section Walkthrou
 快到巨石處，路不好走，仿佛長時間沒有人修繕，都是雨水風化的痕跡。巨石向下看就是山腳，壹個踩滑可能就順著石頭溜出去了，不是掉進西湖，就是葬身山谷。狼狽的我手腳並用，往上擡頭，已有兩人影立在巨石壹尖。此處和路有段距離，還不是很好爬上，看他們都裝備齊全，大包小包，也驚嘆他們是怎麽爬上此處。
 我本來在壹旁聽他們吹牛，細節忘了，大概是壹個是外地人，開著房車，老婆在車裏睡覺，他就上來拍。另壹個是當地的，老婆在家裏睡覺，他就爬起來拍。此處簡稱AB兩人。A經常和好友開著房車出去玩，壹路玩壹路拍，感覺好像不用上班，估計是個老總，長得小個，有點像馬雲。B兒子在美國留學歸來，在上海工作，和室友合租，壹個月房租幾萬，他戲稱：“兒子說要在上海買房，我給不起，但杭州幾百萬我還是可以的”。我禮貌地回應，沒有將心裏的mmp表達出來，白眼也只在肚子裏翻滾了。
 等著時間已經7點，天已經基本白亮，也不見太陽，看來是雲層太厚，沒法看見了。遠處是星星點點的城市人造光，但也是有奇妙的美感。
-見到壹處開闊地，周圍陸續有大石，恩還有壹只狗。狗甚是靈活，山石其間上竄下跳，不亦樂乎。
+ 見到壹處開闊地，周圍陸續有大石，恩還有壹只狗。狗甚是靈活，山石其間上竄下跳，不亦樂乎。
  PS : 現在整理，已有壹年之隔，記不清了，棄坑 😂
  </description>
     </item>
     
     <item>
       <title>2017-12-01(1)-Not a serious Diary</title>
-      <link>https://Vacationwkx.github.io/posts/diary_thoughts/tour/</link>
+      <link>https://example.com/docs/diary_thoughts/tour/</link>
       <pubDate>Fri, 01 Dec 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/diary_thoughts/tour/</guid>
+      <guid>https://example.com/docs/diary_thoughts/tour/</guid>
       <description>游记 下
  今日正經地寫壹篇遊記，紀念這次突然起意卻又收獲頗豐的匆匆旅行。
-先列舉壹些第壹次：
+ 先列舉壹些第壹次：
  第壹次壹個人出遊； 第壹次在火車站“裝逼”用電腦，但是真正的用了，翻譯了文檔，效率奇高； 第壹次在青旅還在小小學習了壹下，我承認，這是真裝逼； 杭州大叔大伯都迅速準確地稱呼了我，小姑娘難得，倒是壹個外國人尊敬地說了“Excuse me，sir” …  再說壹些原來，這個純粹是我見識淺薄，大家不要見笑：
  原來白素貞是仙女下凡，並非僅是妖怪，被徐克老怪坑害不淺； 原來法海才是妖怪，為王八精； 原來斷橋不是斷的，路鋪的好得很，都能跑車了； 原來蘇堤和白堤是蘇軾和白居易的堤，相比蘇堤的安恬，白堤意外的熱鬧，詳見後敘； 原來杭州美女也不溫婉，是特別社會、時尚的，現代化的女性更多； …  現在，讓我們開始倒帶回憶： 上完課，本想和老師討論討論，於3:08緊急接到師傅通知，讓我立馬出發。似乎開了壹個壞頭，整個旅程也是匆匆而行。
-到站後，便開始了電腦“裝逼”，只見我嫻熟地掏出電腦，嫻熟地用指紋開了電腦(看看這嘴臉，現在還得意呢)。然後開始了頭痛的論文翻譯校對，這壹弄，頭也昏了，腰也酸了，得虧吃了麥當勞緩了過來（這下不得不提杭州站的肯德基，效率低，服務人員也少，簡直不像省會）。候車的座位旁邊壹家商店恰好有壹套小的便攜電子折疊鼓，先後有好幾個人來打了，都是胡亂打，我這個破水平都聽得出來，店員稍微好壹點，有點節奏感。不過，後來來了壹位大俠，神乎其技地演奏了壹番，旁邊的人不懂自然聽不出，但至少我短期內是達不到這樣的手速的。說是大俠，自然有大俠的風範，大俠有位同伴，大俠很高，很瘦，很冷，就是大俠的樣子。 上了火車也是翻譯，壹會弄完了，就開始玩遊戲啦，把遊戲從90%玩到了93%的同步率，也是累和淚，就是找不著那圈錄像帶，還有好幾個聖誕小人也不見了，怕是消失在存檔bug裏了TAT.（此處盜壹張遊戲截圖)（等等這個井蓋能打開？）
-到了杭州，
-下來就上了小黃車，騎行到了鼓樓，苦苦尋覓就是找不著青旅，來回奔波，問了店員，扯了好壹會才找著。店裏裝修的很是不錯，這個價格可以說很良心了，和國外的青旅類似，洗漱間與洗澡間廁所是男女共用的。我訂的女生六人間，裝修簡單溫馨，床板很高，裏面還有壹個小燈，拉上簾子就是六個人各自的私密小空間。不得不吐槽的是，這個床墊的套子實在是太小了，弄個20分鐘我估計也弄不上去，將就著睡還是可以的。 小小收拾壹下，包裏揣的滿滿的就出門了。出門左拐就是條美食街，牌坊上是這麽說，實則冷清，或許不是旺季，遊客太少。走著壹處小巷口，開著的綠皮鐵門裏面有個賣蔥包燴、銀耳湯的地方，還賣了或許是綠豆湯的東西。攤主是個小老頭，穿個軍大衣，旁邊和鄰居閑聊的怕是他的老婆。老頭的鍋黑乎乎的，手也臟臟的，看著不幹凈，但就是敢吃。脆餅包蔥，薄皮再裹脆餅，拿小鐵片壹壓，加上熱起鍋再加上料，或甜或辣，看個人口味。我要了個辣味的蔥包燴，帶著四川人的尊嚴還是不願點個甜的。說實話，也不是很好吃，收了我十個大洋，想想西湖高物價，我忍。
-走著走著人越來越少，燈也越來越暗。看著壹處牌指著城隍閣，可能是和上海的城隍廟是親戚，我搜壹下就拐到巷子裏去了。路上全是最平靜的質樸的百姓生活，洗頭、修車、賣水果，看不出熱鬧。配著黃黃的路燈，沒有物質繁榮蒸蒸日上的繁華，就是簡樸。
-我壹個人在路上，擺著各種姿勢拍照，手裏還拿著蔥包燴，路人倒也見怪不怪。這裏拍著壹張《共享單車之死》，名字是剛剛寫到這才取的，估計有點抄襲微博“低調的亮亮”之嫌，然而人水平可高了，我等實屬不入流。
-小巷越走越深，越走越暗，越走越往上，擡頭壹看，就是城隍閣 了。
-上山路上靜悄悄，我心裏就開始多想，想女鬼，想山怪，周圍人家還時不時傳來壹些聲響，或是鍋碗瓢盆、或者人聲弄得壹驚壹乍，更是心慌。走著走著，穿來壹聲狗叫，然後人希希爍爍的說話聲。嚇得我以為撞見了違法犯罪的場面。內心壹橫，不行，得上山。遠遠瞧見白狗壹條，二人圍著狗，不知在狗脖子那搗鼓什麽，狗還在掙紮，怕不是狗販子。仔細壹瞧，大叔還穿著睡衣，怕是出來散步，那狗也是薩摩耶，也不瞧我，看來是溫順的。順著路壹路走，左拐，上坡，右轉，直走。來到壹處寫著《吳山大觀》，好了，這是吳山。
-吳山上都是鍛煉的人，走在妳後面，小聲說著話，走路的鞋跟打的duangduang的，怪嚇人，像是在索命。得虧前面壹個鍛煉的大媽，我跟著她壹路下山，路上碰上壹對膩歪的情侶。男的說：“我背不動妳。要不把妳裙子撩起來。”兩人就開始笑，哼！現在想起來，前面的大媽若是女鬼，我不也是著了道，哈哈。 往下壹拐，路口上站壹個警察，旁邊豎壹個牌子：步行街，機動車不得入內。大概是這個意思，我憑著明銳的直覺，就奔著燈火通明去了。我看著路上人來人往，比美食街不是熱鬧到哪裏，當然東西都壹樣貴。手機壹查，果不其然，就是河坊街。有光的地方就有好照片。接下來就是壹波圖。
-我這人像鏡頭，不適合拍遠景，各位看看便知。
-河坊街主打復古懷舊，很多以老物件為賣點的店鋪小攤。五六十年代的紅軍軍裝照、上海灘民國照等等，都是景區的標配了。意外的是商店裏面特意買來裝飾的小物件:壹本《普適物理詞典》(名字記不大清)壹本《新漢語詞典》，都是真的老物件，幾毛錢，背後還有借書卡。上面有壹個寶麗來，下面壓壹個cd機。寶麗來壹按按鈕，還能彈出膠卷盒，得意壹般：別看我老，我還行。
-轉過頭就是電視收音機攝像機，如此壹來怕也是真貨，不知有什麽故事，錄下拍下過什麽人什麽快樂什麽淚，哎呀跑題了。
-這邊景區都是不要錢的，但看出來花了很多心思，似乎周圍也是美術文化底蘊豐厚的地方，處處都是設計、人文。
-路上買了塊發糕，6個十五塊，真是西湖本色，味道也是不合胃口的。（寫到現在真是累，但越寫越晚。再讓我想想）逛了河坊街，出了城門，居然又繞回了鼓樓。心壹想，我這傻得，明明這麽近，轉念又壹想，出來玩就是瘋，不好玩不自由被他人約束便無趣了。
+ 到站後，便開始了電腦“裝逼”，只見我嫻熟地掏出電腦，嫻熟地用指紋開了電腦(看看這嘴臉，現在還得意呢)。然後開始了頭痛的論文翻譯校對，這壹弄，頭也昏了，腰也酸了，得虧吃了麥當勞緩了過來（這下不得不提杭州站的肯德基，效率低，服務人員也少，簡直不像省會）。候車的座位旁邊壹家商店恰好有壹套小的便攜電子折疊鼓，先後有好幾個人來打了，都是胡亂打，我這個破水平都聽得出來，店員稍微好壹點，有點節奏感。不過，後來來了壹位大俠，神乎其技地演奏了壹番，旁邊的人不懂自然聽不出，但至少我短期內是達不到這樣的手速的。說是大俠，自然有大俠的風範，大俠有位同伴，大俠很高，很瘦，很冷，就是大俠的樣子。 上了火車也是翻譯，壹會弄完了，就開始玩遊戲啦，把遊戲從90%玩到了93%的同步率，也是累和淚，就是找不著那圈錄像帶，還有好幾個聖誕小人也不見了，怕是消失在存檔bug裏了TAT.（此處盜壹張 遊戲截圖)（等等這個井蓋能打開？）
+ 到了杭州，
+ 下來就上了小黃車，騎行到了鼓樓，苦苦尋覓就是找不著青旅，來回奔波，問了店員，扯了好壹會才找著。店裏裝修的很是不錯，這個價格可以說很良心了，和國外的青旅類似，洗漱間與洗澡間廁所是男女共用的。我訂的女生六人間，裝修簡單溫馨，床板很高，裏面還有壹個小燈，拉上簾子就是六個人各自的私密小空間。不得不吐槽的是，這個床墊的套子實在是太小了，弄個20分鐘我估計也弄不上去，將就著睡還是可以的。 小小收拾壹下，包裏揣的滿滿的就出門了。出門左拐就是條美食街，牌坊上是這麽說，實則冷清，或許不是旺季，遊客太少。走著壹處小巷口，開著的綠皮鐵門裏面有個賣蔥包燴、銀耳湯的地方，還賣了或許是綠豆湯的東西。攤主是個小老頭，穿個軍大衣，旁邊和鄰居閑聊的怕是他的老婆。老頭的鍋黑乎乎的，手也臟臟的，看著不幹凈，但就是敢吃。脆餅包蔥，薄皮再裹脆餅，拿小鐵片壹壓，加上熱起鍋再加上料，或甜或辣，看個人口味。我要了個辣味的蔥包燴，帶著四川人的尊嚴還是不願點個甜的。說實話，也不是很好吃，收了我十個大洋，想想西湖高物價，我忍。
+ 走著走著人越來越少，燈也越來越暗。看著壹處牌指著城隍閣，可能是和上海的城隍廟是親戚，我搜壹下就拐到巷子裏去了。路上全是最平靜的質樸的百姓生活，洗頭、修車、賣水果，看不出熱鬧。配著黃黃的路燈，沒有物質繁榮蒸蒸日上的繁華，就是簡樸。
+ 我壹個人在路上，擺著各種姿勢拍照，手裏還拿著蔥包燴，路人倒也見怪不怪。這裏拍著壹張《共享單車之死》，名字是剛剛寫到這才取的，估計有點抄襲微博“低調的亮亮”之嫌，然而人水平可高了，我等實屬不入流。
+ 小巷越走越深，越走越暗，越走越往上，擡頭壹看，就是城隍閣 了。
+ 上山路上靜悄悄，我心裏就開始多想，想女鬼，想山怪，周圍人家還時不時傳來壹些聲響，或是鍋碗瓢盆、或者人聲弄得壹驚壹乍，更是心慌。走著走著，穿來壹聲狗叫，然後人希希爍爍的說話聲。嚇得我以為撞見了違法犯罪的場面。內心壹橫，不行，得上山。遠遠瞧見白狗壹條，二人圍著狗，不知在狗脖子那搗鼓什麽，狗還在掙紮，怕不是狗販子。仔細壹瞧，大叔還穿著睡衣，怕是出來散步，那狗也是薩摩耶，也不瞧我，看來是溫順的。順著路壹路走，左拐，上坡，右轉，直走。來到壹處寫著《吳山大觀》，好了，這是吳山。
+ 吳山上都是鍛煉的人，走在妳後面，小聲說著話，走路的鞋跟打的duangduang的，怪嚇人，像是在索命。得虧前面壹個鍛煉的大媽，我跟著她壹路下山，路上碰上壹對膩歪的情侶。男的說：“我背不動妳。要不把妳裙子撩起來。”兩人就開始笑，哼！現在想起來，前面的大媽若是女鬼，我不也是著了道，哈哈。 往下壹拐，路口上站壹個警察，旁邊豎壹個牌子：步行街，機動車不得入內。大概是這個意思，我憑著明銳的直覺，就奔著燈火通明去了。我看著路上人來人往，比美食街不是熱鬧到哪裏，當然東西都壹樣貴。手機壹查，果不其然，就是河坊街。有光的地方就有好照片。接下來就是壹波圖。
+   我這人像鏡頭，不適合拍遠景，各位看看便知。
+ 河坊街主打復古懷舊，很多以老物件為賣點的店鋪小攤。五六十年代的紅軍軍裝照、上海灘民國照等等，都是景區的標配了。意外的是商店裏面特意買來裝飾的小物件:壹本《普適物理詞典》(名字記不大清)壹本《新漢語詞典》，都是真的老物件，幾毛錢，背後還有借書卡。上面有壹個寶麗來，下面壓壹個cd機。寶麗來壹按按鈕，還能彈出膠卷盒，得意壹般：別看我老，我還行。
+ 轉過頭就是電視收音機攝像機，如此壹來怕也是真貨，不知有什麽故事，錄下拍下過什麽人什麽快樂什麽淚，哎呀跑題了。
+ 這邊景區都是不要錢的，但看出來花了很多心思，似乎周圍也是美術文化底蘊豐厚的地方，處處都是設計、人文。
+ 路上買了塊發糕，6個十五塊，真是西湖本色，味道也是不合胃口的。（寫到現在真是累，但越寫越晚。再讓我想想）逛了河坊街，出了城門，居然又繞回了鼓樓。心壹想，我這傻得，明明這麽近，轉念又壹想，出來玩就是瘋，不好玩不自由被他人約束便無趣了。
 手機壹看地圖，河坊街走到底貌似就是湖邊，雖說手機快沒電，但還是又繞了回去。（流水賬也能這麽長）沒想到越繞越歪，只能打道回府，回了旅店，拿了充電寶，搜了地圖，直奔湖邊。對，還在鼓樓店下買了塊臭豆腐，10塊也是難吃，怎麽那麽多人會在那邊買吃的。
 按著心裏“河坊街到底是西湖邊”的想法，又繞進去昏了頭。無奈，只好跳出包圍圈，正好碰上有人在回收小黃車，手壹拜：“妳騎走吧，鎖上就行。”我便免費騎了壹次ofo。
 騎行了十分鐘來到“西湖天地”，此處多為酒吧，安靜的氛圍和慵懶的歌聲很讓人放松，若我非壹人前來，定要和朋友進去喝上幾盅。聽著歌聲，踏著輕步，看著周圍散步的男女，慢慢沿著小道向前走，也不知道這條路會通往何處，感覺就該向這邊走。仔細想來，整個旅程也充滿了隨意、任性、沖動，和近來的內心境況也是類似。
 到了西湖邊，已經11點。杭州不算冷，我又是騎車前來，身上特別暖和。四周沒什麽烈風，又特別安靜，有小的人聲，更多的聽見的是自己的聲音。沿湖坐在長椅上，兩邊垂著柳樹，看著對面的星點光斑，湖面的反光上下波動起伏，自己的思緒也隨著壹起。
-突然萌生出想要來看日出的想法，便不能多逗留，和朋友聊了聊，就起身回去。路上不乏在長椅上妳儂我儂的小情侶，甚是浪漫（汪汪！）。
+ 突然萌生出想要來看日出的想法，便不能多逗留，和朋友聊了聊，就起身回去。路上不乏在長椅上妳儂我儂的小情侶，甚是浪漫（汪汪！）。
 騎車回到旅店，想著翻譯還沒給同學發過去，便操起小電腦，在壹樓忙起來。此時壹樓人還很多，放著王尼瑪的被禁脫口秀，大家看的笑呵呵，有人在喝茶，有人喝前臺聊天，有人在擼貓，看不出什麽緊張。12點壹到，電視壹關，人也就散了，剩了我和需要熬夜的前臺，那個和前臺不停聊天、普通話蹩腳的福建人。簡單描述壹下，齊劉海、薄條紋毛衣，小眼突嘴，行為舉止有些娘炮。（妳還好意思說別人哈哈）（我這是客觀的描述，難不成要說行為舉止盡顯溫柔嗎）
-此處說明：前為2017-12旅行後立寫遊記，但僅寫了壹晚，後續——為此次補充，時間2018-1-30,記憶不清，見諒</description>
+此處說明：前為2017-12旅行後立寫遊記，但僅寫了壹晚， 後續——為此次補充，時間2018-1-30,記憶不清，見諒</description>
     </item>
     
     <item>
       <title>Der Tod eines Mannen - ChenShifeng</title>
-      <link>https://Vacationwkx.github.io/posts/diary_thoughts/csf/</link>
+      <link>https://example.com/docs/diary_thoughts/CSF/</link>
       <pubDate>Sat, 14 Oct 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/diary_thoughts/csf/</guid>
-      <description>Wir Alle Sind Naiv 2017.11.26
+      <guid>https://example.com/docs/diary_thoughts/CSF/</guid>
+      <description>Wir Alle Sind Naiv #  2017.11.26
 Am 3. November 2016 war Jiangge, die 24 Jahre alt war und derzeit in Japan studierte, von Chen Shifeng umgebracht worden (ermordet). Die offiziele Autopsie von Jiangge behaupte, dass sie 19 mals vom Mörder zugestoßen habe, und die Wunden 10 cm seien. Der Verdächtiger Chen Shifeng ist der Ex-Freund von Jiangges Mitwohnerin Liu Xing. Liu scheint, über den Tod ihrer besten Freundin etwas Unechtes(tatsächlich/wirklich/wahr/waschecht) zu erklären, um eigenen Pflicht zu vermeiden, das auch den Ärger der Netizen erzeugt hat (auslösen/erregen/erwecken/wachrufen).</description>
     </item>
     
     <item>
       <title>Der Saenger</title>
-      <link>https://Vacationwkx.github.io/posts/diary_thoughts/saenger/</link>
+      <link>https://example.com/docs/diary_thoughts/saenger/</link>
       <pubDate>Thu, 14 Sep 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/diary_thoughts/saenger/</guid>
-      <description>Idol Xue Was ist die Pflicht des Sängers? Natürlich, Singen. Aber im letzten Tage ist ein komisches Ereignis passiert. Der Sänger in China, Xue Zhiqian, heiratete mit seiner Ex-Frau, was ein vollkommenes Ende sein soll. Aber er hat danach zwei Tadel bekommen, die Koinzidenz zu sein scheinen. Diese drei Bomben herrscht Weibo, damit alle sich daüber unterhalten, sondern über seine Werke.
-What is the duty of a singer? Simply, sing. But in the past few days a strange thing happened.</description>
+      <guid>https://example.com/docs/diary_thoughts/saenger/</guid>
+      <description>Idol Xue #  Was ist die Pflicht des Sängers? Natürlich, Singen. Aber im letzten Tage ist ein komisches Ereignis passiert. Der Sänger in China, Xue Zhiqian, heiratete mit seiner Ex-Frau, was ein vollkommenes Ende sein soll. Aber er hat danach zwei Tadel bekommen, die Koinzidenz zu sein scheinen. Diese drei Bomben herrscht Weibo, damit alle sich daüber unterhalten, sondern über seine Werke.
+What is the duty of a singer? Simply, sing.</description>
     </item>
     
+    <item>
+      <title>Archive</title>
+      <link>https://example.com/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/archives/</guid>
+      <description>archives</description>
+    </item>
     
+    <item>
+      <title>Search</title>
+      <link>https://example.com/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/search/</guid>
+      <description>search</description>
+    </item>
     
     <item>
       <title>Tags</title>
-      <link>https://Vacationwkx.github.io/tags/</link>
+      <link>https://example.com/tags/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://Vacationwkx.github.io/tags/</guid>
+      <guid>https://example.com/tags/</guid>
       <description>tags</description>
     </item>
     

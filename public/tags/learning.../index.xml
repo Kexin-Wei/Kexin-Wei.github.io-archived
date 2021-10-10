@@ -2,40 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>learning... on 無極</title>
-    <link>https://Vacationwkx.github.io/tags/learning.../</link>
+    <link>https://example.com/tags/learning.../</link>
     <description>Recent content in learning... on 無極</description>
-    <image>
-      <url>https://Vacationwkx.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://Vacationwkx.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://Vacationwkx.github.io/tags/learning.../index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://example.com/tags/learning.../index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Self Driving Car</title>
-      <link>https://Vacationwkx.github.io/posts/learn/self-driving-car/</link>
+      <link>https://example.com/posts/self-driving-car/</link>
       <pubDate>Fri, 03 Sep 2021 22:44:41 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/learn/self-driving-car/</guid>
-      <description>Intro Reading SAE J3016: Autonomous Car Level source 1
-all human adaptive cruise control, anti-lock braking system, electronic stabilty control hazard-minimizing longitudinal/ lateral control, emergency braking full autonomy under certain condition, but human take control when in danger full autonomy under certain condition, can replace human at some cases fully autonomous  Decision making   On-board sensors
+      <guid>https://example.com/posts/self-driving-car/</guid>
+      <description>Intro #  Reading #  SAE J3016: Autonomous Car Level #  source 1
+all human adaptive cruise control, anti-lock braking system, electronic stabilty control hazard-minimizing longitudinal/ lateral control, emergency braking full autonomy under certain condition, but human take control when in danger full autonomy under certain condition, can replace human at some cases fully autonomous  Decision making #    On-board sensors
  LIDAR camera GPS/INS odometry(angle)    Hierachical Decision Making System     Route Planning</description>
     </item>
     
     <item>
       <title>Front End</title>
-      <link>https://Vacationwkx.github.io/posts/learn/front-end/</link>
+      <link>https://example.com/docs/learn/front-end/</link>
       <pubDate>Thu, 08 Jul 2021 23:07:37 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/learn/front-end/</guid>
-      <description>Fundamental  Web Architecture  Flow  learn at developer-roadmap  Internet Node.js local server HTML&amp;amp; CSS &amp;amp; JS   cop with roadmap Firefox web develop  HTML &amp;amp; CSS  code at freecodecamp  HTML CSS Java Project    JS  Book: Eloquent JavaScript Book: You Don&amp;rsquo;t Know JS Yet  Reference  W3C  </description>
+      <guid>https://example.com/docs/learn/front-end/</guid>
+      <description>Fundamental #   Web Architecture  Flow #   learn at developer-roadmap  Internet Node.js local server HTML&amp;amp; CSS &amp;amp; JS   cop with roadmap Firefox web develop  HTML &amp;amp; CSS #   code at freecodecamp  HTML CSS Java Project    JS #   Book: Eloquent JavaScript Book: You Don&amp;rsquo;t Know JS Yet  Reference #    W3C  </description>
     </item>
     
     <item>
       <title>AI</title>
-      <link>https://Vacationwkx.github.io/posts/learn/ai/</link>
+      <link>https://example.com/docs/learn/AI/</link>
       <pubDate>Thu, 08 Jul 2021 17:38:25 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/learn/ai/</guid>
-      <description>Artificial Intelligent Thought Sparks</description>
+      <guid>https://example.com/docs/learn/AI/</guid>
+      <description>Reinforcement Learninng #   check probability is correct replay reuse, not always interacting, split into stages, or types  Computer Vision #   build 3d for object classification position for area + class label power up classification for multiple objects in one scene parameter tuning under reinforcement learning: link accuracy as reward, parameter as actions  Natural Language Processing #   from language to video building voice control to programming  voice control to logica, puls add or minus more complicated logic    Learning at Udemy S1 - Introduction S2 - Python Text Basics S3 - Natural Language Processing Basics S4 - &amp;hellip;</description>
     </item>
     
   </channel>

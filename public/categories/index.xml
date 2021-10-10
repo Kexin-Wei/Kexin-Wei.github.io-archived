@@ -2,83 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 無極</title>
-    <link>https://Vacationwkx.github.io/categories/</link>
+    <link>https://example.com/categories/</link>
     <description>Recent content in Categories on 無極</description>
-    <image>
-      <url>https://Vacationwkx.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://Vacationwkx.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 03 Sep 2021 22:44:41 +0800</lastBuildDate><atom:link href="https://Vacationwkx.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Sep 2021 22:44:41 +0800</lastBuildDate><atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
-      <link>https://Vacationwkx.github.io/categories/ai/</link>
+      <link>https://example.com/categories/AI/</link>
       <pubDate>Fri, 03 Sep 2021 22:44:41 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/categories/ai/</guid>
+      <guid>https://example.com/categories/AI/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Book</title>
-      <link>https://Vacationwkx.github.io/categories/book/</link>
+      <link>https://example.com/categories/Book/</link>
       <pubDate>Mon, 16 Aug 2021 23:34:23 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/categories/book/</guid>
+      <guid>https://example.com/categories/Book/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IT</title>
-      <link>https://Vacationwkx.github.io/categories/it/</link>
+      <link>https://example.com/categories/IT/</link>
       <pubDate>Thu, 08 Jul 2021 23:07:37 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/categories/it/</guid>
+      <guid>https://example.com/categories/IT/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Writing</title>
-      <link>https://Vacationwkx.github.io/categories/writing/</link>
+      <link>https://example.com/categories/Writing/</link>
       <pubDate>Sat, 01 May 2021 21:01:15 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/categories/writing/</guid>
+      <guid>https://example.com/categories/Writing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Game</title>
-      <link>https://Vacationwkx.github.io/categories/game/</link>
+      <link>https://example.com/categories/Game/</link>
       <pubDate>Thu, 29 Oct 2020 10:25:43 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/categories/game/</guid>
+      <guid>https://example.com/categories/Game/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ThinkOfChaos</title>
-      <link>https://Vacationwkx.github.io/categories/thinkofchaos/</link>
+      <link>https://example.com/categories/ThinkOfChaos/</link>
       <pubDate>Wed, 17 Apr 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/categories/thinkofchaos/</guid>
+      <guid>https://example.com/categories/ThinkOfChaos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Language</title>
-      <link>https://Vacationwkx.github.io/categories/language/</link>
+      <link>https://example.com/categories/Language/</link>
       <pubDate>Tue, 12 Mar 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/categories/language/</guid>
+      <guid>https://example.com/categories/Language/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Diary</title>
-      <link>https://Vacationwkx.github.io/categories/diary/</link>
+      <link>https://example.com/categories/Diary/</link>
       <pubDate>Sat, 02 Dec 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/categories/diary/</guid>
+      <guid>https://example.com/categories/Diary/</guid>
       <description></description>
     </item>
     

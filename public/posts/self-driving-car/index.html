@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Intro #  Reading #  SAE J3016: Autonomous Car Level #  source 1
+all human adaptive cruise control, anti-lock braking system, electronic stabilty control hazard-minimizing longitudinal/ lateral control, emergency braking full autonomy under certain condition, but human take control when in danger full autonomy under certain condition, can replace human at some cases fully autonomous  Decision making #    On-board sensors
+ LIDAR camera GPS/INS odometry(angle)    Hierachical Decision Making System     Route Planning">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Self Driving Car" />
+<meta property="og:description" content="Intro #  Reading #  SAE J3016: Autonomous Car Level #  source 1
+all human adaptive cruise control, anti-lock braking system, electronic stabilty control hazard-minimizing longitudinal/ lateral control, emergency braking full autonomy under certain condition, but human take control when in danger full autonomy under certain condition, can replace human at some cases fully autonomous  Decision making #    On-board sensors
+ LIDAR camera GPS/INS odometry(angle)    Hierachical Decision Making System     Route Planning" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/posts/self-driving-car/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-03T22:44:41+08:00" />
+<meta property="article:modified_time" content="2021-09-03T22:44:41+08:00" />
+
+<title>Self Driving Car | 無極</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.95d69eb6bad8b9707ff2b5d8d9e31ce70a1b84f2ed7ffaf665ffcf00aa7993bd.css" integrity="sha256-ldaetrrYuXB/8rXY2eMc5wobhPLtf/r2Zf/PAKp5k70=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.4ac964f991a32eddea693121c643f3f6ee8ab06e61631b51107b4c1266e49107.js" integrity="sha256-Sslk&#43;ZGjLt3qaTEhxkPz9u6KsG5hYxtREHtMEmbkkQc=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/favicon.ico" alt="Logo" /><span>無極</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+  
+
+
+
+  
+    
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="https://example.com/ru/">
+          Deutsch
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://example.com/zh/">
+          Chinese
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li>
+<p>
+  <a href="/posts/">Working&hellip;</a></p>
+</li>
+<li>
+<p>
+  <a href="/docs/">The Book</a></p>
+</li>
+</ul>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/alex-shpak/hugo-book" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://themes.gohugo.io/hugo-book/" target="_blank" rel="noopener">
+        Hugo Themes
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Self Driving Car</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#intro">Intro</a>
+      <ul>
+        <li><a href="#reading">Reading</a>
+          <ul>
+            <li><a href="#sae-j3016-autonomous-car-level">SAE J3016: Autonomous Car Level</a></li>
+            <li><a href="#decision-making">Decision making</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#ref">Reference</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/self-driving-car/">Self Driving Car</a>
+  </h1>
+  
+  <h5>September 3, 2021</h5>
+
+
+
+  
+  <div>
+    
+      <a href="/categories/AI/">AI</a>
+  </div>
+  
+
+  
+  <div>
+    
+      <a href="/tags/self-driving-car/">self driving car</a>, 
+      <a href="/tags/computer-vision/">computer vision</a>
+  </div>
+  
+
+
+
+<h1 id="intro">
+  Intro
+  <a class="anchor" href="#intro">#</a>
+</h1>
+<h2 id="reading">
+  Reading
+  <a class="anchor" href="#reading">#</a>
+</h2>
+<h3 id="sae-j3016-autonomous-car-level">
+  SAE J3016: Autonomous Car Level
+  <a class="anchor" href="#sae-j3016-autonomous-car-level">#</a>
+</h3>
+<p>source 
+  <a href="#ref">1</a></p>
+<ol start="0">
+<li>all human</li>
+<li>adaptive cruise control, anti-lock braking system, electronic stabilty control</li>
+<li>hazard-minimizing longitudinal/ lateral control, emergency braking</li>
+<li>full autonomy under certain condition, but human take control when in danger</li>
+<li>full autonomy under certain condition, can replace human at some cases</li>
+<li>fully autonomous</li>
+</ol>
+<h3 id="decision-making">
+  Decision making
+  <a class="anchor" href="#decision-making">#</a>
+</h3>
+<ul>
+<li>
+<p>On-board sensors</p>
+<ul>
+<li>LIDAR</li>
+<li>camera</li>
+<li>GPS/INS</li>
+<li>odometry(angle)</li>
+</ul>
+</li>
+<li>
+<p>Hierachical Decision Making System
+
+  <img src="/general/slc_pic1.png" alt="" /></p>
+</li>
+</ul>
+<ol>
+<li>
+<p>Route Planning</p>
+<ul>
+<li>Dijkstra</li>
+<li>A*</li>
+</ul>
+</li>
+<li>
+<p>Behavioral Layer: local driving task under rules and planned route</p>
+<ul>
+<li>Input
+<ul>
+<li>other traffic participants</li>
+<li>road conditions</li>
+<li>signals from infrastructure</li>
+</ul>
+</li>
+<li>driving manual -&gt; finite sets of actions -&gt; finite state machine</li>
+<li>uncertainty of behaviour -&gt; predictive planning/ probabilistic planning formalisms
+<ul>
+<li>Probabilistic planning formalism : Markov Decision Process(MDP)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Motion Planning</p>
+<ul>
+<li>cruise-in-lane, change-lane, turn-right -&gt; continous path through the environment</li>
+<li>static and dynamic obstacles -&gt; collision-free trajectory &lt;- travel time + discomfort</li>
+</ul>
+<ol>
+<li>Path planning ==Table of Algos==
+<ul>
+<li>Variational methods
+<ul>
+<li>rapid convergence to local optimum</li>
+</ul>
+</li>
+<li>Graph-search methods
+<ul>
+<li>not easy to local minima</li>
+<li>but only a finite set of optimal path</li>
+</ul>
+</li>
+<li>Incremental search methods
+<ul>
+<li>build tree with nodes growing</li>
+<li>until reach the goal</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Trajectory planning
+<ul>
+<li>TP in dynamic env = generalized PP in static env</li>
+<li>&hellip;</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>Control system: correct errors of motion planning</p>
+</li>
+</ol>
+<h1 id="ref">
+  Reference
+  <a class="anchor" href="#ref">#</a>
+</h1>
+<p>[1] Paden, Brian, et al. &ldquo;A survey of motion planning and control techniques for self-driving urban vehicles.&rdquo; <em>IEEE Transactions on intelligent vehicles</em> 1.1 (2016): 33-55.</p>
+<p>[2]Urmson, Chris, et al. &ldquo;Autonomous driving in urban environments: Boss and the urban challenge.&rdquo; <em>Journal of Field Robotics</em> 25.8 (2008): 425-466.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#intro">Intro</a>
+      <ul>
+        <li><a href="#reading">Reading</a>
+          <ul>
+            <li><a href="#sae-j3016-autonomous-car-level">SAE J3016: Autonomous Car Level</a></li>
+            <li><a href="#decision-making">Decision making</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#ref">Reference</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,40 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>front end on 無極</title>
-    <link>https://Vacationwkx.github.io/tags/front-end/</link>
+    <link>https://example.com/tags/front-end/</link>
     <description>Recent content in front end on 無極</description>
-    <image>
-      <url>https://Vacationwkx.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://Vacationwkx.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 08 Jul 2021 23:07:37 +0800</lastBuildDate><atom:link href="https://Vacationwkx.github.io/tags/front-end/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Jul 2021 23:07:37 +0800</lastBuildDate><atom:link href="https://example.com/tags/front-end/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Front End</title>
-      <link>https://Vacationwkx.github.io/posts/learn/front-end/</link>
+      <link>https://example.com/docs/learn/front-end/</link>
       <pubDate>Thu, 08 Jul 2021 23:07:37 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/learn/front-end/</guid>
-      <description>Fundamental  Web Architecture  Flow  learn at developer-roadmap  Internet Node.js local server HTML&amp;amp; CSS &amp;amp; JS   cop with roadmap Firefox web develop  HTML &amp;amp; CSS  code at freecodecamp  HTML CSS Java Project    JS  Book: Eloquent JavaScript Book: You Don&amp;rsquo;t Know JS Yet  Reference  W3C  </description>
+      <guid>https://example.com/docs/learn/front-end/</guid>
+      <description>Fundamental #   Web Architecture  Flow #   learn at developer-roadmap  Internet Node.js local server HTML&amp;amp; CSS &amp;amp; JS   cop with roadmap Firefox web develop  HTML &amp;amp; CSS #   code at freecodecamp  HTML CSS Java Project    JS #   Book: Eloquent JavaScript Book: You Don&amp;rsquo;t Know JS Yet  Reference #    W3C  </description>
     </item>
     
     <item>
       <title>New on Hugo🤺</title>
-      <link>https://Vacationwkx.github.io/posts/achv/new-on-hugo/</link>
+      <link>https://example.com/docs/achv/new-on-hugo/</link>
       <pubDate>Thu, 22 Oct 2020 21:55:38 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/achv/new-on-hugo/</guid>
-      <description>Starting from hexo, changing to jekyll, now i am on HUGO</description>
+      <guid>https://example.com/docs/achv/new-on-hugo/</guid>
+      <description>Updated on 2021.09.16
+My Steps to HUGO #   Follow the official website basic installation; Find a great (better stable) theme at official theme library Config the config.yml or config.toml by instruction from the theme producer.  something you may want to pay attention to #  images #  In hugos, the post use image from static folder, you can insert a image in a markdown method:</description>
     </item>
     
     <item>
       <title>Note Learn Jekyll</title>
-      <link>https://Vacationwkx.github.io/posts/achv/learn-jekyll/</link>
+      <link>https://example.com/docs/achv/Learn-Jekyll/</link>
       <pubDate>Wed, 01 Apr 2020 21:55:38 +0800</pubDate>
       
-      <guid>https://Vacationwkx.github.io/posts/achv/learn-jekyll/</guid>
+      <guid>https://example.com/docs/achv/Learn-Jekyll/</guid>
       <description>Note of learning creating Blog in Jekyll
-Guide / Tutorial For Jekyll  Quick Start - Official Tutorial Official one is the most basis and reliabel. What is Jekyll? and How it works? - Jekyll Bootstrap Better first go though the official one to understand what is Variables Front Matter .. Sinple guides of jekyll from CarlBoettiger Pure Guide, what do first, what next. Fast guide for those, who know htmlCloudCannon  For HTML  No Base No Building: What is HTML / HTML5 und CSS Basic Knowledge in Mozilla Basic Example &amp;amp; Code Training HTML - W3School and JS -W3School  Front Matter --- title: Antigragile - Book Review layout: post author: Vac categories: [Book] tags: [Probability] --- Front Matter default default your font matters in _config.</description>
+Guide / Tutorial #  For Jekyll #    Quick Start - Official Tutorial Official one is the most basis and reliabel.  What is Jekyll? and How it works? - Jekyll Bootstrap Better first go though the official one to understand what is Variables Front Matter .. Sinple guides of jekyll from CarlBoettiger Pure Guide, what do first, what next. Fast guide for those, who know html CloudCannon  For HTML #   No Base No Building: What is HTML / HTML5 und CSS Basic Knowledge in Mozilla Basic Example &amp;amp; Code Training HTML - W3School and JS -W3School  Front Matter #  --- title: Antigragile - Book Review layout: post author: Vac categories: [Book] tags: [Probability] --- Front Matter default #  default your font matters in _config.</description>
     </item>
     
   </channel>

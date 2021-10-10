@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Basic Recap #  Reinforcement learning bases on $V(s),Q(s,a),\pi(a|s),R,G$:
+  $V(s)$ : state value, often used in model-based method;
+  $Q(s,a)$ : state-action value, often used in model-free method;
+ why state-action: $s\rightarrow a$ is defined partly in $\pi(a|s)$, and $V(s,a),\pi(a|s)$ are all parameters inside agent, consequently, $Q(s,a)$ is a combination of $V(s)$ and $\pi(a|s)$.    $\pi(a|s)$ : the policy of a agent, chose a $a$ (action) at a $s$ state;">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Monte Carlo vs TD vs Q-learning" />
+<meta property="og:description" content="Basic Recap #  Reinforcement learning bases on $V(s),Q(s,a),\pi(a|s),R,G$:
+  $V(s)$ : state value, often used in model-based method;
+  $Q(s,a)$ : state-action value, often used in model-free method;
+ why state-action: $s\rightarrow a$ is defined partly in $\pi(a|s)$, and $V(s,a),\pi(a|s)$ are all parameters inside agent, consequently, $Q(s,a)$ is a combination of $V(s)$ and $\pi(a|s)$.    $\pi(a|s)$ : the policy of a agent, chose a $a$ (action) at a $s$ state;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/docs/ai/rl-comparsion/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2020-11-28T21:47:38+08:00" />
+<meta property="article:modified_time" content="2020-11-28T21:47:38+08:00" />
+
+<title>Monte Carlo vs TD vs Q-learning | 無極</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.95d69eb6bad8b9707ff2b5d8d9e31ce70a1b84f2ed7ffaf665ffcf00aa7993bd.css" integrity="sha256-ldaetrrYuXB/8rXY2eMc5wobhPLtf/r2Zf/PAKp5k70=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.4ac964f991a32eddea693121c643f3f6ee8ab06e61631b51107b4c1266e49107.js" integrity="sha256-Sslk&#43;ZGjLt3qaTEhxkPz9u6KsG5hYxtREHtMEmbkkQc=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/favicon.ico" alt="Logo" /><span>無極</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+  
+
+
+
+  
+    
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="https://example.com/ru/">
+          Deutsch
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://example.com/zh/">
+          Chinese
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li>
+<p>
+  <a href="/posts/">Working&hellip;</a></p>
+</li>
+<li>
+<p>
+  <a href="/docs/">The Book</a></p>
+</li>
+</ul>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/alex-shpak/hugo-book" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://themes.gohugo.io/hugo-book/" target="_blank" rel="noopener">
+        Hugo Themes
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Monte Carlo vs TD vs Q-learning</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-recap">Basic Recap</a>
+      <ul>
+        <li><a href="#a-little-more-from-basic">A little more from Basic</a></li>
+        <li><a href="#the-famous-bellman-equation">The FAMOUS Bellman Equation</a></li>
+        <li><a href="#choose-path-based-on-bellman-equation">Choose Path based on Bellman Equation</a></li>
+        <li><a href="#v_pis-vs-q_pisa">$v_{\pi}(s)$ vs $q_{\pi}(s,a)$</a></li>
+      </ul>
+    </li>
+    <li><a href="#update-methods-clarification">Update Methods Clarification</a>
+      <ul>
+        <li><a href="#monte-carlo">Monte Carlo</a></li>
+        <li><a href="#alpha-constant-monte-carlo">$\alpha$-constant Monte Carlo</a></li>
+        <li><a href="#temporal-difference">Temporal Difference</a></li>
+        <li><a href="#q-learning">Q-learning</a></li>
+      </ul>
+    </li>
+    <li><a href="#other-thinking">Other Thinking</a>
+      <ul>
+        <li><a href="#arbitrary-initial-q-or-v">Arbitrary Initial Q or V</a></li>
+        <li><a href="#where-goes-psrsa-">Where goes $p(s',r|s,a)$ ?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="basic-recap">
+  Basic Recap
+  <a class="anchor" href="#basic-recap">#</a>
+</h1>
+<p>Reinforcement learning bases on $V(s),Q(s,a),\pi(a|s),R,G$:</p>
+<ul>
+<li>
+<p>$V(s)$ : state value, often used  in model-based method;</p>
+</li>
+<li>
+<p>$Q(s,a)$ : state-action value, often used in model-free method;</p>
+<ul>
+<li>why state-action: $s\rightarrow a$ is defined partly in $\pi(a|s)$, and $V(s,a),\pi(a|s)$ are all parameters inside agent, consequently,  $Q(s,a)$ is a combination of $V(s)$ and $\pi(a|s)$.</li>
+</ul>
+</li>
+<li>
+<p>$\pi(a|s)$ : the policy of a agent, chose a $a$ (action) at a $s$ state;</p>
+</li>
+<li>
+<p>$R$ : reward, got from each step</p>
+</li>
+<li>
+<p>$G$ : a time-scale reward recording, or a estimate of value for current state.
+$$
+G_t=R_T+\gamma R_{T-1}+\gamma^2R_{T-2}+&hellip;=\sum\limits_{t+1}^{T}\gamma^{T-i} R
+$$</p>
+<ul>
+<li>$T$ : Terminal time</li>
+<li>$\gamma$ : a self-defined parameter to look how much further into future &ndash; long future reward would not affect that much,but instant does.</li>
+<li>From the equation, the $G$ is influenced by $R$ and $\gamma$, but for a well-behaved future-telling agent $\gamma$ is usually set to 1or 0.9, which indicates, for a self-made envornment, $R$ should be set properly to obtain a wanted training result.</li>
+</ul>
+</li>
+</ul>
+<h2 id="a-little-more-from-basic">
+  A little more from Basic
+  <a class="anchor" href="#a-little-more-from-basic">#</a>
+</h2>
+<p><strong>Example</strong> : a hero in game, collects he always coins(reward) along a path in a 2d grid map to gain experience</p>
+<p>
+  <img src="https://miro.medium.com/freeze/max/588/1*Lq_shZnfjjiFEBmBOHk_qA.gif" alt="a hero in a 2D map" />
+<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<ul>
+<li>
+<p>Real Existing Items:</p>
+<p>Once the hero has the real items, it can absolutely get the max reward from environment.</p>
+<ul>
+<li>$G$ represents how many future values the position has, (even $\gamma$ is also self-defined, but in my view, $\gamma$ doesn&rsquo;t affect that much.)</li>
+<li>and $R$ is what the hero gets from each step in the environment.</li>
+</ul>
+</li>
+<li>
+<p>Esitimate:</p>
+<p>Estimate is what the hero guess about the $G$, which is $E(G)$. But obviously, in an environment, $G$ is related to state and time, when the hero is exploring with a policy. Then $E(G)$ should be $E_{\pi}(G_t|S_t=s)$, that&rsquo;s what we get from training.</p>
+<ul>
+<li>$v_{\pi}(s)$ - value function</li>
+<li>$q_{\pi}(s,a)$ - action-value function</li>
+</ul>
+<p>These 2 are generally the same with $V(s),Q(s,a)$, since basically the policy always exist for most of the agent. The only difference is now they are estimate for $G$ with policy $\pi$.</p>
+</li>
+</ul>
+<h2 id="the-famous-bellman-equation">
+  The FAMOUS Bellman Equation
+  <a class="anchor" href="#the-famous-bellman-equation">#</a>
+</h2>
+<p>The Bellman equation is basiccally connecting the $v_{\pi}(s)$ and $v_{\pi}(s')$, or $q_{\pi}(s,a)$ and $q_{\pi}(s',a')$,</p>
+<p>
+  <img src="/rl/vs.png" alt="Backup Diagramm" /><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>
+$$
+\begin{aligned}
+v_{\pi}(s)&amp;=E_{\pi}[G_t|S_t=s]\\\<br>
+&amp;=E_{\pi}[R_{t+1}+\gamma G_{t+1}|S_t=s]\\\<br>
+&amp;=?E_{\pi}[R_{t+1}+\gamma G_{t+1}|S_{t+1}=s']\\\<br>
+&amp;=\sum_{a\in A}\pi(a|s)\sum_{s'\in S}p(s',r|s,a) E_{\pi}[R_{t+1}+\gamma G_{t+1}|S_{t+1}=s']\\\<br>
+&amp;=\sum_{a\in A}\pi(a|s)\sum_{s'\in S}p(s',r|s,a) [r+\gamma E_{\pi}[G_{t+1}|S_{t+1}=s']\\\<br>
+&amp;=\sum_{a\in A}\pi(a|s)\sum_{s'\in S}p(s',r|s,a) [r+\gamma v_{\pi}(s')]\\\<br>
+\end{aligned}
+$$</p>
+<p>Similarily explained above, $E(G)$ will become $E_{\pi}(G_t|S_t=s,A_t=a)$ for $q_{\pi}(s,a)$, then the Bellman equation changes to:</p>
+<p>$$
+\begin{aligned}
+q_{\pi}(s,a)&amp;=E_{\pi}[G_t|S_t=s,A_t=a]\\\<br>
+&amp;=?E_{\pi}[R_{t+1}+\gamma G_{t+1}|S_{t+1}=s',A_{t+1}=a']\\\<br>
+&amp;=\sum_{s'\in S}p(s',r|s,a)E_{\pi}[R_{t+1}+\gamma G_{t+1}|S_{t+1}=s']\\\<br>
+&amp;=\sum_{s'\in S}p(s',r|s,a)\sum_{a'\in A}\pi(a'|s')E_{\pi}[R_{t+1}+\gamma G_{t+1}|S_{t+1}=s',A_{t+1}=a']\\\<br>
+&amp;=\sum_{s'\in S}p(s',r|s,a)\sum_{a'\in A}\pi(a'|s')[r+\gamma E_{\pi}[G_{t+1}|S_{t+1}=s',A_{t+1}=a']]\\\<br>
+&amp;=\sum_{s'\in S}p(s',r|s,a)\sum_{a'\in A}\pi(a'|s')[r+\gamma q_{\pi}(s',a')]\\\<br>
+\end{aligned}
+$$</p>
+<h2 id="choose-path-based-on-bellman-equation">
+  Choose Path based on Bellman Equation
+  <a class="anchor" href="#choose-path-based-on-bellman-equation">#</a>
+</h2>
+<p>When the hero stand at $s$ state seeing all $v_{\pi}(s')$ , but only one step will be chosen in reality, which means $\pi(a|s)=1$ for this action $a$. This decision will let the $v_{\pi}(s)$ biggest, and the policy will be updated and $v_*(s)$ is defined as:
+$$
+\begin{aligned}
+v_*(s)&amp;=\max_a \pi(a|s)\sum_{s'\in S}p(s',r|s,a)[r+\gamma v_{\pi}(s')]\\\<br>
+&amp;=\sum_{s'\in S}p(s',r|s,a_{\max})[r+\gamma v_{\pi}(s')]\\\<br>
+&amp;=q_{\pi}(s,a_{\max})
+\end{aligned}
+$$</p>
+<p>$p(s',r|s,a)$ is of course not controlled by the hero, thus, policy has the only option in next step &ndash; at $s'$ choose $a'_{\max}$ , where $q(s',a')$ is max for all $a' \in A$. Use the same logic,</p>
+<p>$$
+\begin{aligned}
+q_*(s,a)&amp;=\sum_{s'\in S}p(s',r|s,a)[r+\gamma q(s',a'_{\max})]\\\<br>
+\end{aligned}
+$$</p>
+<h2 id="v_pis-vs-q_pisa">
+  $v_{\pi}(s)$ vs $q_{\pi}(s,a)$
+  <a class="anchor" href="#v_pis-vs-q_pisa">#</a>
+</h2>
+<p>$q_{\pi}(s,a)$ seems have chosen the $a$ without policy. But thinking deeply, policy $\pi(a|s)$ controls the choice when finally the hero acts in the environment. The $\pi$ for $v(s)$ and $q(s,a)$ just dedicates the policy is updated according $v(s)$ and $q(s,a)$.</p>
+<p>No matter which is used in policy update, what really matters is the next state $s'$, the $v(s')$ or the $\sum\limits_{s'\in S} p(s',r|s,a)[r+\gamma v(s')] $, since again the $p(s',r|s,a)$ is not controllable.</p>
+<p>Once the next step is determinated, $a$ at this state $s$ is also confirmed. $q(s,a)$ just more connects to the next state.</p>
+<p>$v(s)$ choses the path by comparsion between multiple $v(s')$, but $q(s,a)$ indicates the path by comparsion between its company $q(s,a_1), q(s,a_2), q(s,a_3)&hellip;$.</p>
+<h1 id="update-methods-clarification">
+  Update Methods Clarification
+  <a class="anchor" href="#update-methods-clarification">#</a>
+</h1>
+<p>Monte Carlo, Temporal-Difference and Q-Learning are all model-free methods, which means the probability departing from states to states is unknown. The above optimal policy is used in Dynamic Programming, since the $p(s',r|s,a)$ is known. That&rsquo;s also the reason why use DP in model-based environment. For model-free environment, the value is estimated by exploring and update. MC, TD or Q-learning just differ at these 2 processes.</p>
+<h2 id="monte-carlo">
+  Monte Carlo
+  <a class="anchor" href="#monte-carlo">#</a>
+</h2>
+<p>The basic idea of Monte Carlo is to estimate value by :
+$$
+V(s)=\frac{G}{N}
+$$</p>
+<p>in the step update form:
+$$
+V(s)\leftarrow V(s)+\frac{R-V(s)}{N}
+$$</p>
+<p>with starting from $N=1$, in Monte Carlo $V(s)=G$.</p>
+<p>With this setting, Monte Carlo performs the best with full exploring, also means $\epsilon=1$ for on policy MC control with $\epsilon$-soft algorithm, and must run enough steps, which is absolutely slow!!!</p>
+<p>Using this idea, of course in most environments, exploring start with argmax at policy update will fail.</p>
+<p>Nevertheless, the $G$ is driven from trajecotry $\left[s_0,a_0,r_1,s_1,a_1,r_2,&hellip;,s_{T-1},a_{T-1},r_T\right]$ updated by $G_{s_t}=R_t+\gamma G_{s_{t-1}}$, where the Terminal $G_{s_T}=0$. No terminal then no value update and policy update. However, a random walk can&rsquo;t garante reaching the terminal.</p>
+<h2 id="alpha-constant-monte-carlo">
+  $\alpha$-constant Monte Carlo
+  <a class="anchor" href="#alpha-constant-monte-carlo">#</a>
+</h2>
+<p>The $\alpha$ - constant Monte Carlo updates it by:
+$$
+\begin{aligned}
+V(s)&amp;=V(s)+\alpha [G-V(s)]\\\<br>
+&amp;=V(s)+\frac{G-V(s)}{\frac{1}{\alpha}}\\\<br>
+&amp;=V(s)(1-\alpha)+\alpha G\\\<br>
+\end{aligned}
+$$</p>
+<p>In $\alpha$ - constant will always consider part of the original $V(s)$: <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<p>$$
+\begin{aligned}
+V_{ep+1}(s)&amp;=[V_{ep-1}(s)(1-\alpha)+\alpha G_{ep-1}](1-\alpha)+\alpha G_{ep}\\\<br>
+&amp;=V_{ep-1}(1-\alpha)^2+\alpha(1-\alpha)G_{ep-1}+\alpha G_{ep}\\\<br>
+&amp;=V_1(1-\alpha)^{ep}+\sum_1^{ep}\alpha(1-\alpha)^iG_i\\\<br>
+\end{aligned}
+$$</p>
+<p>for $\alpha &lt;1$, when $t\rightarrow \infty$,  $V_{\infty}$ has more value depending on $G$, and specially recent $G$.</p>
+<p>What&rsquo;s more, when updating the value, the value $V(s)$ is moving towards to the actual value, no matter is updated by Monte Carlo average method or TD or Q-learning, so partly we can trust the new $V(s)$.</p>
+<h2 id="temporal-difference">
+  Temporal Difference
+  <a class="anchor" href="#temporal-difference">#</a>
+</h2>
+<p>TD is a bootstrapping method, which is quiet determined by the old value.
+$$
+V_{ep+1}(s)=V_{ep}(s)+\alpha[R+\gamma V_{ep}(s')-V_{ep}(s)]
+$$</p>
+<p>Comparing with the $\alpha$ - constant Monte Carlo $V_{ep+1}(s)=V_{ep}(s)+\alpha [R_{ep}+\gamma G_{ep-1}-V_{ep}(s)]$, $\alpha$ is the stepsize and also determines the update quantity of the $V(s)$. Once $V(s')$ is estimated close to the real value, $V(s)$ is updated by one step closer to the real $V(s)$. Digging to the end, the terminal $V(s_T)=0$, and the $V(s_{T-1})$ s are all updated exactlly by one step close to the real value, unlike the Monte Carlo, always needing a trajectory to end to update the value.</p>
+<p>For TD, update is not deserved with end to terminal. The first run to terminal is only updated valuable on the $V(s_{T-1})$, and next run is $V(s_{T-2})$, and so on&hellip;</p>
+<p>On one side, the $V(s)$ is updated truely along the way to terminal, with this chosen path, the value is updated more fast, since the agent prefers to go this path under $\epsilon$ - greedy policy; On the other side, with randomly exploring, the agent searchs for a better way to terminal. Once found the new path will be compared with the old one, the $V(s)$ will determine the optimal path.</p>
+<p>If we use $Q(s,a)$ in TD, then the algorithm is called the famous <strong>sarsa</strong>.
+$$
+Q_{ep+1}(s,a)=Q_{ep}(s,a)+\alpha[R+\gamma Q_{ep}(s',a')-Q_{ep}(s,a)]
+$$
+Similarly, the $Q(s,a)$ is updated from the $Q(s_T,a_T)$ once reaches the terminal.</p>
+<h2 id="q-learning">
+  Q-learning
+  <a class="anchor" href="#q-learning">#</a>
+</h2>
+<p>While the agent is still randomly walking in the environment without arriving at the terminal, then the updated value is equavalent to random initialized $Q(s,a)$. The meaningful value is like TD starting from $Q(s_T,a_T)$, the difference locates at that, because of the continous exploring, we can safely choose the best way with fast speed. This indicates we can determine the best step from state $s$ by looking into the $Q(s',a')$s and gives the $s-1$ a symbol ($Q(s,a)$) that $s$ is the best within his company:
+$$
+Q_{ep+1}(s,a)=Q_{ep}(s,a)+\alpha [R+\gamma Q_{ep}(s',a'_{\max})-Q_{ep}(s,a)]
+$$
+Gradually the from the starting state, the agent find the fast by seeing the biggest $Q(s,a)$ at each state.</p>
+<h1 id="other-thinking">
+  Other Thinking
+  <a class="anchor" href="#other-thinking">#</a>
+</h1>
+<h2 id="arbitrary-initial-q-or-v">
+  Arbitrary Initial Q or V
+  <a class="anchor" href="#arbitrary-initial-q-or-v">#</a>
+</h2>
+<p>Even give $Q(s,a)$ or $V(s)$ a positive value at start, by updating, a negative value $Q(s',a')$ or $V(s')$ will contribute part of it. At least the $R$ will definately affect negatively to it. After this, a positive $Q(s,a)$ or $V(s)$ can&rsquo;t be compared with a $Q(s,a)$, which is driven from the positive value given by terminal.</p>
+<h2 id="where-goes-psrsa-">
+  Where goes $p(s',r|s,a)$ ?
+  <a class="anchor" href="#where-goes-psrsa-">#</a>
+</h2>
+<p>When we have the model, then $p(s',r|s,a)$ can help us compare the $V(s)$  by avioding the low value and passing more though the high value, or directly getting more rewards. In model free, there is no $p(s',r|s,a)$ in offer. But no matter $p(s',r|s,a)$ or $Q(s,a)$ or $V(s)$ just to find the best way. With many exploring, the value is showing the best probability of getting best reward, then there is no need to setting $p(s',r|s,a)$ in model free environment.</p>
+<p>$p(s',r|s,a)$ is of course not controlled by the hero.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Online image from 
+  <a href="https://miro.medium.com/freeze/max/588/1*Lq_shZnfjjiFEBmBOHk_qA.gif">here</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Sutton&rsquo;s Reinforcement Book&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>The ep represents the episode number, there we use first visit Monte Calro method.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-recap">Basic Recap</a>
+      <ul>
+        <li><a href="#a-little-more-from-basic">A little more from Basic</a></li>
+        <li><a href="#the-famous-bellman-equation">The FAMOUS Bellman Equation</a></li>
+        <li><a href="#choose-path-based-on-bellman-equation">Choose Path based on Bellman Equation</a></li>
+        <li><a href="#v_pis-vs-q_pisa">$v_{\pi}(s)$ vs $q_{\pi}(s,a)$</a></li>
+      </ul>
+    </li>
+    <li><a href="#update-methods-clarification">Update Methods Clarification</a>
+      <ul>
+        <li><a href="#monte-carlo">Monte Carlo</a></li>
+        <li><a href="#alpha-constant-monte-carlo">$\alpha$-constant Monte Carlo</a></li>
+        <li><a href="#temporal-difference">Temporal Difference</a></li>
+        <li><a href="#q-learning">Q-learning</a></li>
+      </ul>
+    </li>
+    <li><a href="#other-thinking">Other Thinking</a>
+      <ul>
+        <li><a href="#arbitrary-initial-q-or-v">Arbitrary Initial Q or V</a></li>
+        <li><a href="#where-goes-psrsa-">Where goes $p(s',r|s,a)$ ?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

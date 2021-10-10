@@ -1,145 +1,114 @@
-baseURL: 'https://Vacationwkx.github.io'
+# hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
+
+baseURL: https://example.com/
 title: 無極
-paginate: 10
-theme: PaperMod
+theme: book
 
-enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
+# Book configuration
+disablePathToLower: true
+enableGitInfo: true
 
-googleAnalytics: UA-123-45
+# Needed for mermaid/katex shortcodes
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 1
 
-minify:
-    disableXML: true
-    minifyOutput: true
+# Multi-lingual mode config
+# There are different options to translate files
+# See https://gohugo.io/content-management/multilingual/#translation-by-filename
+# And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
+languages:
+  en:
+    languageName: English
+    contentDir: content
+    weight: 1
+  ru:
+    languageName: Deutsch
+    contentDir: content.de
+    weight: 2
+  zh:
+    languageName: Chinese
+    contentDir: content.zh
+    weight: 3
+
+menu:
+  # before: []
+  after:
+    - name: "Github"
+      url: "https://github.com/alex-shpak/hugo-book"
+      weight: 10
+    - name: "Hugo Themes"
+      url: "https://themes.gohugo.io/hugo-book/"
+      weight: 20
 
 params:
-    env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: ExampleSite
-    description: "ExampleSite description"
-    keywords: [Blog, Portfolio, PaperMod]
-    author: 'Vac'
+  # (Optional, default light) Sets color theme: light, dark or auto.
+  # Theme 'auto' switches between dark and light modes based on browser/os preferences
+  BookTheme: "auto"
 
-    # author: ["Me", "You"] # multiple authors
-    images: ["<link or path of image for opengraph, twitter-cards>"]
-    DateFormat: "January 2, 2006"
-    defaultTheme: auto # dark, light
-    disableThemeToggle: false
+  # (Optional, default true) Controls table of contents visibility on right side of pages.
+  # Start and end levels can be controlled with markup.tableOfContents setting.
+  # You can also specify this parameter per page in front matter.
+  BookToC: true
 
-    ShowReadingTime: true
-    ShowShareButtons: false
-    ShowPostNavLinks: true
-    ShowBreadCrumbs: true
-    disableSpecial1stPost: false
-    disableScrollToTop: false
-    comments: true
-    hidemeta: false
-    hideSummary: false
-    showtoc: true
-    tocopen: false
+  # (Optional, default none) Set the path to a logo for the book. If the logo is
+  # /static/logo.png then the path would be logo.png
+  BookLogo: /favicon.ico
 
-    assets:
-        # disableHLJS: true # to disable highlight.js
-        # disableFingerprinting: true
-        favicon: "<link / abs url>"
-        favicon16x16: "/favicon-16x16.png"
-        favicon32x32: "/favicon-32x32.png"
-        apple_touch_icon: "<link / abs url>"
-        safari_pinned_tab: "<link / abs url>"
+  # (Optional, default none) Set leaf bundle to render as side menu
+  # When not specified file structure and weights will be used
+  BookMenuBundle: /menu
 
-    label:
-        text: "Home"
-        icon: /apple-touch-icon.png
-        iconHeight: 35
+  # (Optional, default docs) Specify root page to render child pages as menu.
+  # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
+  # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
+  BookSection: docs
 
-    # profile-mode
-    profileMode:
-        enabled: false # needs to be explicitly set
-        title: ExampleSite
-        subtitle: "This is subtitle"
-        imageUrl: "<img location>"
-        imageWidth: 120
-        imageHeight: 120
-        imageTitle: my image
-        buttons:
-            - name: Categories
-              url: categories
-            - name: Posts
-              url: posts
-            - name: Tags
-              url: tags
+  # Set source repository location.
+  # Used for 'Last Modified' and 'Edit this page' links.
+  BookRepo: https://github.com/alex-shpak/hugo-book
 
-    # home-info mode
-    homeInfoParams:
-        Title: "Digging to zero \U0001F9BE"
-        Content: A very little human working on things she may like. Recording life
+  # (Optional, default 'commit') Specifies commit portion of the link to the page's last modified
+  # commit hash for 'doc' page type.
+  # Requires 'BookRepo' param.
+  # Value used to construct a URL consisting of BookRepo/BookCommitPath/<commit-hash>
+  # Github uses 'commit', Bitbucket uses 'commits'
+  # BookCommitPath: commit
 
-    socialIcons:
-        - name: email
-          url: 'wkx611@outlook.com'
-        - name: github
-          url: 'https://github.com/Vacationwkx'
+  # Enable "Edit this page" links for 'doc' page type.
+  # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
+  # Edit path must point to root directory of repo.
+  # BookEditPath: edit/main/exampleSite
 
-    analytics:
-        google:
-            SiteVerificationTag: "XYZabc"
-        bing:
-            SiteVerificationTag: "XYZabc"
-        yandex:
-            SiteVerificationTag: "XYZabc"
+  # Configure the date format used on the pages
+  # - In git information
+  # - In blog posts
+  BookDateFormat: "January 2, 2006"
 
-    cover:
-        hidden: true # hide everywhere but not in structured data
-        hiddenInList: true # hide on list pages and home
-        hiddenInSingle: false # hide on single page
+  # (Optional, default true) Enables search function with flexsearch,
+  # Index is built on fly, therefore it might slowdown your website.
+  # Configuration for indexing can be adjusted in i18n folder per language.
+  BookSearch: true
 
-#    editPost:
-#        URL: "https://github.com/<path_to_repo>/content"
-#        Text: "Suggest Changes" # edit text
-#        appendFilePath: false # to append file path to Edit link
+  # (Optional, default true) Enables comments template on pages
+  # By default partals/docs/comments.html includes Disqus template
+  # See https://gohugo.io/content-management/comments/#configure-disqus
+  # Can be overwritten by same param in page frontmatter
+  BookComments: true
 
-    # for search
-    # https://fusejs.io/api/options.html
-    fuseOpts:
-        isCaseSensitive: false
-        shouldSort: true
-        location: 0
-        distance: 1000
-        threshold: 0.4
-        minMatchCharLength: 0
-        keys: ["title", "permalink", "summary", "content"]
-menu:
-    main:
-        - identifier: archives
-          name: Archives
-          url: /archives/
-          weight: 10
-        - identifier: categories
-          name: Categories
-          url: /categories/
-          weight: 20
-        - identifier: tags
-          name: Tags
-          url: /tags/
-          weight: 30
-        - identifier: search
-          name: Search
-          url: /search/
-          weight: 40
+  # /!\ This is an experimental feature, might be removed or changed at any time
+  # (Optional, experimental, default false) Enables portable links and link checks in markdown pages.
+  # Portable links meant to work with text editors and let you write markdown without {{< relref >}} shortcode
+  # Theme will print warning if page referenced in markdown does not exists.
+  BookPortableLinks: true
 
-# add for search.md to toggle search function
-outputs:
-    home:
-        - HTML
-        - RSS
-        - JSON # is necessary
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-# pygmentsUseClasses: true
-# markup:
-#     highlight:
-#         # anchorLineNos: true
-#         codeFences: true
-#         guessSyntax: true
-#         lineNos: true
-#         style: monokai
+  # /!\ This is an experimental feature, might be removed or changed at any time
+  # (Optional, experimental, default false) Enables service worker that caches visited pages and resources for offline use.
+  BookServiceWorker: true
+
+  # /!\ This is an experimental feature, might be removed or changed at any time
+  # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
+  BookTranslatedOnly: false
