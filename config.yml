@@ -38,11 +38,11 @@ menu:
   # before: []
   after:
     - name: "Github"
-      url: "https://github.com/alex-shpak/hugo-book"
+      url: "https://github.com/Vacationwkx"
       weight: 10
-    - name: "Hugo Themes"
-      url: "https://themes.gohugo.io/hugo-book/"
-      weight: 20
+#    - name: "Hugo Themes"
+#      url: "https://themes.gohugo.io/hugo-book/"
+#      weight: 20
 
 params:
   # (Optional, default light) Sets color theme: light, dark or auto.
@@ -60,16 +60,16 @@ params:
 
   # (Optional, default none) Set leaf bundle to render as side menu
   # When not specified file structure and weights will be used
-  BookMenuBundle: /menu
+  # BookMenuBundle: /menu
 
   # (Optional, default docs) Specify root page to render child pages as menu.
   # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
   # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
-  BookSection: docs
+  # BookSection: docs
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo: https://github.com/alex-shpak/hugo-book
+  # BookRepo: https://github.com/alex-shpak/hugo-book
 
   # (Optional, default 'commit') Specifies commit portion of the link to the page's last modified
   # commit hash for 'doc' page type.

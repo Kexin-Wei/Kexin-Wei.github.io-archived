@@ -36,7 +36,7 @@ all human adaptive cruise control, anti-lock braking system, electronic stabilty
     </item>
     
     <item>
-      <title>NNN notes</title>
+      <title>NNN Learning Notes</title>
       <link>https://example.com/docs/ai/nn-notes/</link>
       <pubDate>Mon, 07 Dec 2020 08:55:38 +0800</pubDate>
       
@@ -50,23 +50,20 @@ all human adaptive cruise control, anti-lock braking system, electronic stabilty
       <pubDate>Mon, 30 Nov 2020 11:35:49 +0800</pubDate>
       
       <guid>https://example.com/docs/ai/rl-epsilon-policy/</guid>
-      <description>In reinforcement learning, we can&amp;rsquo;t run infinite times to update the whole $Q$ - value table or $V$ - value table, efficient update choices must be made.
-Generally thinking, which $s$ or $(s,a)$ has more opportunity to get $R$ (high value), should be updated more to converge to the optimal. But stochastic exploring is also required to jump out of sub-optimal. The simple idea to implement is $\epsilon$ -greedy.
-Tips:</description>
+      <description>In reinforcement learning, we can&amp;rsquo;t run infinite times to update the whole   \(Q\)  - value table or  \(V\)  - value table, efficient update choices must be made.
+Generally thinking, which  \(s\)  or  \((s,a)\)  has more opportunity to get  \(R\)  (high value), should be updated more to converge to the optimal. But stochastic exploring is also required to jump out of sub-optimal.</description>
     </item>
     
     <item>
-      <title>Value Update Comparsion among Basical RL</title>
+      <title>Value Update Comparison among Basic RL</title>
       <link>https://example.com/docs/ai/rl-update-equation/</link>
       <pubDate>Mon, 30 Nov 2020 11:13:00 +0800</pubDate>
       
       <guid>https://example.com/docs/ai/rl-update-equation/</guid>
       <description>In this post, we will compare the state value update or state-action value update equation in fundamental rl methods.
-Monte Carlo #  $$V(s)\leftarrow V(s)+\frac{1}{N}[G_t-V(s)]$$
-recall that, monte carlo update use average $V(s)=\sum G_t/N$. After simple transformation, we will have the error form equation:point_up_2:.
+Monte Carlo #    \[V(s)\leftarrow V(s)&amp;#43;\frac{1}{N}\left[G_t-V(s)\right]\]  recall that, monte carlo update use average  \(V(s)=\sum G_t/N\)  . After simple transformation, we will have the error form equation:point_up_2:.
 and the corresponding state-action value update is:
-$$Q(s,a)\leftarrow Q(s,a)+\frac{1}{N}[G_t-Q(s,a)]$$
-Temporal Difference #  TD is driven from $\alpha$ - Monte Carlo, but replace the $G_t$ with $R_t+\gamma V(s&#39;)$, since we want a instant update per step rather than till terminal.</description>
+ \[Q(s,a)\leftarrow Q(s,a)&amp;#43;\frac{1}{N}\left[G_t-Q(s,a)\right]\]  Temporal Difference #  TD is driven from  \(\alpha\)  - Monte Carlo, but replace the  \(G_t\)  with  \(R_t&amp;#43;\gamma V(s&amp;#39;)\)  , since we want a instant update per step rather than till terminal.</description>
     </item>
     
     <item>
@@ -75,10 +72,10 @@ Temporal Difference #  TD is driven from $\alpha$ - Monte Carlo, but replace the
       <pubDate>Sat, 28 Nov 2020 21:47:38 +0800</pubDate>
       
       <guid>https://example.com/docs/ai/rl-comparsion/</guid>
-      <description>Basic Recap #  Reinforcement learning bases on $V(s),Q(s,a),\pi(a|s),R,G$:
-  $V(s)$ : state value, often used in model-based method;
-  $Q(s,a)$ : state-action value, often used in model-free method;
- why state-action: $s\rightarrow a$ is defined partly in $\pi(a|s)$, and $V(s,a),\pi(a|s)$ are all parameters inside agent, consequently, $Q(s,a)$ is a combination of $V(s)$ and $\pi(a|s)$.    $\pi(a|s)$ : the policy of a agent, chose a $a$ (action) at a $s$ state;</description>
+      <description>Basic Recap #  Reinforcement learning bases on   \(V(s),Q(s,a),\pi(a|s),R,G\)  :
+   \(V(s)\)  : state value, often used in model-based method;
+   \(Q(s,a)\)  : state-action value, often used in model-free method;
+ why state-action:  \(s\rightarrow a\)  is defined partly in  \(\pi(a|s)\)  , and  \(V(s,a),\pi(a|s)\)  are all parameters inside agent, consequently,  \(Q(s,a)\)  is a combination of  \(V(s)\)  and  \(\pi(a|s)\)  .</description>
     </item>
     
   </channel>

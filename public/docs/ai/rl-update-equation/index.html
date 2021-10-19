@@ -4,29 +4,25 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="In this post, we will compare the state value update or state-action value update equation in fundamental rl methods.
-Monte Carlo #  $$V(s)\leftarrow V(s)&#43;\frac{1}{N}[G_t-V(s)]$$
-recall that, monte carlo update use average $V(s)=\sum G_t/N$. After simple transformation, we will have the error form equation:point_up_2:.
+Monte Carlo #    \[V(s)\leftarrow V(s)&#43;\frac{1}{N}\left[G_t-V(s)\right]\]  recall that, monte carlo update use average  \(V(s)=\sum G_t/N\)  . After simple transformation, we will have the error form equation:point_up_2:.
 and the corresponding state-action value update is:
-$$Q(s,a)\leftarrow Q(s,a)&#43;\frac{1}{N}[G_t-Q(s,a)]$$
-Temporal Difference #  TD is driven from $\alpha$ - Monte Carlo, but replace the $G_t$ with $R_t&#43;\gamma V(s&#39;)$, since we want a instant update per step rather than till terminal.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Value Update Comparsion among Basical RL" />
+ \[Q(s,a)\leftarrow Q(s,a)&#43;\frac{1}{N}\left[G_t-Q(s,a)\right]\]  Temporal Difference #  TD is driven from  \(\alpha\)  - Monte Carlo, but replace the  \(G_t\)  with  \(R_t&#43;\gamma V(s&#39;)\)  , since we want a instant update per step rather than till terminal.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Value Update Comparison among Basic RL" />
 <meta property="og:description" content="In this post, we will compare the state value update or state-action value update equation in fundamental rl methods.
-Monte Carlo #  $$V(s)\leftarrow V(s)&#43;\frac{1}{N}[G_t-V(s)]$$
-recall that, monte carlo update use average $V(s)=\sum G_t/N$. After simple transformation, we will have the error form equation:point_up_2:.
+Monte Carlo #    \[V(s)\leftarrow V(s)&#43;\frac{1}{N}\left[G_t-V(s)\right]\]  recall that, monte carlo update use average  \(V(s)=\sum G_t/N\)  . After simple transformation, we will have the error form equation:point_up_2:.
 and the corresponding state-action value update is:
-$$Q(s,a)\leftarrow Q(s,a)&#43;\frac{1}{N}[G_t-Q(s,a)]$$
-Temporal Difference #  TD is driven from $\alpha$ - Monte Carlo, but replace the $G_t$ with $R_t&#43;\gamma V(s&#39;)$, since we want a instant update per step rather than till terminal." />
+ \[Q(s,a)\leftarrow Q(s,a)&#43;\frac{1}{N}\left[G_t-Q(s,a)\right]\]  Temporal Difference #  TD is driven from  \(\alpha\)  - Monte Carlo, but replace the  \(G_t\)  with  \(R_t&#43;\gamma V(s&#39;)\)  , since we want a instant update per step rather than till terminal." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.com/docs/ai/rl-update-equation/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-11-30T11:13:00+08:00" />
 <meta property="article:modified_time" content="2021-10-11T07:46:18+08:00" />
 
-<title>Value Update Comparsion among Basical RL | 無極</title>
+<title>Value Update Comparison among Basic RL | 無極</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.95d69eb6bad8b9707ff2b5d8d9e31ce70a1b84f2ed7ffaf665ffcf00aa7993bd.css" integrity="sha256-ldaetrrYuXB/8rXY2eMc5wobhPLtf/r2Zf/PAKp5k70=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.4ac964f991a32eddea693121c643f3f6ee8ab06e61631b51107b4c1266e49107.js" integrity="sha256-Sslk&#43;ZGjLt3qaTEhxkPz9u6KsG5hYxtREHtMEmbkkQc=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.f19fe0a6590e8a2c50ef9e1d605adbe671c2d1b1b4eb45bf9e63970c208d93e2.js" integrity="sha256-8Z/gplkOiixQ754dYFrb5nHC0bG060W/nmOXDCCNk&#43;I=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -102,25 +98,427 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-
-
-
-
-
-  <ul>
-<li>
-<p>
-  <a href="/posts/">Working&hellip;</a></p>
-</li>
-<li>
-<p>
-  <a href="/docs/">The Book I am writing</a></p>
-</li>
-<li>
-<p>
-  <a href="/docs/toc/">Table of Contents</a></p>
-</li>
+  
+<ul>
+  
+  <li>
+    <a href="/posts/" >
+        Working on ...
+      </a>
+  </li>
+  
 </ul>
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8bb89e37bc8ac94ed7933c2c15518f8c" class="toggle" checked />
+    <label for="section-8bb89e37bc8ac94ed7933c2c15518f8c" class="flex justify-between">
+      <a role="button" class="">1. AI</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/ai/rl-notes/" class="">Reinforcement Learning Notes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/ai/nn-notes/" class="">NNN Learning Notes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/ai/rl-epsilon-policy/" class="">epsilon-Greedy vs epsilon-Soft</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/ai/rl-update-equation/" class=" active">Value Update Comparison among Basic RL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/ai/rl-comparsion/" class="">Monte Carlo vs TD vs Q-learning</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-010cc3a6dda69f98986133a7094047b7" class="toggle"  />
+    <label for="section-010cc3a6dda69f98986133a7094047b7" class="flex justify-between">
+      <a role="button" class="">2. Books I Read</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/books/principles-of-microeconomics/" class="">Principles of Microeconomics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/books/simple-europe-history/" class="">[Book]The Shortest History of Europe</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/books/my-first-book/" class="">My First Book</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/books/The-Crowd/" class="">[Book]The Crowd - A Study of the Popular Mind</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/books/antifragile/" class="">[Book]Antigragile</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d808f8574b076f34757efa25cfa94f05" class="toggle"  />
+    <label for="section-d808f8574b076f34757efa25cfa94f05" class="flex justify-between">
+      <a role="button" class="">3. Learning Plan</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/learn/front-end/" class="">Front End</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/learn/AI/" class="">AI</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2a14d3e9b56ded9a228b0add698b5e2b" class="toggle"  />
+    <label for="section-2a14d3e9b56ded9a228b0add698b5e2b" class="flex justify-between">
+      <a role="button" class="">4. Diary</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/diary_thoughts/Thoughts-In-2019/" class="">Thoughts in 2019</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/diary_thoughts/tour2/" class="">2017-12-01(2)-Not a serious Diary</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/diary_thoughts/tour/" class="">2017-12-01(1)-Not a serious Diary</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/diary_thoughts/CSF/" class="">Der Tod eines Mannen - ChenShifeng</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/diary_thoughts/saenger/" class="">Der Saenger</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9a5dc60c61925a1b6716e156a8b79c04" class="toggle"  />
+    <label for="section-9a5dc60c61925a1b6716e156a8b79c04" class="flex justify-between">
+      <a role="button" class="">Archived</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/achv/ssh-jupyter/" class="">Use Jupiter Notebook by ssh</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/achv/rustylake/" class="">Rusty lake - Game Timeline &amp; Secrets</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/achv/new-on-hugo/" class="">New on Hugo🤺</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/achv/Learn-Jekyll/" class="">Note Learn Jekyll</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://example.com/docs/achv/GRE/" class="">Personal GRE Summary</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
 
 
 
@@ -131,14 +529,8 @@ https://github.com/alex-shpak/hugo-book
 <ul>
   
   <li>
-    <a href="https://github.com/alex-shpak/hugo-book" target="_blank" rel="noopener">
+    <a href="https://github.com/Vacationwkx" target="_blank" rel="noopener">
         Github
-      </a>
-  </li>
-  
-  <li>
-    <a href="https://themes.gohugo.io/hugo-book/" target="_blank" rel="noopener">
-        Hugo Themes
       </a>
   </li>
   
@@ -169,7 +561,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Value Update Comparsion among Basical RL</strong>
+  <strong>Value Update Comparison among Basic RL</strong>
 
   <label for="toc-control">
     
@@ -205,23 +597,77 @@ https://github.com/alex-shpak/hugo-book
   Monte Carlo
   <a class="anchor" href="#monte-carlo">#</a>
 </h1>
-<p>$$V(s)\leftarrow V(s)+\frac{1}{N}[G_t-V(s)]$$</p>
-<p>recall that, monte carlo update use average $V(s)=\sum G_t/N$. After simple transformation, we will have the error form equation:point_up_2:.</p>
+
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \[V(s)\leftarrow V(s)&#43;\frac{1}{N}\left[G_t-V(s)\right]\]
+</span>
+
+<p>recall that, monte carlo update use average <span>
+  \(V(s)=\sum G_t/N\)
+</span>
+. After simple transformation, we will have the error form equation:point_up_2:.</p>
 <p>and the corresponding state-action value update is:</p>
-<p>$$Q(s,a)\leftarrow Q(s,a)+\frac{1}{N}[G_t-Q(s,a)]$$</p>
+<span>
+  \[Q(s,a)\leftarrow Q(s,a)&#43;\frac{1}{N}\left[G_t-Q(s,a)\right]\]
+</span>
+
 <h1 id="temporal-difference">
   Temporal Difference
   <a class="anchor" href="#temporal-difference">#</a>
 </h1>
-<p>TD is driven from $\alpha$ - Monte Carlo, but replace the $G_t$ with $R_t+\gamma V(s')$, since we want a instant update per step rather than till terminal.</p>
-<p>$$V(s)\leftarrow V(s)+\alpha [R_t + \gamma V(s') -V(s)]$$</p>
-<p>The state-action one is simply change the $V(s)$ to $Q(s,a)$, and becomes <strong>Sarsa</strong> (omitted).</p>
+<p>TD is driven from <span>
+  \(\alpha\)
+</span>
+ - Monte Carlo, but replace the <span>
+  \(G_t\)
+</span>
+ with <span>
+  \(R_t&#43;\gamma V(s&#39;)\)
+</span>
+, since we want a instant update per step rather than till terminal.</p>
+<span>
+  \[V(s)\leftarrow V(s)&#43;\alpha \left[R_t &#43; \gamma V(s&#39;) -V(s)\right]\]
+</span>
+
+<p>The state-action one is simply change the <span>
+  \(V(s)\)
+</span>
+ to <span>
+  \(Q(s,a)\)
+</span>
+, and becomes <strong>Sarsa</strong> (omitted).</p>
 <h1 id="q-learning">
   Q-learning
   <a class="anchor" href="#q-learning">#</a>
 </h1>
-<p>Q-learning is a <strong>off-policy</strong> method, where the update ignores the policy while other <strong>on-policy</strong> only use the state-action value determinted by $\pi(a|s)$. Recall that, even $s$ and $a$ are connected in $Q(s,a)$, but the $s'$ is determineted by environment, and $a$ is chosen by $\pi(a|s)$.</p>
-<p>$$Q(s,a)\leftarrow Q(s,a)+\alpha[R_t+\gamma Q_{max}(s',a')-Q(s,a)]$$</p>
+<p>Q-learning is a <strong>off-policy</strong> method, where the update ignores the policy while other <strong>on-policy</strong> only use the state-action value determinted by <span>
+  \(\pi(a|s)\)
+</span>
+. Recall that, even <span>
+  \(s\)
+</span>
+ and <span>
+  \(a\)
+</span>
+ are connected in <span>
+  \(Q(s,a)\)
+</span>
+, but the <span>
+  \(s&#39;\)
+</span>
+ is determineted by environment, and <span>
+  \(a\)
+</span>
+ is chosen by <span>
+  \(\pi(a|s)\)
+</span>
+.</p>
+<span>
+  \[Q(s,a)\leftarrow Q(s,a)&#43;\alpha[R_t&#43;\gamma Q_{max}(s&#39;,a&#39;)-Q(s,a)]\]
+</span>
+
 </article>
  
       
@@ -230,12 +676,6 @@ https://github.com/alex-shpak/hugo-book
         
   <div class="flex flex-wrap justify-between">
 
-
-  <div><a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/commit/97b0efbda71482095a114f22d06eeb293942d980" title='Last modified by Vacationwkx | October 11, 2021' target="_blank" rel="noopener">
-      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>October 11, 2021</span>
-    </a>
-  </div>
 
 
 

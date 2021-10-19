@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>無極</title>
+    <title>Welcome on 無極</title>
     <link>https://example.com/</link>
-    <description>Recent content on 無極</description>
+    <description>Recent content in Welcome on 無極</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 03 Sep 2021 22:44:41 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Oct 2021 07:38:22 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Self Driving Car</title>
       <link>https://example.com/posts/self-driving-car/</link>
@@ -15,6 +15,15 @@
       <description>Intro #  Reading #  SAE J3016: Autonomous Car Level #  source 1
 all human adaptive cruise control, anti-lock braking system, electronic stabilty control hazard-minimizing longitudinal/ lateral control, emergency braking full autonomy under certain condition, but human take control when in danger full autonomy under certain condition, can replace human at some cases fully autonomous  Decision making #    On-board sensors
  LIDAR camera GPS/INS odometry(angle)    Hierachical Decision Making System     Route Planning</description>
+    </item>
+    
+    <item>
+      <title>Test for Book</title>
+      <link>https://example.com/posts/test-for-book/</link>
+      <pubDate>Mon, 18 Oct 2021 07:38:22 +0800</pubDate>
+      
+      <guid>https://example.com/posts/test-for-book/</guid>
+      <description>hello im here</description>
     </item>
     
     <item>
@@ -72,7 +81,7 @@ all human adaptive cruise control, anti-lock braking system, electronic stabilty
     </item>
     
     <item>
-      <title>NNN notes</title>
+      <title>NNN Learning Notes</title>
       <link>https://example.com/docs/ai/nn-notes/</link>
       <pubDate>Mon, 07 Dec 2020 08:55:38 +0800</pubDate>
       
@@ -97,23 +106,20 @@ $ sudo apt-get install openssh-server Jupyter Notebook Setting(optional) #  usin
       <pubDate>Mon, 30 Nov 2020 11:35:49 +0800</pubDate>
       
       <guid>https://example.com/docs/ai/rl-epsilon-policy/</guid>
-      <description>In reinforcement learning, we can&amp;rsquo;t run infinite times to update the whole $Q$ - value table or $V$ - value table, efficient update choices must be made.
-Generally thinking, which $s$ or $(s,a)$ has more opportunity to get $R$ (high value), should be updated more to converge to the optimal. But stochastic exploring is also required to jump out of sub-optimal. The simple idea to implement is $\epsilon$ -greedy.
-Tips:</description>
+      <description>In reinforcement learning, we can&amp;rsquo;t run infinite times to update the whole   \(Q\)  - value table or  \(V\)  - value table, efficient update choices must be made.
+Generally thinking, which  \(s\)  or  \((s,a)\)  has more opportunity to get  \(R\)  (high value), should be updated more to converge to the optimal. But stochastic exploring is also required to jump out of sub-optimal.</description>
     </item>
     
     <item>
-      <title>Value Update Comparsion among Basical RL</title>
+      <title>Value Update Comparison among Basic RL</title>
       <link>https://example.com/docs/ai/rl-update-equation/</link>
       <pubDate>Mon, 30 Nov 2020 11:13:00 +0800</pubDate>
       
       <guid>https://example.com/docs/ai/rl-update-equation/</guid>
       <description>In this post, we will compare the state value update or state-action value update equation in fundamental rl methods.
-Monte Carlo #  $$V(s)\leftarrow V(s)+\frac{1}{N}[G_t-V(s)]$$
-recall that, monte carlo update use average $V(s)=\sum G_t/N$. After simple transformation, we will have the error form equation:point_up_2:.
+Monte Carlo #    \[V(s)\leftarrow V(s)&amp;#43;\frac{1}{N}\left[G_t-V(s)\right]\]  recall that, monte carlo update use average  \(V(s)=\sum G_t/N\)  . After simple transformation, we will have the error form equation:point_up_2:.
 and the corresponding state-action value update is:
-$$Q(s,a)\leftarrow Q(s,a)+\frac{1}{N}[G_t-Q(s,a)]$$
-Temporal Difference #  TD is driven from $\alpha$ - Monte Carlo, but replace the $G_t$ with $R_t+\gamma V(s&#39;)$, since we want a instant update per step rather than till terminal.</description>
+ \[Q(s,a)\leftarrow Q(s,a)&amp;#43;\frac{1}{N}\left[G_t-Q(s,a)\right]\]  Temporal Difference #  TD is driven from  \(\alpha\)  - Monte Carlo, but replace the  \(G_t\)  with  \(R_t&amp;#43;\gamma V(s&amp;#39;)\)  , since we want a instant update per step rather than till terminal.</description>
     </item>
     
     <item>
@@ -122,10 +128,10 @@ Temporal Difference #  TD is driven from $\alpha$ - Monte Carlo, but replace the
       <pubDate>Sat, 28 Nov 2020 21:47:38 +0800</pubDate>
       
       <guid>https://example.com/docs/ai/rl-comparsion/</guid>
-      <description>Basic Recap #  Reinforcement learning bases on $V(s),Q(s,a),\pi(a|s),R,G$:
-  $V(s)$ : state value, often used in model-based method;
-  $Q(s,a)$ : state-action value, often used in model-free method;
- why state-action: $s\rightarrow a$ is defined partly in $\pi(a|s)$, and $V(s,a),\pi(a|s)$ are all parameters inside agent, consequently, $Q(s,a)$ is a combination of $V(s)$ and $\pi(a|s)$.    $\pi(a|s)$ : the policy of a agent, chose a $a$ (action) at a $s$ state;</description>
+      <description>Basic Recap #  Reinforcement learning bases on   \(V(s),Q(s,a),\pi(a|s),R,G\)  :
+   \(V(s)\)  : state value, often used in model-based method;
+   \(Q(s,a)\)  : state-action value, often used in model-free method;
+ why state-action:  \(s\rightarrow a\)  is defined partly in  \(\pi(a|s)\)  , and  \(V(s,a),\pi(a|s)\)  are all parameters inside agent, consequently,  \(Q(s,a)\)  is a combination of  \(V(s)\)  and  \(\pi(a|s)\)  .</description>
     </item>
     
     <item>
@@ -256,8 +262,8 @@ Verbal Reasoning #  Good video suggested from Youtube: GRE Verbal Section Walkth
       <pubDate>Sat, 02 Dec 2017 21:55:38 +0800</pubDate>
       
       <guid>https://example.com/docs/diary_thoughts/tour2/</guid>
-      <description>  游记 上
- 青旅有常住客，人很和善，本以為都是如我壹般的，其他人似乎都是結伴而行，有的看著比我小，但似乎也是大學生，但也有十分社會。各位都是夜貓子，十二點都還開著燈，床簾惘然虛設。我對光可謂十分敏，有點過強，就不要想睡了。無奈掙紮到1、2點，爬起來關了大燈，才睡去。要知道這個時候已經設置好第二天的起床鬧鐘了，還能睡3個半小時吧。睡前搜索了看日出的景點，講了好幾個，觀景臺和大石頭，還有若幹等等，兩個月過去實在是記不清了。初步定在某壹個近壹點的地方，看了看地點，騎自行車過去便趕得上，畢竟前壹晚騎了不下4次，周圍早已輕車熟路。
+      <description>接 游记 上
+青旅有常住客，人很和善，本以為都是如我壹般的，其他人似乎都是結伴而行，有的看著比我小，但似乎也是大學生，但也有十分社會。各位都是夜貓子，十二點都還開著燈，床簾惘然虛設。我對光可謂十分敏，有點過強，就不要想睡了。無奈掙紮到1、2點，爬起來關了大燈，才睡去。要知道這個時候已經設置好第二天的起床鬧鐘了，還能睡3個半小時吧。睡前搜索了看日出的景點，講了好幾個，觀景臺和大石頭，還有若幹等等，兩個月過去實在是記不清了。初步定在某壹個近壹點的地方，看了看地點，騎自行車過去便趕得上，畢竟前壹晚騎了不下4次，周圍早已輕車熟路。
 第二天鬧鐘壹響就起，旅店內壹人沒有，就我壹人。說起來有個尷尬的事，我忘了帶牙膏，只有牙刷。前壹晚回來的晚，沒處去買，早上起得又早，店也沒開門，就幹刷牙。長教訓了！
 下來到前臺，就只有我壹人的腳步聲。前臺也只有壹個人，和昨日不壹樣，昨天的小妹應該是去睡覺了。退了房，把東西寄存在小隔間，拿上相機和手機就出發了，當然還有錢。其實錢並不是必須，杭州在馬爸爸的鼎力幫助下，誰誰都有二維碼。
 退過房後，出門鼓樓門下吃碗餛飩，10元壹大碗，想想昨晚也是他家的臭豆腐，有種大仇已報的感覺。其間上網，臨時更改地點，決定去大石處，和觀景臺於同壹處，兩百米之隔。
@@ -324,15 +330,6 @@ Am 3. November 2016 war Jiangge, die 24 Jahre alt war und derzeit in Japan studi
       <guid>https://example.com/docs/diary_thoughts/saenger/</guid>
       <description>Idol Xue #  Was ist die Pflicht des Sängers? Natürlich, Singen. Aber im letzten Tage ist ein komisches Ereignis passiert. Der Sänger in China, Xue Zhiqian, heiratete mit seiner Ex-Frau, was ein vollkommenes Ende sein soll. Aber er hat danach zwei Tadel bekommen, die Koinzidenz zu sein scheinen. Diese drei Bomben herrscht Weibo, damit alle sich daüber unterhalten, sondern über seine Werke.
 What is the duty of a singer? Simply, sing.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://example.com/docs/toc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/docs/toc/</guid>
-      <description></description>
     </item>
     
     <item>

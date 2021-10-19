@@ -65,6 +65,8 @@ For a youtube video from link https://www.youtube.com/watch?v=w7Ft2ymGmfc
 
 - if you also want to display shortcode in .md check [this website](https://liatas.com/posts/escaping-hugo-shortcodes/) from [Chris Liatas](https://liatas.com/).
 
+# Theme Configuration - [book](https://themes.gohugo.io/themes/hugo-book/)
+A well modified and simplist theme with book chapter style, most of the settings can be found from the official docs.
 # Theme Configuration - [hugo-PaperMod](https://adityatelange.github.io/hugo-PaperMod/)
 
 Most of the parameter can be changed simply in `config.yml` or `config.toml`, like `title`, `author`. To use emoji in the `config.yml` go straight to the [emoji website](http://unicode.org/emoji/charts/full-emoji-list.html), find one :smile: with code `U+1F604` , replace the +1 with 000, namely insert `\U000F604`. 
@@ -121,7 +123,8 @@ has been a long time not update my blog, life got boring, but i barely realized 
 
 So, new hugo add some more settings, like `description`  in front matters. We can have a auto github page with the [Github Action](https://github.com/marketplace/actions/hugo-setup) said in the [official doc](https://gohugo.io/hosting-and-deployment/hosting-on-github/). The magic code will build a branch in the github repository called `gh-pages`.
 
-![gh-page branch](/general/hugo_github_action.png#center)
+![gh-page branch](/general/hugo_github_action.png)
+
 All you should do is go to **Setting >> Pages >> Source** and change the branch to `gh-pages`.
 
 The paperMod theme i used also updated. You can find [here](https://adityatelange.github.io/hugo-PaperMod/). Following some new instructions i rebuilt my blog, add search and comment block.

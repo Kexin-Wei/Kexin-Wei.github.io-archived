@@ -51,7 +51,7 @@ Good video suggested from Youtube: [GRE Verbal Section Walkthrough: How I take t
 
 # Analytical Wirting
 
-Download book: [新GRE寫作5.5](/file/GRE5.5.pdf)
+Download book: [新GRE寫作5.5](/file/GRE55.pdf)
 
 ## Issue
 

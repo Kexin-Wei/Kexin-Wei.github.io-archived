@@ -8,6 +8,7 @@ tags:
   - self driving car
   - computer vision
   - learning...
+# bookComments: false
 ---
 
 # Intro
@@ -36,7 +37,7 @@ source [1]({{< relref "#ref" >}})
   - odometry(angle)
 
 - Hierachical Decision Making System
-  ![](/general/slc_pic1.png)
+  ![this](/general/slc_pic1.png)
 
 1. Route Planning
 

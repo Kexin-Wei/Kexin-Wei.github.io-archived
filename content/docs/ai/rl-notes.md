@@ -131,9 +131,9 @@ maybe drop DQN
 
 ### DQN Parameter Adjustment
 
-https://github.com/dennybritz/reinforcement-learning/issues/30
+[ref 1](https://github.com/dennybritz/reinforcement-learning/issues/30)
 
-https://www.reddit.com/r/reinforcementlearning/comments/7kwcb5/need_help_how_to_debug_deep_rl_algorithms/
+[ref 2](https://www.reddit.com/r/reinforcementlearning/comments/7kwcb5/need_help_how_to_debug_deep_rl_algorithms/)
 
 ### A3C
 
@@ -148,7 +148,7 @@ https://www.reddit.com/r/reinforcementlearning/comments/7kwcb5/need_help_how_to_
 [Why A2C not A3C](https://github.com/ikostrikov/pytorch-a3c)
 
 - [Two head Network](https://www.datahubbs.com/two-headed-a2c-network-in-pytorch/)
-- **Why Entropy**: https://awjuliani.medium.com/maximum-entropy-policies-in-reinforcement-learning-everyday-life-f5a1cc18d32d#:~:text=Because%20RL%20is%20all%20about,the%20actions%20an%20agent%20takes.&text=In%20RL%2C%20the%20goal%20is,term%20sum%20of%20discounted%20rewards
+- [**Why Entropy**](https://awjuliani.medium.com/maximum-entropy-policies-in-reinforcement-learning-everyday-life-f5a1cc18d32d#:~:text=Because%20RL%20is%20all%20about,the%20actions%20an%20agent%20takes.&text=In%20RL%2C%20the%20goal%20is,term%20sum%20of%20discounted%20rewards):
   - Entropy is great, but you might be wondering what that has to do with reinforcement learning and this A2C algorithm we discussed. The idea here is to use entropy to encourage further exploration of the model
   -  to prevent premature convergence
 - Negative Loss:
@@ -219,12 +219,10 @@ https://www.reddit.com/r/reinforcementlearning/comments/7kwcb5/need_help_how_to_
 - [Recap](https://rubenfiszel.github.io/posts/rl4j/2016-08-24-Reinforcement-Learning-and-DQN.html)
 
 #### CNN
-
-- parameter calculation : https://medium.com/@iamvarman/how-to-calculate-the-number-of-parameters-in-the-cnn-5bd55364d7ca#:~:text=To%20calculate%20it%2C%20we%20have,3%E2%80%931))%20%3D%2048
+- [parameter calculation](https://medium.com/@iamvarman/how-to-calculate-the-number-of-parameters-in-the-cnn-5bd55364d7ca#:~:text=To%20calculate%20it%2C%20we%20have,3%E2%80%931)
 - [output shape calculation](https://cs231n.github.io/convolutional-networks/#pool)
 
 ### API for Vrep
-
 [Legacy remote API](https://www.coppeliarobotics.com/helpFiles/en/legacyRemoteApiOverview.htm)
 
 [Remote API functions (Python)](https://www.coppeliarobotics.com/helpFiles/en/remoteApiFunctionsPython.htm)

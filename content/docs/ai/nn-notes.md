@@ -1,5 +1,5 @@
 ---
-title: "NNN notes"
+title: "NNN Learning Notes"
 date: 2020-12-07T08:55:38+08:00
 draft: false
 categories: AI
@@ -64,7 +64,8 @@ In any case, you will need to get started with reading up on machine learning. i
 
   - fresh hand following the tutorial, get cricked out because of ssh update after the buildung the instance. find solution [here](https://stackoverflow.com/questions/26193535/error-gcloud-compute-ssh-usr-bin-ssh-exited-with-return-code-255#:~:text=If%20you%20have%20installed%20gcloud%20without%20sudo%2C%20you%20can%20omit%20sudo%20.&text=255%20is%20the%20interactive%20ssh,executed%20in%20the%20ssh%20session.&text=Go%20to%20your%20google%20cloud,tab%20and%20click%20on%20edit.). MAKE SURE THE INSTANCE IS RUNNING!!!
 
-### [Michael Nielsen](http://michaelnielsen.org/) 's guide 
+### Michael Nielsen's guide 
+[Who is Michael Nielsen](http://michaelnielsen.org/))
 [Neural networks and deep learning](http://neuralnetworksanddeeplearning.com/chap1.html)
 
 - Tasks
