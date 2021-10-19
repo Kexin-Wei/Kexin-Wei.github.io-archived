@@ -7,7 +7,7 @@ Hi there, thanks to come to my page.
 
 Start to look around from the left sidebar if you like, 
 
-or just enjoy these beautiful photos I made :)
+or just enjoy these beautiful photos I took :)
 
 
 {{< figure src="/photos/window.jpeg" width="700px" >}}
