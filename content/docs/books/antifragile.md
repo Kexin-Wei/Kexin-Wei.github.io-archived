@@ -1,5 +1,5 @@
 ---
-title: "[Book]Antigragile"
+title: "Antigragile"
 date: 2019-01-15T21:55:38+08:00
 categories: Book
 lang: cn

@@ -1,12 +1,11 @@
 ---
-title: "[Book]The Crowd - A Study of the Popular Mind"
+title: "The Crowd - A Study of the Popular Mind"
 layout: post
 date: 2019-03-22T21:55:38+08:00
 categories: Book
 lang: cn
 tags:
   - psychology
-  - book
 ---
 A Chinese version book note, mostly cited directly from the book.
 

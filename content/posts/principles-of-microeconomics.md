@@ -1,10 +1,8 @@
 ---
 title: "Principles of Microeconomics"
 date: 2021-08-16T23:34:23+08:00
-draft: true
 categories: Book
 tags:
-  - book
   - economics
 ---
 
