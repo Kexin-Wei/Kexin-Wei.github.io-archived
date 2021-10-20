@@ -2,99 +2,89 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Welcome on 無極</title>
-    <link>https://example.com/</link>
+    <link>https://vacationwkx.github.io/</link>
     <description>Recent content in Welcome on 無極</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 18 Oct 2021 07:38:22 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://vacationwkx.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Self Driving Car</title>
-      <link>https://example.com/posts/self-driving-car/</link>
+      <link>https://vacationwkx.github.io/posts/self-driving-car/</link>
       <pubDate>Fri, 03 Sep 2021 22:44:41 +0800</pubDate>
       
-      <guid>https://example.com/posts/self-driving-car/</guid>
+      <guid>https://vacationwkx.github.io/posts/self-driving-car/</guid>
       <description>Intro #  Reading #  SAE J3016: Autonomous Car Level #  source 1
 all human adaptive cruise control, anti-lock braking system, electronic stabilty control hazard-minimizing longitudinal/ lateral control, emergency braking full autonomy under certain condition, but human take control when in danger full autonomy under certain condition, can replace human at some cases fully autonomous  Decision making #    On-board sensors
  LIDAR camera GPS/INS odometry(angle)    Hierachical Decision Making System     Route Planning</description>
     </item>
     
     <item>
-      <title>Test for Book</title>
-      <link>https://example.com/posts/test-for-book/</link>
-      <pubDate>Mon, 18 Oct 2021 07:38:22 +0800</pubDate>
-      
-      <guid>https://example.com/posts/test-for-book/</guid>
-      <description>hello im here</description>
-    </item>
-    
-    <item>
       <title>Principles of Microeconomics</title>
-      <link>https://example.com/docs/books/principles-of-microeconomics/</link>
+      <link>https://vacationwkx.github.io/posts/principles-of-microeconomics/</link>
       <pubDate>Mon, 16 Aug 2021 23:34:23 +0800</pubDate>
       
-      <guid>https://example.com/docs/books/principles-of-microeconomics/</guid>
+      <guid>https://vacationwkx.github.io/posts/principles-of-microeconomics/</guid>
       <description>Ch.1 Ten Principles of Economics #   Economists normally assume that people are rational. Rational people systemati- cally and purposefully do the best they can to achieve their objectives, given the available opportunities. Rational people know that decisions in life are rarely black and white but usu- ally involve shades of gray most policies aim either to enlarge the economic pie or to change how the pie is divided market failure to refer to a situation in which the market on its own fails to produce an efficient allocation of resources.</description>
     </item>
     
     <item>
       <title>Front End</title>
-      <link>https://example.com/docs/learn/front-end/</link>
+      <link>https://vacationwkx.github.io/docs/learn/front-end/</link>
       <pubDate>Thu, 08 Jul 2021 23:07:37 +0800</pubDate>
       
-      <guid>https://example.com/docs/learn/front-end/</guid>
+      <guid>https://vacationwkx.github.io/docs/learn/front-end/</guid>
       <description>Fundamental #   Web Architecture  Flow #   learn at developer-roadmap  Internet Node.js local server HTML&amp;amp; CSS &amp;amp; JS   cop with roadmap Firefox web develop  HTML &amp;amp; CSS #   code at freecodecamp  HTML CSS Java Project    JS #   Book: Eloquent JavaScript Book: You Don&amp;rsquo;t Know JS Yet  Reference #    W3C  </description>
     </item>
     
     <item>
       <title>AI</title>
-      <link>https://example.com/docs/learn/AI/</link>
+      <link>https://vacationwkx.github.io/docs/learn/AI/</link>
       <pubDate>Thu, 08 Jul 2021 17:38:25 +0800</pubDate>
       
-      <guid>https://example.com/docs/learn/AI/</guid>
+      <guid>https://vacationwkx.github.io/docs/learn/AI/</guid>
       <description>Reinforcement Learninng #   check probability is correct replay reuse, not always interacting, split into stages, or types  Computer Vision #   build 3d for object classification position for area + class label power up classification for multiple objects in one scene parameter tuning under reinforcement learning: link accuracy as reward, parameter as actions  Natural Language Processing #   from language to video building voice control to programming  voice control to logica, puls add or minus more complicated logic    Learning at Udemy S1 - Introduction S2 - Python Text Basics S3 - Natural Language Processing Basics S4 - &amp;hellip;</description>
     </item>
     
     <item>
-      <title>[Book]The Shortest History of Europe</title>
-      <link>https://example.com/docs/books/simple-europe-history/</link>
+      <title>The Shortest History of Europe</title>
+      <link>https://vacationwkx.github.io/docs/books/simple-europe-history/</link>
       <pubDate>Sun, 13 Jun 2021 23:25:31 +0800</pubDate>
       
-      <guid>https://example.com/docs/books/simple-europe-history/</guid>
+      <guid>https://vacationwkx.github.io/docs/books/simple-europe-history/</guid>
       <description>Ch.1 从希腊说起，讲到日耳曼&amp;ndash;古典时期到中世纪 #   日耳曼与希腊学术   Ch.5 有国王的民主，没国王的极权 #   我们现今的祈祷姿势是模仿世俗领主宣誓顺从的动作 军队 &amp;amp; 政治 &amp;amp; 礼仪   Ch.6 皇帝和教皇到底谁大？ #   罗马历史   Ch.7 语言：从两种变几十种 #   语言政策是最容易自取其败的公共政策。在某个地区压制本土语言以另一套取而代之简直难如登天，在古代，从来没人想过要这样做。 英国语言发展   Ch.8 平民百姓的生活面貌 #   你一定会喜欢这些平民百姓。他们很脏很臭，看来很不讨喜，因为他们一年到头无分寒暑地日夜操劳，形容憔悴、伤痕累累、营养不良、疾病缠身。那为什么你还会喜欢他们？因为他们的命运很容易追踪；百年复百年，他们做的都是同样的事，几乎所有的人都在耕种。 经济发展并不是罗马人推动革新的重点，以一套法典及一种效率卓越的军事组织将整个帝国维系于不坠，才是他们的治国精神所在。 谈天气不是为了没话找话，而是一群人在忧心自己的命运。 对当时的农民来说，他们是真的自给自足。在他们看来，政府和教会纯然只是负担，伸手要钱就和抢劫没什么两样。 休耕法   </description>
     </item>
     
     <item>
       <title>My First Book</title>
-      <link>https://example.com/docs/books/my-first-book/</link>
+      <link>https://vacationwkx.github.io/posts/my-first-book/</link>
       <pubDate>Sat, 01 May 2021 21:01:15 +0800</pubDate>
       
-      <guid>https://example.com/docs/books/my-first-book/</guid>
+      <guid>https://vacationwkx.github.io/posts/my-first-book/</guid>
       <description>榮譽與爸爸 #  納稅與點石成金 #  全球與英雄 #  祠堂與國家 #  </description>
     </item>
     
     <item>
       <title>Reinforcement Learning Notes</title>
-      <link>https://example.com/docs/ai/rl-notes/</link>
+      <link>https://vacationwkx.github.io/docs/ai/rl-notes/</link>
       <pubDate>Tue, 08 Dec 2020 08:47:38 +0800</pubDate>
       
-      <guid>https://example.com/docs/ai/rl-notes/</guid>
+      <guid>https://vacationwkx.github.io/docs/ai/rl-notes/</guid>
       <description>State Representation #   state vector ( obey Markov Property) observation →knowledge→ state  Partially observable Markov decision process &amp;ldquo;learning or classification algorithms to &amp;ldquo;learn&amp;rdquo; those states&amp;rdquo;  A simple linear regression A more complex non-linear function approximator, such as a multi-layer neural network.    The Atari DQN work by DeepMind team used a combination of feature engineering and relying on deep neural network to achieve its results.</description>
     </item>
     
     <item>
       <title>NNN Learning Notes</title>
-      <link>https://example.com/docs/ai/nn-notes/</link>
+      <link>https://vacationwkx.github.io/docs/ai/nn-notes/</link>
       <pubDate>Mon, 07 Dec 2020 08:55:38 +0800</pubDate>
       
-      <guid>https://example.com/docs/ai/nn-notes/</guid>
+      <guid>https://vacationwkx.github.io/docs/ai/nn-notes/</guid>
       <description>In any case, you will need to get started with reading up on machine learning. i would suggest you first briefly start with neural networks, followed by deep convolutional neural networks just to get used to the idea of deep learning and subsequently focus on picking up reinforcement learning. As this machine learning field heavily requires you to be able to do programming, I would suggest that you try to implement the models you learnt and get familiar with the various packages of pytorch, tensorflow, fastai.</description>
     </item>
     
     <item>
       <title>Use Jupiter Notebook by ssh</title>
-      <link>https://example.com/docs/achv/ssh-jupyter/</link>
+      <link>https://vacationwkx.github.io/docs/achv/ssh-jupyter/</link>
       <pubDate>Sat, 05 Dec 2020 22:18:34 +0800</pubDate>
       
-      <guid>https://example.com/docs/achv/ssh-jupyter/</guid>
+      <guid>https://vacationwkx.github.io/docs/achv/ssh-jupyter/</guid>
       <description>This blog shows up a way to ssh a ubuntu computer (as Jupyter Notebook server) from mac.
 Prerequirements #  Ubuntu / Remote Setting #  SSH Setting #  run the following command to enable the ssh on ubuntu(18.04)
 $ sudo apt-get install openssh-server Jupyter Notebook Setting(optional) #  using jupyter notebook may require the token or password, you may refer to the jupyter notebook official site for details.</description>
@@ -102,20 +92,20 @@ $ sudo apt-get install openssh-server Jupyter Notebook Setting(optional) #  usin
     
     <item>
       <title>epsilon-Greedy vs epsilon-Soft</title>
-      <link>https://example.com/docs/ai/rl-epsilon-policy/</link>
+      <link>https://vacationwkx.github.io/docs/ai/rl-epsilon-policy/</link>
       <pubDate>Mon, 30 Nov 2020 11:35:49 +0800</pubDate>
       
-      <guid>https://example.com/docs/ai/rl-epsilon-policy/</guid>
+      <guid>https://vacationwkx.github.io/docs/ai/rl-epsilon-policy/</guid>
       <description>In reinforcement learning, we can&amp;rsquo;t run infinite times to update the whole   \(Q\)  - value table or  \(V\)  - value table, efficient update choices must be made.
 Generally thinking, which  \(s\)  or  \((s,a)\)  has more opportunity to get  \(R\)  (high value), should be updated more to converge to the optimal. But stochastic exploring is also required to jump out of sub-optimal.</description>
     </item>
     
     <item>
       <title>Value Update Comparison among Basic RL</title>
-      <link>https://example.com/docs/ai/rl-update-equation/</link>
+      <link>https://vacationwkx.github.io/docs/ai/rl-update-equation/</link>
       <pubDate>Mon, 30 Nov 2020 11:13:00 +0800</pubDate>
       
-      <guid>https://example.com/docs/ai/rl-update-equation/</guid>
+      <guid>https://vacationwkx.github.io/docs/ai/rl-update-equation/</guid>
       <description>In this post, we will compare the state value update or state-action value update equation in fundamental rl methods.
 Monte Carlo #    \[V(s)\leftarrow V(s)&amp;#43;\frac{1}{N}\left[G_t-V(s)\right]\]  recall that, monte carlo update use average  \(V(s)=\sum G_t/N\)  . After simple transformation, we will have the error form equation:point_up_2:.
 and the corresponding state-action value update is:
@@ -124,10 +114,10 @@ and the corresponding state-action value update is:
     
     <item>
       <title>Monte Carlo vs TD vs Q-learning</title>
-      <link>https://example.com/docs/ai/rl-comparsion/</link>
+      <link>https://vacationwkx.github.io/docs/ai/rl-comparsion/</link>
       <pubDate>Sat, 28 Nov 2020 21:47:38 +0800</pubDate>
       
-      <guid>https://example.com/docs/ai/rl-comparsion/</guid>
+      <guid>https://vacationwkx.github.io/docs/ai/rl-comparsion/</guid>
       <description>Basic Recap #  Reinforcement learning bases on   \(V(s),Q(s,a),\pi(a|s),R,G\)  :
    \(V(s)\)  : state value, often used in model-based method;
    \(Q(s,a)\)  : state-action value, often used in model-free method;
@@ -136,40 +126,40 @@ and the corresponding state-action value update is:
     
     <item>
       <title>Rusty lake - Game Timeline &amp; Secrets</title>
-      <link>https://example.com/docs/achv/rustylake/</link>
+      <link>https://vacationwkx.github.io/docs/achv/rustylake/</link>
       <pubDate>Thu, 29 Oct 2020 10:25:43 +0800</pubDate>
       
-      <guid>https://example.com/docs/achv/rustylake/</guid>
+      <guid>https://vacationwkx.github.io/docs/achv/rustylake/</guid>
       <description>Rusty Lake #  Rusty lake is a thrilling game series with many secrets in them. Animal characters, shadow person, religious elements, murders&amp;hellip; A thriller is too less to cover the topic of rusty lake, and what I am intent to do, is to reveal the prossible secrest hidden behind the screen&amp;hellip;
  Cubes Collection #  The Lake #   The lake&amp;rsquo;s goal is to find the 5 objects:</description>
     </item>
     
     <item>
       <title>New on Hugo🤺</title>
-      <link>https://example.com/docs/achv/new-on-hugo/</link>
+      <link>https://vacationwkx.github.io/docs/achv/new-on-hugo/</link>
       <pubDate>Thu, 22 Oct 2020 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/docs/achv/new-on-hugo/</guid>
+      <guid>https://vacationwkx.github.io/docs/achv/new-on-hugo/</guid>
       <description>Updated on 2021.09.16
 My Steps to HUGO #   Follow the official website basic installation; Find a great (better stable) theme at official theme library Config the config.yml or config.toml by instruction from the theme producer.  something you may want to pay attention to #  images #  In hugos, the post use image from static folder, you can insert a image in a markdown method:</description>
     </item>
     
     <item>
       <title>Note Learn Jekyll</title>
-      <link>https://example.com/docs/achv/Learn-Jekyll/</link>
+      <link>https://vacationwkx.github.io/docs/achv/Learn-Jekyll/</link>
       <pubDate>Wed, 01 Apr 2020 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/docs/achv/Learn-Jekyll/</guid>
+      <guid>https://vacationwkx.github.io/docs/achv/Learn-Jekyll/</guid>
       <description>Note of learning creating Blog in Jekyll
 Guide / Tutorial #  For Jekyll #    Quick Start - Official Tutorial Official one is the most basis and reliabel.  What is Jekyll? and How it works? - Jekyll Bootstrap Better first go though the official one to understand what is Variables Front Matter .. Sinple guides of jekyll from CarlBoettiger Pure Guide, what do first, what next. Fast guide for those, who know html CloudCannon  For HTML #   No Base No Building: What is HTML / HTML5 und CSS Basic Knowledge in Mozilla Basic Example &amp;amp; Code Training HTML - W3School and JS -W3School  Front Matter #  --- title: Antigragile - Book Review layout: post author: Vac categories: [Book] tags: [Probability] --- Front Matter default #  default your font matters in _config.</description>
     </item>
     
     <item>
       <title>Thoughts in 2019</title>
-      <link>https://example.com/docs/diary_thoughts/Thoughts-In-2019/</link>
+      <link>https://vacationwkx.github.io/docs/diary_thoughts/Thoughts-In-2019/</link>
       <pubDate>Wed, 17 Apr 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/docs/diary_thoughts/Thoughts-In-2019/</guid>
+      <guid>https://vacationwkx.github.io/docs/diary_thoughts/Thoughts-In-2019/</guid>
       <description>Personal daily thinking splitted by categories.
 Thoughts this year #  懶社會 #  2019.4.13 #  社會價值觀的單壹變態到理所當然了，錢能做到壹切，沒有錢什麽都困難重重。懶勁和怕麻煩如此，不惜不去反思這樣的道路是否可行合理。人的因素被大大弱化，只是眾多經驗的合集，固然各個人的不同努力被忽視只能得出錢的重要性。
 2019.4.7 #  極端主義、完美主義和懶都有聯系，不願去接受世界上的多樣和復雜化，費腦子。和以神經網絡擼所有模型沒有差別，與不想思考更多的可能性壹樣，與人物單壹臉譜化類似
@@ -187,11 +177,11 @@ Thoughts this year #  懶社會 #  2019.4.13 #  社會價值觀的單壹變態�
     </item>
     
     <item>
-      <title>[Book]The Crowd - A Study of the Popular Mind</title>
-      <link>https://example.com/docs/books/The-Crowd/</link>
+      <title>The Crowd - A Study of the Popular Mind</title>
+      <link>https://vacationwkx.github.io/docs/books/The-Crowd/</link>
       <pubDate>Fri, 22 Mar 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/docs/books/The-Crowd/</guid>
+      <guid>https://vacationwkx.github.io/docs/books/The-Crowd/</guid>
       <description>A Chinese version book note, mostly cited directly from the book.
   群體只有很普通的品質。
 群體只有很普通的智慧。
@@ -221,10 +211,10 @@ Thoughts this year #  懶社會 #  2019.4.13 #  社會價值觀的單壹變態�
     
     <item>
       <title>Personal GRE Summary</title>
-      <link>https://example.com/docs/achv/GRE/</link>
+      <link>https://vacationwkx.github.io/docs/achv/GRE/</link>
       <pubDate>Tue, 12 Mar 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/docs/achv/GRE/</guid>
+      <guid>https://vacationwkx.github.io/docs/achv/GRE/</guid>
       <description>personal experience of gre.
 Verbal Reasoning #  Good video suggested from Youtube: GRE Verbal Section Walkthrough: How I take the test (Part 1)
    等號 強詞 逆向思維 浮動思維  Verbal Time Arrangement #   word,2 min short essay :1.5:1 middle essay: 2.5:1 long essay: 4.5:1  閱讀 #    內容
@@ -232,11 +222,11 @@ Verbal Reasoning #  Good video suggested from Youtube: GRE Verbal Section Walkth
     </item>
     
     <item>
-      <title>[Book]Antigragile</title>
-      <link>https://example.com/docs/books/antifragile/</link>
+      <title>Antigragile</title>
+      <link>https://vacationwkx.github.io/docs/books/antifragile/</link>
       <pubDate>Tue, 15 Jan 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/docs/books/antifragile/</guid>
+      <guid>https://vacationwkx.github.io/docs/books/antifragile/</guid>
       <description>A chinese vision book note.
  Foreword #    從隨機事件（或壹定沖擊）中獲得的有利結果大於不利結果的就是反脆弱的，反之則是脆弱的
   人造的復雜系統往往會引發失控的連鎖反應，它會減少甚至消除可預測性，並導致特大事件。因此，現代世界的技術性知識可能會不斷地增加，但矛盾的是，它也會使事情變得更加不可預測。現在，由於人為因素的增加，以及我們逐漸地遠離了先祖和自然的模式，加上林林總總的設計復雜性削弱了強韌性，以至於“黑天鵝”的影響在進壹步增加。此外，我們成為壹種新型疾病的受害者，即新事物狂熱癥，它使我們建立起面對“黑天鵝”事件時會表現得極其脆弱的系統，卻自以為實現了所謂的“進步”。
@@ -258,10 +248,10 @@ Verbal Reasoning #  Good video suggested from Youtube: GRE Verbal Section Walkth
     
     <item>
       <title>2017-12-01(2)-Not a serious Diary</title>
-      <link>https://example.com/docs/diary_thoughts/tour2/</link>
+      <link>https://vacationwkx.github.io/docs/diary_thoughts/tour2/</link>
       <pubDate>Sat, 02 Dec 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/docs/diary_thoughts/tour2/</guid>
+      <guid>https://vacationwkx.github.io/docs/diary_thoughts/tour2/</guid>
       <description>接 游记 上
 青旅有常住客，人很和善，本以為都是如我壹般的，其他人似乎都是結伴而行，有的看著比我小，但似乎也是大學生，但也有十分社會。各位都是夜貓子，十二點都還開著燈，床簾惘然虛設。我對光可謂十分敏，有點過強，就不要想睡了。無奈掙紮到1、2點，爬起來關了大燈，才睡去。要知道這個時候已經設置好第二天的起床鬧鐘了，還能睡3個半小時吧。睡前搜索了看日出的景點，講了好幾個，觀景臺和大石頭，還有若幹等等，兩個月過去實在是記不清了。初步定在某壹個近壹點的地方，看了看地點，騎自行車過去便趕得上，畢竟前壹晚騎了不下4次，周圍早已輕車熟路。
 第二天鬧鐘壹響就起，旅店內壹人沒有，就我壹人。說起來有個尷尬的事，我忘了帶牙膏，只有牙刷。前壹晚回來的晚，沒處去買，早上起得又早，店也沒開門，就幹刷牙。長教訓了！
@@ -281,10 +271,10 @@ Verbal Reasoning #  Good video suggested from Youtube: GRE Verbal Section Walkth
     
     <item>
       <title>2017-12-01(1)-Not a serious Diary</title>
-      <link>https://example.com/docs/diary_thoughts/tour/</link>
+      <link>https://vacationwkx.github.io/docs/diary_thoughts/tour/</link>
       <pubDate>Fri, 01 Dec 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/docs/diary_thoughts/tour/</guid>
+      <guid>https://vacationwkx.github.io/docs/diary_thoughts/tour/</guid>
       <description>游记 下
  今日正經地寫壹篇遊記，紀念這次突然起意卻又收獲頗豐的匆匆旅行。
  先列舉壹些第壹次：
@@ -314,48 +304,48 @@ Verbal Reasoning #  Good video suggested from Youtube: GRE Verbal Section Walkth
     
     <item>
       <title>Der Tod eines Mannen - ChenShifeng</title>
-      <link>https://example.com/docs/diary_thoughts/CSF/</link>
+      <link>https://vacationwkx.github.io/docs/diary_thoughts/CSF/</link>
       <pubDate>Sat, 14 Oct 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/docs/diary_thoughts/CSF/</guid>
+      <guid>https://vacationwkx.github.io/docs/diary_thoughts/CSF/</guid>
       <description>Wir Alle Sind Naiv #  2017.11.26
 Am 3. November 2016 war Jiangge, die 24 Jahre alt war und derzeit in Japan studierte, von Chen Shifeng umgebracht worden (ermordet). Die offiziele Autopsie von Jiangge behaupte, dass sie 19 mals vom Mörder zugestoßen habe, und die Wunden 10 cm seien. Der Verdächtiger Chen Shifeng ist der Ex-Freund von Jiangges Mitwohnerin Liu Xing. Liu scheint, über den Tod ihrer besten Freundin etwas Unechtes(tatsächlich/wirklich/wahr/waschecht) zu erklären, um eigenen Pflicht zu vermeiden, das auch den Ärger der Netizen erzeugt hat (auslösen/erregen/erwecken/wachrufen).</description>
     </item>
     
     <item>
       <title>Der Saenger</title>
-      <link>https://example.com/docs/diary_thoughts/saenger/</link>
+      <link>https://vacationwkx.github.io/docs/diary_thoughts/saenger/</link>
       <pubDate>Thu, 14 Sep 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/docs/diary_thoughts/saenger/</guid>
+      <guid>https://vacationwkx.github.io/docs/diary_thoughts/saenger/</guid>
       <description>Idol Xue #  Was ist die Pflicht des Sängers? Natürlich, Singen. Aber im letzten Tage ist ein komisches Ereignis passiert. Der Sänger in China, Xue Zhiqian, heiratete mit seiner Ex-Frau, was ein vollkommenes Ende sein soll. Aber er hat danach zwei Tadel bekommen, die Koinzidenz zu sein scheinen. Diese drei Bomben herrscht Weibo, damit alle sich daüber unterhalten, sondern über seine Werke.
 What is the duty of a singer? Simply, sing.</description>
     </item>
     
     <item>
       <title>Archive</title>
-      <link>https://example.com/archives/</link>
+      <link>https://vacationwkx.github.io/archives/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/archives/</guid>
+      <guid>https://vacationwkx.github.io/archives/</guid>
       <description>archives</description>
     </item>
     
     <item>
       <title>Search</title>
-      <link>https://example.com/search/</link>
+      <link>https://vacationwkx.github.io/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/search/</guid>
+      <guid>https://vacationwkx.github.io/search/</guid>
       <description>search</description>
     </item>
     
     <item>
       <title>Tags</title>
-      <link>https://example.com/tags/</link>
+      <link>https://vacationwkx.github.io/tags/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/</guid>
+      <guid>https://vacationwkx.github.io/tags/</guid>
       <description>tags</description>
     </item>
     

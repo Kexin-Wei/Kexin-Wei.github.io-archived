@@ -2,241 +2,232 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 無極</title>
-    <link>https://example.com/tags/</link>
+    <link>https://vacationwkx.github.io/tags/</link>
     <description>Recent content in Tags on 無極</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 03 Sep 2021 22:44:41 +0800</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Sep 2021 22:44:41 +0800</lastBuildDate><atom:link href="https://vacationwkx.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>computer vision</title>
-      <link>https://example.com/tags/computer-vision/</link>
+      <link>https://vacationwkx.github.io/tags/computer-vision/</link>
       <pubDate>Fri, 03 Sep 2021 22:44:41 +0800</pubDate>
       
-      <guid>https://example.com/tags/computer-vision/</guid>
+      <guid>https://vacationwkx.github.io/tags/computer-vision/</guid>
       <description></description>
     </item>
     
     <item>
       <title>self driving car</title>
-      <link>https://example.com/tags/self-driving-car/</link>
+      <link>https://vacationwkx.github.io/tags/self-driving-car/</link>
       <pubDate>Fri, 03 Sep 2021 22:44:41 +0800</pubDate>
       
-      <guid>https://example.com/tags/self-driving-car/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>book</title>
-      <link>https://example.com/tags/book/</link>
-      <pubDate>Mon, 16 Aug 2021 23:34:23 +0800</pubDate>
-      
-      <guid>https://example.com/tags/book/</guid>
+      <guid>https://vacationwkx.github.io/tags/self-driving-car/</guid>
       <description></description>
     </item>
     
     <item>
       <title>economics</title>
-      <link>https://example.com/tags/economics/</link>
+      <link>https://vacationwkx.github.io/tags/economics/</link>
       <pubDate>Mon, 16 Aug 2021 23:34:23 +0800</pubDate>
       
-      <guid>https://example.com/tags/economics/</guid>
+      <guid>https://vacationwkx.github.io/tags/economics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>front end</title>
-      <link>https://example.com/tags/front-end/</link>
+      <link>https://vacationwkx.github.io/tags/front-end/</link>
       <pubDate>Thu, 08 Jul 2021 23:07:37 +0800</pubDate>
       
-      <guid>https://example.com/tags/front-end/</guid>
+      <guid>https://vacationwkx.github.io/tags/front-end/</guid>
       <description></description>
     </item>
     
     <item>
       <title>machine-learning</title>
-      <link>https://example.com/tags/machine-learning/</link>
+      <link>https://vacationwkx.github.io/tags/machine-learning/</link>
       <pubDate>Thu, 08 Jul 2021 17:38:25 +0800</pubDate>
       
-      <guid>https://example.com/tags/machine-learning/</guid>
+      <guid>https://vacationwkx.github.io/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>history</title>
-      <link>https://example.com/tags/history/</link>
+      <link>https://vacationwkx.github.io/tags/history/</link>
       <pubDate>Sun, 13 Jun 2021 23:25:31 +0800</pubDate>
       
-      <guid>https://example.com/tags/history/</guid>
+      <guid>https://vacationwkx.github.io/tags/history/</guid>
       <description></description>
     </item>
     
     <item>
       <title>reinforcement learning</title>
-      <link>https://example.com/tags/reinforcement-learning/</link>
+      <link>https://vacationwkx.github.io/tags/reinforcement-learning/</link>
       <pubDate>Tue, 08 Dec 2020 08:47:38 +0800</pubDate>
       
-      <guid>https://example.com/tags/reinforcement-learning/</guid>
+      <guid>https://vacationwkx.github.io/tags/reinforcement-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jupyter</title>
-      <link>https://example.com/tags/jupyter/</link>
+      <link>https://vacationwkx.github.io/tags/jupyter/</link>
       <pubDate>Sat, 05 Dec 2020 22:18:34 +0800</pubDate>
       
-      <guid>https://example.com/tags/jupyter/</guid>
+      <guid>https://vacationwkx.github.io/tags/jupyter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
-      <link>https://example.com/tags/linux/</link>
+      <link>https://vacationwkx.github.io/tags/linux/</link>
       <pubDate>Sat, 05 Dec 2020 22:18:34 +0800</pubDate>
       
-      <guid>https://example.com/tags/linux/</guid>
+      <guid>https://vacationwkx.github.io/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ssh</title>
-      <link>https://example.com/tags/ssh/</link>
+      <link>https://vacationwkx.github.io/tags/ssh/</link>
       <pubDate>Sat, 05 Dec 2020 22:18:34 +0800</pubDate>
       
-      <guid>https://example.com/tags/ssh/</guid>
+      <guid>https://vacationwkx.github.io/tags/ssh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rusty lake</title>
-      <link>https://example.com/tags/rusty-lake/</link>
+      <link>https://vacationwkx.github.io/tags/rusty-lake/</link>
       <pubDate>Thu, 29 Oct 2020 10:25:43 +0800</pubDate>
       
-      <guid>https://example.com/tags/rusty-lake/</guid>
+      <guid>https://vacationwkx.github.io/tags/rusty-lake/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blog</title>
-      <link>https://example.com/tags/blog/</link>
+      <link>https://vacationwkx.github.io/tags/blog/</link>
       <pubDate>Thu, 22 Oct 2020 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/tags/blog/</guid>
+      <guid>https://vacationwkx.github.io/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>https://example.com/tags/hugo/</link>
+      <link>https://vacationwkx.github.io/tags/hugo/</link>
       <pubDate>Thu, 22 Oct 2020 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/tags/hugo/</guid>
+      <guid>https://vacationwkx.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jekyll</title>
-      <link>https://example.com/tags/jekyll/</link>
+      <link>https://vacationwkx.github.io/tags/jekyll/</link>
       <pubDate>Wed, 01 Apr 2020 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/tags/jekyll/</guid>
+      <guid>https://vacationwkx.github.io/tags/jekyll/</guid>
       <description></description>
     </item>
     
     <item>
       <title>society</title>
-      <link>https://example.com/tags/society/</link>
+      <link>https://vacationwkx.github.io/tags/society/</link>
       <pubDate>Wed, 17 Apr 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/tags/society/</guid>
+      <guid>https://vacationwkx.github.io/tags/society/</guid>
       <description></description>
     </item>
     
     <item>
       <title>thinkofchaos</title>
-      <link>https://example.com/tags/thinkofchaos/</link>
+      <link>https://vacationwkx.github.io/tags/thinkofchaos/</link>
       <pubDate>Wed, 17 Apr 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/tags/thinkofchaos/</guid>
+      <guid>https://vacationwkx.github.io/tags/thinkofchaos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>psychology</title>
-      <link>https://example.com/tags/psychology/</link>
+      <link>https://vacationwkx.github.io/tags/psychology/</link>
       <pubDate>Fri, 22 Mar 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/tags/psychology/</guid>
+      <guid>https://vacationwkx.github.io/tags/psychology/</guid>
       <description></description>
     </item>
     
     <item>
       <title>en</title>
-      <link>https://example.com/tags/en/</link>
+      <link>https://vacationwkx.github.io/tags/en/</link>
       <pubDate>Tue, 12 Mar 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/tags/en/</guid>
+      <guid>https://vacationwkx.github.io/tags/en/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Probability</title>
-      <link>https://example.com/tags/Probability/</link>
+      <link>https://vacationwkx.github.io/tags/Probability/</link>
       <pubDate>Tue, 15 Jan 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/tags/Probability/</guid>
+      <guid>https://vacationwkx.github.io/tags/Probability/</guid>
       <description></description>
     </item>
     
     <item>
       <title>1201</title>
-      <link>https://example.com/tags/1201/</link>
+      <link>https://vacationwkx.github.io/tags/1201/</link>
       <pubDate>Sat, 02 Dec 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/tags/1201/</guid>
+      <guid>https://vacationwkx.github.io/tags/1201/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017</title>
-      <link>https://example.com/tags/2017/</link>
+      <link>https://vacationwkx.github.io/tags/2017/</link>
       <pubDate>Sat, 02 Dec 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/tags/2017/</guid>
+      <guid>https://vacationwkx.github.io/tags/2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>trip</title>
-      <link>https://example.com/tags/trip/</link>
+      <link>https://vacationwkx.github.io/tags/trip/</link>
       <pubDate>Sat, 02 Dec 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/tags/trip/</guid>
+      <guid>https://vacationwkx.github.io/tags/trip/</guid>
       <description></description>
     </item>
     
     <item>
       <title>de</title>
-      <link>https://example.com/tags/de/</link>
+      <link>https://vacationwkx.github.io/tags/de/</link>
       <pubDate>Sat, 14 Oct 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/tags/de/</guid>
+      <guid>https://vacationwkx.github.io/tags/de/</guid>
       <description></description>
     </item>
     
     <item>
       <title>deutsch</title>
-      <link>https://example.com/tags/deutsch/</link>
+      <link>https://vacationwkx.github.io/tags/deutsch/</link>
       <pubDate>Sat, 14 Oct 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/tags/deutsch/</guid>
+      <guid>https://vacationwkx.github.io/tags/deutsch/</guid>
       <description></description>
     </item>
     
     <item>
       <title>learning...</title>
-      <link>https://example.com/tags/learning.../</link>
+      <link>https://vacationwkx.github.io/tags/learning.../</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/learning.../</guid>
+      <guid>https://vacationwkx.github.io/tags/learning.../</guid>
       <description></description>
     </item>
     

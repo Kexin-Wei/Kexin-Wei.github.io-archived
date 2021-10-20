@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IT on 無極</title>
-    <link>https://example.com/categories/IT/</link>
+    <link>https://vacationwkx.github.io/categories/IT/</link>
     <description>Recent content in IT on 無極</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 08 Jul 2021 23:07:37 +0800</lastBuildDate><atom:link href="https://example.com/categories/IT/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Jul 2021 23:07:37 +0800</lastBuildDate><atom:link href="https://vacationwkx.github.io/categories/IT/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Front End</title>
-      <link>https://example.com/docs/learn/front-end/</link>
+      <link>https://vacationwkx.github.io/docs/learn/front-end/</link>
       <pubDate>Thu, 08 Jul 2021 23:07:37 +0800</pubDate>
       
-      <guid>https://example.com/docs/learn/front-end/</guid>
+      <guid>https://vacationwkx.github.io/docs/learn/front-end/</guid>
       <description>Fundamental #   Web Architecture  Flow #   learn at developer-roadmap  Internet Node.js local server HTML&amp;amp; CSS &amp;amp; JS   cop with roadmap Firefox web develop  HTML &amp;amp; CSS #   code at freecodecamp  HTML CSS Java Project    JS #   Book: Eloquent JavaScript Book: You Don&amp;rsquo;t Know JS Yet  Reference #    W3C  </description>
     </item>
     
     <item>
       <title>Use Jupiter Notebook by ssh</title>
-      <link>https://example.com/docs/achv/ssh-jupyter/</link>
+      <link>https://vacationwkx.github.io/docs/achv/ssh-jupyter/</link>
       <pubDate>Sat, 05 Dec 2020 22:18:34 +0800</pubDate>
       
-      <guid>https://example.com/docs/achv/ssh-jupyter/</guid>
+      <guid>https://vacationwkx.github.io/docs/achv/ssh-jupyter/</guid>
       <description>This blog shows up a way to ssh a ubuntu computer (as Jupyter Notebook server) from mac.
 Prerequirements #  Ubuntu / Remote Setting #  SSH Setting #  run the following command to enable the ssh on ubuntu(18.04)
 $ sudo apt-get install openssh-server Jupyter Notebook Setting(optional) #  using jupyter notebook may require the token or password, you may refer to the jupyter notebook official site for details.</description>
@@ -28,20 +28,20 @@ $ sudo apt-get install openssh-server Jupyter Notebook Setting(optional) #  usin
     
     <item>
       <title>New on Hugo🤺</title>
-      <link>https://example.com/docs/achv/new-on-hugo/</link>
+      <link>https://vacationwkx.github.io/docs/achv/new-on-hugo/</link>
       <pubDate>Thu, 22 Oct 2020 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/docs/achv/new-on-hugo/</guid>
+      <guid>https://vacationwkx.github.io/docs/achv/new-on-hugo/</guid>
       <description>Updated on 2021.09.16
 My Steps to HUGO #   Follow the official website basic installation; Find a great (better stable) theme at official theme library Config the config.yml or config.toml by instruction from the theme producer.  something you may want to pay attention to #  images #  In hugos, the post use image from static folder, you can insert a image in a markdown method:</description>
     </item>
     
     <item>
       <title>Note Learn Jekyll</title>
-      <link>https://example.com/docs/achv/Learn-Jekyll/</link>
+      <link>https://vacationwkx.github.io/docs/achv/Learn-Jekyll/</link>
       <pubDate>Wed, 01 Apr 2020 21:55:38 +0800</pubDate>
       
-      <guid>https://example.com/docs/achv/Learn-Jekyll/</guid>
+      <guid>https://vacationwkx.github.io/docs/achv/Learn-Jekyll/</guid>
       <description>Note of learning creating Blog in Jekyll
 Guide / Tutorial #  For Jekyll #    Quick Start - Official Tutorial Official one is the most basis and reliabel.  What is Jekyll? and How it works? - Jekyll Bootstrap Better first go though the official one to understand what is Variables Front Matter .. Sinple guides of jekyll from CarlBoettiger Pure Guide, what do first, what next. Fast guide for those, who know html CloudCannon  For HTML #   No Base No Building: What is HTML / HTML5 und CSS Basic Knowledge in Mozilla Basic Example &amp;amp; Code Training HTML - W3School and JS -W3School  Front Matter #  --- title: Antigragile - Book Review layout: post author: Vac categories: [Book] tags: [Probability] --- Front Matter default #  default your font matters in _config.</description>
     </item>

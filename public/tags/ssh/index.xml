@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ssh on 無極</title>
-    <link>https://example.com/tags/ssh/</link>
+    <link>https://vacationwkx.github.io/tags/ssh/</link>
     <description>Recent content in ssh on 無極</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 05 Dec 2020 22:18:34 +0800</lastBuildDate><atom:link href="https://example.com/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Dec 2020 22:18:34 +0800</lastBuildDate><atom:link href="https://vacationwkx.github.io/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Use Jupiter Notebook by ssh</title>
-      <link>https://example.com/docs/achv/ssh-jupyter/</link>
+      <link>https://vacationwkx.github.io/docs/achv/ssh-jupyter/</link>
       <pubDate>Sat, 05 Dec 2020 22:18:34 +0800</pubDate>
       
-      <guid>https://example.com/docs/achv/ssh-jupyter/</guid>
+      <guid>https://vacationwkx.github.io/docs/achv/ssh-jupyter/</guid>
       <description>This blog shows up a way to ssh a ubuntu computer (as Jupyter Notebook server) from mac.
 Prerequirements #  Ubuntu / Remote Setting #  SSH Setting #  run the following command to enable the ssh on ubuntu(18.04)
 $ sudo apt-get install openssh-server Jupyter Notebook Setting(optional) #  using jupyter notebook may require the token or password, you may refer to the jupyter notebook official site for details.</description>
