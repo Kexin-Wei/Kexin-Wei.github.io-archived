@@ -7,7 +7,6 @@ categories: AI
 tags:
   - self driving car
   - computer vision
-  - learning...
 # bookComments: false
 ---
 
