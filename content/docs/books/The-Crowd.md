@@ -7,7 +7,6 @@ lang: cn
 tags:
   - psychology
 ---
-A Chinese version book note, mostly cited directly from the book.
 
 - 群體只有很普通的品質。
 

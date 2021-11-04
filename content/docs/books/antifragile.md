@@ -6,7 +6,6 @@ lang: cn
 tags: 
   - Probability
 ---
-> A chinese vision book note.
 
 # Foreword
 

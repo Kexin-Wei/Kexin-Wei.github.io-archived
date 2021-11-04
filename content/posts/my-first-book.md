@@ -6,10 +6,10 @@ categories: Writing
 description: "Temporal chapter name in chinese"
 ---
 
-## 榮譽與爸爸
+## 爸爸请给我荣耀
 
-## 納稅與點石成金
+## 收集金来学點石成金的魔法
 
-## 全球與英雄
+## 英雄拯救人类
 
-## 祠堂與國家
+## 在祠堂给國家刻一个碑
