@@ -34,9 +34,22 @@ tags:
 > Unemployment
 
 # Ch.2 Thinking like an economist
-
+- Economists, like astronomers and evolutionary biologists, usually have to make do with whatever data the world happens to give them.
+- Economists make assumptions for the same reason: Assumptions can simplify the complex world and make it easier to understand.
 - The Circular Flow 
   ![The Circular Flow](/book_pic/me_2_circular_flow.png)
+  - Two decision makers: firms and households
+  - Firms
+    - need input to produce goods: **factor of production**
+  - Households
+    - prodive **factor of production**: labor, land, capital
+    - consume the serivice and products from **firms**
+  - Interaction market
+    - market for goods and services
+    - market for the factors of production
 - The Production Possible Frontier ![The Production Possible Frontier](/book_pic/me_2_production_possibilities_frontier.png)
+  - Opportunity cost: The production possibilities frontier shows the opportunity cost of one good as measured in terms of the other good.
 - **Microeconomics** is the study of how households and firms make decisions and how they interact in specific markets.
 - **Macroeconomics** is the study of economy-wide phenomena. 
+
+2-2
