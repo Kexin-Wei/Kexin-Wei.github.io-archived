@@ -2,232 +2,241 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 無極</title>
-    <link>https://vacationwkx.github.io/tags/</link>
+    <link>https://kexinwei.org/tags/</link>
     <description>Recent content in Tags on 無極</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 03 Sep 2021 22:44:41 +0800</lastBuildDate><atom:link href="https://vacationwkx.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Nov 2021 23:07:37 +0800</lastBuildDate><atom:link href="https://kexinwei.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>computer vision</title>
-      <link>https://vacationwkx.github.io/tags/computer-vision/</link>
-      <pubDate>Fri, 03 Sep 2021 22:44:41 +0800</pubDate>
+      <title>python</title>
+      <link>https://kexinwei.org/tags/python/</link>
+      <pubDate>Thu, 11 Nov 2021 23:07:37 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/computer-vision/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>self driving car</title>
-      <link>https://vacationwkx.github.io/tags/self-driving-car/</link>
-      <pubDate>Fri, 03 Sep 2021 22:44:41 +0800</pubDate>
-      
-      <guid>https://vacationwkx.github.io/tags/self-driving-car/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>economics</title>
-      <link>https://vacationwkx.github.io/tags/economics/</link>
-      <pubDate>Mon, 16 Aug 2021 23:34:23 +0800</pubDate>
-      
-      <guid>https://vacationwkx.github.io/tags/economics/</guid>
+      <guid>https://kexinwei.org/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>psychology</title>
-      <link>https://vacationwkx.github.io/tags/psychology/</link>
+      <link>https://kexinwei.org/tags/psychology/</link>
+      <pubDate>Wed, 03 Nov 2021 23:34:23 +0800</pubDate>
+      
+      <guid>https://kexinwei.org/tags/psychology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>computer vision</title>
+      <link>https://kexinwei.org/tags/computer-vision/</link>
+      <pubDate>Fri, 03 Sep 2021 22:44:41 +0800</pubDate>
+      
+      <guid>https://kexinwei.org/tags/computer-vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>self driving car</title>
+      <link>https://kexinwei.org/tags/self-driving-car/</link>
+      <pubDate>Fri, 03 Sep 2021 22:44:41 +0800</pubDate>
+      
+      <guid>https://kexinwei.org/tags/self-driving-car/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>economics</title>
+      <link>https://kexinwei.org/tags/economics/</link>
       <pubDate>Mon, 16 Aug 2021 23:34:23 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/psychology/</guid>
+      <guid>https://kexinwei.org/tags/economics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>front end</title>
-      <link>https://vacationwkx.github.io/tags/front-end/</link>
+      <link>https://kexinwei.org/tags/front-end/</link>
       <pubDate>Thu, 08 Jul 2021 23:07:37 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/front-end/</guid>
+      <guid>https://kexinwei.org/tags/front-end/</guid>
       <description></description>
     </item>
     
     <item>
       <title>machine-learning</title>
-      <link>https://vacationwkx.github.io/tags/machine-learning/</link>
+      <link>https://kexinwei.org/tags/machine-learning/</link>
       <pubDate>Thu, 08 Jul 2021 17:38:25 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/machine-learning/</guid>
+      <guid>https://kexinwei.org/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>history</title>
-      <link>https://vacationwkx.github.io/tags/history/</link>
+      <link>https://kexinwei.org/tags/history/</link>
       <pubDate>Sun, 13 Jun 2021 23:25:31 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/history/</guid>
+      <guid>https://kexinwei.org/tags/history/</guid>
       <description></description>
     </item>
     
     <item>
       <title>reinforcement learning</title>
-      <link>https://vacationwkx.github.io/tags/reinforcement-learning/</link>
+      <link>https://kexinwei.org/tags/reinforcement-learning/</link>
       <pubDate>Tue, 08 Dec 2020 08:47:38 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/reinforcement-learning/</guid>
+      <guid>https://kexinwei.org/tags/reinforcement-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jupyter</title>
-      <link>https://vacationwkx.github.io/tags/jupyter/</link>
+      <link>https://kexinwei.org/tags/jupyter/</link>
       <pubDate>Sat, 05 Dec 2020 22:18:34 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/jupyter/</guid>
+      <guid>https://kexinwei.org/tags/jupyter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
-      <link>https://vacationwkx.github.io/tags/linux/</link>
+      <link>https://kexinwei.org/tags/linux/</link>
       <pubDate>Sat, 05 Dec 2020 22:18:34 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/linux/</guid>
+      <guid>https://kexinwei.org/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ssh</title>
-      <link>https://vacationwkx.github.io/tags/ssh/</link>
+      <link>https://kexinwei.org/tags/ssh/</link>
       <pubDate>Sat, 05 Dec 2020 22:18:34 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/ssh/</guid>
+      <guid>https://kexinwei.org/tags/ssh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rusty lake</title>
-      <link>https://vacationwkx.github.io/tags/rusty-lake/</link>
+      <link>https://kexinwei.org/tags/rusty-lake/</link>
       <pubDate>Thu, 29 Oct 2020 10:25:43 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/rusty-lake/</guid>
+      <guid>https://kexinwei.org/tags/rusty-lake/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blog</title>
-      <link>https://vacationwkx.github.io/tags/blog/</link>
+      <link>https://kexinwei.org/tags/blog/</link>
       <pubDate>Thu, 22 Oct 2020 21:55:38 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/blog/</guid>
+      <guid>https://kexinwei.org/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>https://vacationwkx.github.io/tags/hugo/</link>
+      <link>https://kexinwei.org/tags/hugo/</link>
       <pubDate>Thu, 22 Oct 2020 21:55:38 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/hugo/</guid>
+      <guid>https://kexinwei.org/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jekyll</title>
-      <link>https://vacationwkx.github.io/tags/jekyll/</link>
+      <link>https://kexinwei.org/tags/jekyll/</link>
       <pubDate>Wed, 01 Apr 2020 21:55:38 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/jekyll/</guid>
+      <guid>https://kexinwei.org/tags/jekyll/</guid>
       <description></description>
     </item>
     
     <item>
       <title>society</title>
-      <link>https://vacationwkx.github.io/tags/society/</link>
+      <link>https://kexinwei.org/tags/society/</link>
       <pubDate>Wed, 17 Apr 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/society/</guid>
+      <guid>https://kexinwei.org/tags/society/</guid>
       <description></description>
     </item>
     
     <item>
       <title>thinkofchaos</title>
-      <link>https://vacationwkx.github.io/tags/thinkofchaos/</link>
+      <link>https://kexinwei.org/tags/thinkofchaos/</link>
       <pubDate>Wed, 17 Apr 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/thinkofchaos/</guid>
+      <guid>https://kexinwei.org/tags/thinkofchaos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>en</title>
-      <link>https://vacationwkx.github.io/tags/en/</link>
+      <link>https://kexinwei.org/tags/en/</link>
       <pubDate>Tue, 12 Mar 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/en/</guid>
+      <guid>https://kexinwei.org/tags/en/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Probability</title>
-      <link>https://vacationwkx.github.io/tags/Probability/</link>
+      <link>https://kexinwei.org/tags/Probability/</link>
       <pubDate>Tue, 15 Jan 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/Probability/</guid>
+      <guid>https://kexinwei.org/tags/Probability/</guid>
       <description></description>
     </item>
     
     <item>
       <title>1201</title>
-      <link>https://vacationwkx.github.io/tags/1201/</link>
+      <link>https://kexinwei.org/tags/1201/</link>
       <pubDate>Sat, 02 Dec 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/1201/</guid>
+      <guid>https://kexinwei.org/tags/1201/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017</title>
-      <link>https://vacationwkx.github.io/tags/2017/</link>
+      <link>https://kexinwei.org/tags/2017/</link>
       <pubDate>Sat, 02 Dec 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/2017/</guid>
+      <guid>https://kexinwei.org/tags/2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>trip</title>
-      <link>https://vacationwkx.github.io/tags/trip/</link>
+      <link>https://kexinwei.org/tags/trip/</link>
       <pubDate>Sat, 02 Dec 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/trip/</guid>
+      <guid>https://kexinwei.org/tags/trip/</guid>
       <description></description>
     </item>
     
     <item>
       <title>de</title>
-      <link>https://vacationwkx.github.io/tags/de/</link>
+      <link>https://kexinwei.org/tags/de/</link>
       <pubDate>Sat, 14 Oct 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/de/</guid>
+      <guid>https://kexinwei.org/tags/de/</guid>
       <description></description>
     </item>
     
     <item>
       <title>deutsch</title>
-      <link>https://vacationwkx.github.io/tags/deutsch/</link>
+      <link>https://kexinwei.org/tags/deutsch/</link>
       <pubDate>Sat, 14 Oct 2017 21:55:38 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/deutsch/</guid>
+      <guid>https://kexinwei.org/tags/deutsch/</guid>
       <description></description>
     </item>
     
     <item>
       <title>learning...</title>
-      <link>https://vacationwkx.github.io/tags/learning.../</link>
+      <link>https://kexinwei.org/tags/learning.../</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vacationwkx.github.io/tags/learning.../</guid>
+      <guid>https://kexinwei.org/tags/learning.../</guid>
       <description></description>
     </item>
     

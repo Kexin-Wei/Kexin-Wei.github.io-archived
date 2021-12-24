@@ -1,32 +1,16 @@
 ---
-title: "Reinforcement Learning Notes"
+title: "1.Key Algorithm in DRL"
 date: 2020-12-08T08:47:38+08:00
 draft: false
+weight: 2
 categories: AI
 tags:
   - reinforcement learning
 ---
 
-## [State Representation](https://ai.stackexchange.com/questions/7763/how-to-define-states-in-reinforcement-learning)
+# Key Algorithm in DRL
 
-- state vector ( obey Markov Property)
-- observation →knowledge→ state
-- [Partially observable Markov decision process](https://en.wikipedia.org/wiki/Partially_observable_Markov_decision_process)
-- "learning or classification algorithms to "learn" those states"
-    - A simple linear regression
-    - A more complex non-linear function approximator, such as a multi-layer neural network.
-
-The Atari DQN work by DeepMind team used a combination of feature engineering and relying on deep neural network to achieve its results. The feature engineering included downsampling the image, reducing it to grey-scale and - importantly for the Markov Property - using four consecutive frames to represent a single state, so that information about velocity of objects was present in the state representation. The DNN then processed the images into higher-level features that could be used to make predictions about state values.
-
-## Policy Gradients
-
-[Deep Deterministic Policy Gradient - Spinning Up documentation](https://spinningup.openai.com/en/latest/algorithms/ddpg.html)
-
-[Mathe Funda](https://danieltakeshi.github.io/2017/03/28/going-deeper-into-reinforcement-learning-fundamentals-of-policy-gradients/)
-
-## Deep Reinforcement Learning
-
-### VDQN
+### DQN
 
 ![DQN](/rl/dqn.png)
 
@@ -35,7 +19,7 @@ DeepMind used atari environment for DQN test, even through all the return `obser
 #### Preprocessing
 
 - Observation
-  1. rgb $\rightarrow$ gray, i.e. image shape (210,160,3)$\rightarrow$ (210,160)
+  1. rgb {{$\rightarrow$ gray, i.e. image shape (210,160,3)$\rightarrow$ (210,160)
   2. down sample: (210,160) $\rightarrow$ (110,84)
   3. crop: (110,84) $\rightarrow$ (84,84)
 - Observation :arrow_right: state:
@@ -55,18 +39,6 @@ DeepMind used atari environment for DQN test, even through all the return `obser
 - comple
   - RMSProp
 
-#### Replay Buffer
-
-- fix length
-- every time feed: (state, action, reward, next_state, done)
-- once reach L length: start training
-- length: 1million
-
-#### Target model update
-
-- every C step
-- Epsilon: 1$\rightarrow$0.1 (1 million frame for total 50 milion)
-
 #### Frame skipping
 
 ![Frame skip](/rl/frame_skip.png)
@@ -79,71 +51,13 @@ DeepMind used atari environment for DQN test, even through all the return `obser
 
 Speed up for atari, use `info['ale.lives'] < 5` for terminating the episode
 
-#### Clip
-
-- reward: -1,0,1
-- Error: $|Q(s,a,\theta)-Q(s',a',\theta^-)\le1$ 
-
-NOTES:
-
-change RMSprop parameter
-
-```python
-tf.keras.optimizers.RMSprop(
-    learning_rate=0.00025,
-    rho=0.9,
-    momentum=0.95,
-    epsilon=1e-07,
-    centered=False,
-    name="RMSprop",
-    **kwargs
-)
-```
-
-#### Random Gym Run
-
-- Frame:10,000
-- Reward: 4-2, 5-0
-
-### [Double DQN](https://medium.com/analytics-vidhya/building-a-powerful-dqn-in-tensorflow-2-0-explanation-tutorial-d48ea8f3177a)
-
-- main: choose action
-- target: update Q in Bellman as Q_max
-- model fit: fit the main with target value output
-- after same iterations, copy main weights and biases to target
-
-### [DuelingDQN](https://towardsdatascience.com/dueling-deep-q-networks-81ffab672751)
-
-maybe drop DQN
-
-![Perform on atari](/rl/drl_compare.png)
-
-[source](https://www.toptal.com/machine-learning/deep-dive-into-reinforcement-learning)
-
-- [x] DDQN Architecture
-- [x] ~~custom model fit for weights~~ too complicated
-- [x] Priorited Replay
-  - [x] paper
-  - [x] code
-  - [x] test
-- [x] Agent
-- [x] Train Main
-
-### DQN Parameter Adjustment
+#### DQN Parameter Adjustment
 
 [ref 1](https://github.com/dennybritz/reinforcement-learning/issues/30)
 
 [ref 2](https://www.reddit.com/r/reinforcementlearning/comments/7kwcb5/need_help_how_to_debug_deep_rl_algorithms/)
 
-### A3C
-
-- [x] David Sliver
-- [x] [Policy Gradient Mathe](https://medium.com/@thechrisyoon/deriving-policy-gradients-and-implementing-reinforce-f887949bd63)
-- [x] Paper review
-- [ ] ~~Example threading Pytorch~~
-- [ ] ~~Code for Pendulum~~
-
-### A2C
+## A2C
 
 [Why A2C not A3C](https://github.com/ikostrikov/pytorch-a3c)
 
@@ -172,32 +86,11 @@ maybe drop DQN
     >
     > [source](https://www.reddit.com/r/reinforcementlearning/comments/bqh01v/having_trouble_with_ppo_rewards_crashing/?utm_source=share&utm_medium=web2x)
 
-  - 
-
 ## Material
 
 #### Powerup Knowledge
 
-- [How to Exploration](https://towardsdatascience.com/a-short-introduction-to-go-explore-c61c2ef201f0)
-- [Why RL Hard](https://www.alexirpan.com/2018/02/14/rl-hard.html)
-- [DRL Sucks](https://www.reddit.com/r/MachineLearning/comments/bdgxin/d_any_papers_that_criticize_deep_reinforcement/)
-
-### Intro
-
-[An Introduction to Deep Reinforcement Learning](https://thomassimonini.medium.com/an-introduction-to-deep-reinforcement-learning-17a565999c0c)
-
-### DRL
-
-#### Reward shaping
-
-[reference](https://www.youtube.com/watch?v=0R3PnJEisqk&ab_channel=Bonsai)
-
-#### Code for model
-
-- [Tensorflow](https://github.com/marload/DeepRL-TensorFlow2)
-- [Pytorch](https://github.com/bentrevett/pytorch-rl)
-  - [Simple to create Model](https://github.com/FrancescoSaverioZuppichini/Pytorch-how-and-when-to-use-Module-Sequential-ModuleList-and-ModuleDict)
-  - [PPO](https://github.com/ikostrikov/pytorch-a2c-ppo-acktr-gail)
+- 
 
 #### Course
 
@@ -219,34 +112,11 @@ maybe drop DQN
 - [Recap](https://rubenfiszel.github.io/posts/rl4j/2016-08-24-Reinforcement-Learning-and-DQN.html)
 
 #### CNN
+
 - [parameter calculation](https://medium.com/@iamvarman/how-to-calculate-the-number-of-parameters-in-the-cnn-5bd55364d7ca#:~:text=To%20calculate%20it%2C%20we%20have,3%E2%80%931)
 - [output shape calculation](https://cs231n.github.io/convolutional-networks/#pool)
-
-### API for Vrep
-[Legacy remote API](https://www.coppeliarobotics.com/helpFiles/en/legacyRemoteApiOverview.htm)
-
-[Remote API functions (Python)](https://www.coppeliarobotics.com/helpFiles/en/remoteApiFunctionsPython.htm)
 
 ### David Silver - 4/10
 
 [Teaching - David Silver](https://www.davidsilver.uk/teaching/)
 
-### The Book - Ch5
-
-[Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book.html)
-
-[Code for it:](http://incompleteideas.net/book/code/code2nd.html)
-
-[Reinforcement Learning: An Introduction](https://waxworksmath.com/Authors/N_Z/Sutton/RLAI_1st_Edition/sutton.html)
-
-### Paper
-
-[Keypaper](https://spinningup.openai.com/en/latest/spinningup/keypapers.html)
-
-### Training Software
-
-[Gym: A toolkit for developing and comparing reinforcement learning algorithms](https://gym.openai.com/)
-
-### Open cv
-
-- [resize](https://chadrick-kwag.net/cv2-resize-interpolation-methods/)

@@ -2,18 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Probability on 無極</title>
-    <link>https://vacationwkx.github.io/tags/Probability/</link>
+    <link>https://kexinwei.org/tags/Probability/</link>
     <description>Recent content in Probability on 無極</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Jan 2019 21:55:38 +0800</lastBuildDate><atom:link href="https://vacationwkx.github.io/tags/Probability/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Jan 2019 21:55:38 +0800</lastBuildDate><atom:link href="https://kexinwei.org/tags/Probability/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Antigragile</title>
-      <link>https://vacationwkx.github.io/docs/books/antifragile/</link>
+      <link>https://kexinwei.org/docs/books/antifragile/</link>
       <pubDate>Tue, 15 Jan 2019 21:55:38 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/docs/books/antifragile/</guid>
-      <description>A chinese vision book note.
- Foreword #    從隨機事件（或壹定沖擊）中獲得的有利結果大於不利結果的就是反脆弱的，反之則是脆弱的
+      <guid>https://kexinwei.org/docs/books/antifragile/</guid>
+      <description>Foreword #    從隨機事件（或壹定沖擊）中獲得的有利結果大於不利結果的就是反脆弱的，反之則是脆弱的
   人造的復雜系統往往會引發失控的連鎖反應，它會減少甚至消除可預測性，並導致特大事件。因此，現代世界的技術性知識可能會不斷地增加，但矛盾的是，它也會使事情變得更加不可預測。現在，由於人為因素的增加，以及我們逐漸地遠離了先祖和自然的模式，加上林林總總的設計復雜性削弱了強韌性，以至於“黑天鵝”的影響在進壹步增加。此外，我們成為壹種新型疾病的受害者，即新事物狂熱癥，它使我們建立起面對“黑天鵝”事件時會表現得極其脆弱的系統，卻自以為實現了所謂的“進步”。
   當妳尋求秩序，妳得到的不過是表面的秩序；而當妳擁抱隨機性，妳卻能把握秩序、掌控局面
   “黑天鵝”問題有壹個惱人方面，實際上也是壹個很核心的並在很大程度上被忽略的問題，即罕見事件的發生概率根本是不可計算的
@@ -28,7 +27,9 @@
    那些了解生物領域細菌耐藥性的人，卻完全不理解塞內加在《寬恕》壹書中就處罰的反效應所寫下的格言。他寫道：“重復處罰雖然打擊了某些人的仇恨，卻激起了所有人的仇恨……就像樹木修剪後將再抽出無數新的枝條壹樣。”事實上，革命正是在壓迫中孕育的，殺害幾名示威者只會讓更多的人站起來反抗。壹首愛爾蘭的革命歌曲就飽含了這層寓意：
 妳的堡壘築得越高，我們就越有力量。
   政治運動和叛亂具有高度的反脆弱性，愚蠢的行為就是試圖用暴力壓制它們，而不是想辦法操控它們、以退為進，或找到更精明的策略，就像赫拉克勒斯殺死九頭蛇怪壹樣。
-  信息是具有反脆弱性的，湮滅信息的努力比宣傳信息的努力更能增強信息的力量。壹個典型的例子是，許多人越是為自己辯解，越會越描越黑。</description>
+  信息是具有反脆弱性的，湮滅信息的努力比宣傳信息的努力更能增強信息的力量。壹個典型的例子是，許多人越是為自己辯解，越會越描越黑。
+  告訴別人壹個秘密，並強調說這是壹個秘密，懇請對方“千萬不要告訴任何人”，妳越是強調這是壹個秘密，它傳播得就越快
+  “我的兒子，我對妳很失望，”他說，“我從未聽到外界對妳的指責。妳已經證明了自己根本無法激發別人對妳的嫉妒。”</description>
     </item>
     
   </channel>

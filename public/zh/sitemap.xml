@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://vacationwkx.github.io/zh/categories/</loc>
+    <loc>https://kexinwei.org/zh/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://vacationwkx.github.io/categories/"
+                href="https://kexinwei.org/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://vacationwkx.github.io/ru/categories/"
+                href="https://kexinwei.org/ru/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://vacationwkx.github.io/zh/categories/"
+                href="https://kexinwei.org/zh/categories/"
                 />
   </url><url>
-    <loc>https://vacationwkx.github.io/zh/tags/</loc>
+    <loc>https://kexinwei.org/zh/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://vacationwkx.github.io/tags/"
+                href="https://kexinwei.org/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://vacationwkx.github.io/ru/tags/"
+                href="https://kexinwei.org/ru/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://vacationwkx.github.io/zh/tags/"
+                href="https://kexinwei.org/zh/tags/"
                 />
   </url><url>
-    <loc>https://vacationwkx.github.io/zh/</loc>
+    <loc>https://kexinwei.org/zh/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://vacationwkx.github.io/"
+                href="https://kexinwei.org/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://vacationwkx.github.io/ru/"
+                href="https://kexinwei.org/ru/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://vacationwkx.github.io/zh/"
+                href="https://kexinwei.org/zh/"
                 />
   </url>
 </urlset>

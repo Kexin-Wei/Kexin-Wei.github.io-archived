@@ -1,7 +1,8 @@
 ---
-title: "Value Update Comparison among Basic RL"
+title: "4. RL - Value Update Comparison"
 date: 2020-11-30T11:13:00+08:00
 draft: false
+weight: 5
 categories: AI
 tags:
   - reinforcement learning

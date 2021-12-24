@@ -2,24 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3. Learning Plan on 無極</title>
-    <link>https://vacationwkx.github.io/docs/learn/</link>
+    <link>https://kexinwei.org/docs/learn/</link>
     <description>Recent content in 3. Learning Plan on 無極</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://vacationwkx.github.io/docs/learn/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kexinwei.org/docs/learn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Numpy Package Usage Notes</title>
+      <link>https://kexinwei.org/docs/learn/numpy-notes/</link>
+      <pubDate>Thu, 11 Nov 2021 23:07:37 +0800</pubDate>
+      
+      <guid>https://kexinwei.org/docs/learn/numpy-notes/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Front End</title>
-      <link>https://vacationwkx.github.io/docs/learn/front-end/</link>
+      <link>https://kexinwei.org/docs/learn/front-end/</link>
       <pubDate>Thu, 08 Jul 2021 23:07:37 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/docs/learn/front-end/</guid>
+      <guid>https://kexinwei.org/docs/learn/front-end/</guid>
       <description>Fundamental #   Web Architecture  Flow #   learn at developer-roadmap  Internet Node.js local server HTML&amp;amp; CSS &amp;amp; JS   cop with roadmap Firefox web develop  HTML &amp;amp; CSS #   code at freecodecamp  HTML CSS Java Project    JS #   Book: Eloquent JavaScript Book: You Don&amp;rsquo;t Know JS Yet  Reference #    W3C  </description>
     </item>
     
     <item>
       <title>AI</title>
-      <link>https://vacationwkx.github.io/docs/learn/AI/</link>
+      <link>https://kexinwei.org/docs/learn/AI/</link>
       <pubDate>Thu, 08 Jul 2021 17:38:25 +0800</pubDate>
       
-      <guid>https://vacationwkx.github.io/docs/learn/AI/</guid>
+      <guid>https://kexinwei.org/docs/learn/AI/</guid>
       <description>Reinforcement Learninng #   check probability is correct replay reuse, not always interacting, split into stages, or types  Computer Vision #   build 3d for object classification position for area + class label power up classification for multiple objects in one scene parameter tuning under reinforcement learning: link accuracy as reward, parameter as actions  Natural Language Processing #   from language to video building voice control to programming  voice control to logica, puls add or minus more complicated logic    Learning at Udemy S1 - Introduction S2 - Python Text Basics S3 - Natural Language Processing Basics S4 - &amp;hellip;</description>
     </item>
     

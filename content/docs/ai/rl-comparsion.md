@@ -1,7 +1,8 @@
 ---
-title: "Monte Carlo vs TD vs Q-learning"
+title: "3. RL - Monte Carlo vs TD vs Q-learning"
 date: 2020-11-28T21:47:38+08:00
 draft: false
+weight: 4
 categories: AI
 tags:
   - reinforcement learning
