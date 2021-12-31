@@ -1,6 +1,7 @@
 ---
 title: 无极
 layout: base.njk
+permarlink: "/"
 ---
 
 A learner recording daily steps and struggles.
