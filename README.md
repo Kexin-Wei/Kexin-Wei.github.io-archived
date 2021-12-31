@@ -4,4 +4,5 @@ This is my new website. I build it while learning HTML, CCS, Node.js and SASS, s
 - [x] a basic shape
 - [x] add gh-pages branch push into github action workflows
 - [x] change homepage permarlink
-- [x] navigation bar
+- [x] add CNAME to github page for custom domain
+- [ ] navigation bar
