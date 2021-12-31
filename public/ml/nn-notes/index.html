@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>0.Machine Learning Resources</title>
+</head>
+<body>
+    <h1></h1>
+<article><p>In any case, you will need to get started with reading up on machine learning. i would suggest you first briefly start with neural networks, followed by deep convolutional neural networks just to get used to the idea of deep learning and subsequently focus on picking up reinforcement learning. As this machine learning field heavily requires you to be able to do programming, I would suggest that you try to implement the models you learnt and get familiar with the various packages of pytorch, tensorflow, fastai.</p>
+<h2>Course</h2>
+<h3>CV</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=NfnWJUyUJYU">CS231n Winter 2016</a></li>
+<li><a href="https://courses.edx.org/courses/course-v1:Microsoft+DEV290x+1T2020a/course/">Course | DEV290x | edX</a></li>
+</ul>
+<h3>ML: Coursera</h3>
+<h3>DL</h3>
+<ul>
+<li>
+<p><a href="https://deeplizard.com/learn/video/gZmobeGL0Yg">Fundamental Recap</a></p>
+</li>
+<li>
+<p><a href="https://course.fast.ai/">Course from Fastai</a>
+you have 3 options of the platform to practice the example in the fastai course</p>
+<ol>
+<li>
+<p>use Colab: fast set up, free | ahah, too slow, 👋🏻</p>
+</li>
+<li>
+<p>use GCP</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>A config command: <code>gcloud compute config -ssh</code></p>
+</li>
+<li>
+<p>if you get error like:</p>
+<pre><code class="language-bash"># error type 1
+External IP address was not found; defaulting to using IAP tunneling.
+ERROR: (gcloud.compute.start-iap-tunnel) Error while connecting [4033: u'not authorized'].
+kex_exchange_identification: Connection closed by remote host
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+
+# error type 2
+ssh: connect to host 34.**.**.167 port 22: Resource temporarily unavailable
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+</code></pre>
+<p>try this:<a href="https://stackoverflow.com/questions/26193535/error-gcloud-compute-ssh-usr-bin-ssh-exited-with-return-code-255#:~:text=If%20you%20have%20installed%20gcloud%20without%20sudo%2C%20you%20can%20omit%20sudo%20.&amp;text=255%20is%20the%20interactive%20ssh,executed%20in%20the%20ssh%20session.&amp;text=Go%20to%20your%20google%20cloud,tab%20and%20click%20on%20edit.">quelle</a></p>
+<p><img src="/general/gcp.png" alt="GCP"></p>
+</li>
+</ul>
+<ol start="3">
+<li>use WSL in windows</li>
+</ol>
+<ul>
+<li>
+<p>3 tips</p>
+</li>
+<li>
+<p>if  you can't get app-key, try this <a href="https://stackoverflow.com/questions/46673717/gpg-cant-connect-to-the-agent-ipc-connect-call-failed">solution</a></p>
+<pre><code class="language-bash">sudo apt remove gpg
+sudo apt-get update -y
+sudo apt-get install -y gnupg1
+</code></pre>
+</li>
+<li>
+<p>if you are fresh hand following the tutorial, and get cricked out because of ssh update after the buildung the instance, can try the solution <a href="https://stackoverflow.com/questions/26193535/error-gcloud-compute-ssh-usr-bin-ssh-exited-with-return-code-255#:~:text=If%20you%20have%20installed%20gcloud%20without%20sudo%2C%20you%20can%20omit%20sudo%20.&amp;text=255%20is%20the%20interactive%20ssh,executed%20in%20the%20ssh%20session.&amp;text=Go%20to%20your%20google%20cloud,tab%20and%20click%20on%20edit.">here</a>. MAKE SURE THE INSTANCE IS RUNNING!!!</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3>Neural Network</h3>
+<ul>
+<li><a href="http://neuralnetworksanddeeplearning.com/index.html">Michael Nielsen's guide</a></li>
+</ul>
+<h3>CNN</h3>
+<ul>
+<li>A great <a href="https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53">intro</a></li>
+<li><a href="https://github.com/vdumoulin/conv_arithmetic">GIF</a> for better understanding</li>
+<li><a href="https://medium.com/@RaghavPrabhu/cnn-architectures-lenet-alexnet-vgg-googlenet-and-resnet-7c81c017b848#:~:text=VGG%2D16%20is%20a%20simpler,2%20with%20stride%20of%202.&amp;text=The%20winner%20of%20ILSVRC%202014,also%20known%20as%20Inception%20Module.">Architecture of Famous CCN</a></li>
+<li>Tips from stanford for CNN setting
+<ul>
+<li><a href="https://cs231n.github.io/neural-networks-1/">Tip 1</a></li>
+<li><a href="https://cs231n.github.io/neural-networks-2/">Tip 2</a></li>
+<li><a href="https://cs231n.github.io/neural-networks-3/">Tip 3</a></li>
+</ul>
+</li>
+</ul>
+<h3>Hyper Parameter Choosing</h3>
+<ul>
+<li>
+<p>a package to help adjust: <a href="http://hyperopt.github.io/hyperopt/">Hyperopt</a></p>
+</li>
+<li>
+<p>or you can randomly search for hyper-parameter optimization: <a href="https://dl.acm.org/doi/10.5555/2188385.2188395">source</a></p>
+</li>
+<li>
+<p>some recommendations from <a href="https://arxiv.org/abs/1206.5533">this paper</a></p>
+</li>
+</ul>
+</article>
+</body>
+</html>

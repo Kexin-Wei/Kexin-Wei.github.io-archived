@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>1.Key Algorithm in DRL</title>
+</head>
+<body>
+    <h1></h1>
+<article><h1>Key Algorithm in DRL</h1>
+<h3>DQN</h3>
+<p><img src="/rl/dqn.png" alt="DQN"></p>
+<p>DeepMind used atari environment for DQN test, even through all the return <code>observation</code> for preprocessing:</p>
+<h4>Preprocessing</h4>
+<ul>
+<li>Observation
+<ol>
+<li>rgb {{$\rightarrow$ gray, i.e. image shape (210,160,3)$\rightarrow$ (210,160)</li>
+<li>down sample: (210,160) $\rightarrow$ (110,84)</li>
+<li>crop: (110,84) $\rightarrow$ (84,84)</li>
+</ol>
+</li>
+<li>Observation :arrow_right: state:
+<ol>
+<li>4 history frames to 1 $\rightarrow$ (84,84,4)</li>
+</ol>
+</li>
+</ul>
+<h4>CNN</h4>
+<p><img src="/rl/atari_cnn.png" alt="CNN of DQN"></p>
+<ul>
+<li>
+<p>architecture</p>
+<ul>
+<li>Conv2D: 32, 8x8, strides=4, input_shape=(84,84,4)</li>
+<li>Conv2D: 64, 4x4, strides=2</li>
+<li>Conv2D: 64, 3x3, strides=1</li>
+<li>Dense: 256</li>
+<li>Dens: outputshape</li>
+</ul>
+</li>
+<li>
+<p>comple</p>
+<ul>
+<li>RMSProp</li>
+</ul>
+</li>
+</ul>
+<h4>Frame skipping</h4>
+<p><img src="/rl/frame_skip.png" alt="Frame skip"></p>
+<p><a href="https://danieltakeshi.github.io/2016/11/25/frame-skipping-and-preprocessing-for-deep-q-networks-on-atari-2600-games/">great explanation</a></p>
+<ul>
+<li>chose at kth frame</li>
+<li>last k-1 frame</li>
+<li>k=4</li>
+</ul>
+<p>Speed up for atari, use <code>info['ale.lives'] &lt; 5</code> for terminating the episode</p>
+<h4>DQN Parameter Adjustment</h4>
+<p><a href="https://github.com/dennybritz/reinforcement-learning/issues/30">ref 1</a></p>
+<p><a href="https://www.reddit.com/r/reinforcementlearning/comments/7kwcb5/need_help_how_to_debug_deep_rl_algorithms/">ref 2</a></p>
+<h2>A2C</h2>
+<p><a href="https://github.com/ikostrikov/pytorch-a3c">Why A2C not A3C</a></p>
+<ul>
+<li><a href="https://www.datahubbs.com/two-headed-a2c-network-in-pytorch/">Two head Network</a></li>
+<li><a href="https://awjuliani.medium.com/maximum-entropy-policies-in-reinforcement-learning-everyday-life-f5a1cc18d32d#:~:text=Because%20RL%20is%20all%20about,the%20actions%20an%20agent%20takes.&amp;text=In%20RL%2C%20the%20goal%20is,term%20sum%20of%20discounted%20rewards"><strong>Why Entropy</strong></a>:
+<ul>
+<li>Entropy is great, but you might be wondering what that has to do with reinforcement learning and this A2C algorithm we discussed. The idea here is to use entropy to encourage further exploration of the model</li>
+<li>to prevent premature convergence</li>
+</ul>
+</li>
+<li>Negative Loss:
+<ul>
+<li>TensorFlow and PyTorch currently don’t have the ability to maximize a function, we then minimize the negative of our loss</li>
+</ul>
+</li>
+<li><a href="https://discuss.pytorch.org/t/how-to-implement-accumulated-gradient/3822">Accumulated gradient</a></li>
+</ul>
+<h3>PPO</h3>
+<ul>
+<li>
+<p>debug for sub optimal:</p>
+<ul>
+<li>
+<p><a href="https://www.reddit.com/r/reinforcementlearning/comments/d3wym2/catastrophic_unlearning_in_ppo_a_plausible_cause/">possible solutions</a></p>
+<ul>
+<li>decrease lr</li>
+<li>decrease lambda during program</li>
+</ul>
+</li>
+<li>
+<p>It would be helpful to output more metrics, such as losses, norms of the gradients, KL divergence between your old and new policies after a number of PPO updates.<a href="https://www.reddit.com/r/reinforcementlearning/comments/bqh01v/having_trouble_with_ppo_rewards_crashing/?utm_source=share&amp;utm_medium=web2x">source</a></p>
+</li>
+<li>
+<p>change algo</p>
+<blockquote>
+<p>It depends on the environment. Something like ball balancing might just tend to destabilize with PPO, vs. something like half cheetah that is less finicky balance wise. You might try using td3 or sac, but with ppo you might just have to early stop. There might be some perfect combo of lr and clip param that leaves it stabilized... maybe with using another optimizer as well like classic momentum or adagrad.</p>
+<p><a href="https://www.reddit.com/r/reinforcementlearning/comments/bqh01v/having_trouble_with_ppo_rewards_crashing/?utm_source=share&amp;utm_medium=web2x">source</a></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h2>Material</h2>
+<h4>Powerup Knowledge</h4>
+<ul>
+<li></li>
+</ul>
+<h4>Course</h4>
+<ul>
+<li>
+<p><a href="http://rail.eecs.berkeley.edu/deeprlcourse/">CS 285</a></p>
+</li>
+<li>
+<p><a href="http://videolectures.net/rldm2015_silver_reinforcement_learning/">Deep Reinforcement Learning</a></p>
+</li>
+</ul>
+<h4>Blog</h4>
+<ul>
+<li><a href="https://neuro.cs.ut.ee/demystifying-deep-reinforcement-learning/">Atari</a></li>
+<li><a href="https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-0-q-learning-with-tables-and-neural-networks-d195264329d0">Medium</a></li>
+<li><a href="https://github.com/marload/DeepRL-TensorFlow2">Tensorflow Code</a></li>
+<li><a href="https://towardsdatascience.com/tutorial-double-deep-q-learning-with-dueling-network-architectures-4c1b3fb7f756">Start from PONG</a></li>
+<li><a href="https://danieltakeshi.github.io">Nice Dude</a></li>
+</ul>
+<h4>Atari</h4>
+<ul>
+<li><a href="https://hub.packtpub.com/openai-gym-environments-wrappers-and-monitors-tutorial/">Monitor / Video using X11</a></li>
+<li><a href="https://rubenfiszel.github.io/posts/rl4j/2016-08-24-Reinforcement-Learning-and-DQN.html">Recap</a></li>
+</ul>
+<h4>CNN</h4>
+<ul>
+<li><a href="https://medium.com/@iamvarman/how-to-calculate-the-number-of-parameters-in-the-cnn-5bd55364d7ca#:~:text=To%20calculate%20it%2C%20we%20have,3%E2%80%931">parameter calculation</a></li>
+<li><a href="https://cs231n.github.io/convolutional-networks/#pool">output shape calculation</a></li>
+</ul>
+<h3>David Silver - 4/10</h3>
+<p><a href="https://www.davidsilver.uk/teaching/">Teaching - David Silver</a></p>
+</article>
+</body>
+</html>
