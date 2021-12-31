@@ -3,4 +3,5 @@ This is my new website. I build it while learning HTML, CCS, Node.js and SASS, s
 ## Current Progress
 - [x] a basic shape
 - [x] add gh-pages branch push into github action workflows
-- [ ] change homepage permarlink
+- [x] change homepage permarlink
+- [x] navigation bar
