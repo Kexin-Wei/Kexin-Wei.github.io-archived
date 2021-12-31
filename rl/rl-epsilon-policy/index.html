@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2. RL - epsilon-Greedy vs epsilon-Soft</title>
+</head>
+<body>
+    <h1></h1>
+<article><p>In reinforcement learning, we can't run infinite times to update the whole Q - value table or V - value table, efficient update choices must be made.</p>
+<p>Generally thinking, which s or (s,a) has more opportunity to get R (high value), should be updated more to converge to the optimal. But stochastic exploring is also required to jump out of sub-optimal. The simple idea to implement is \epsilon -greedy.</p>
+<p><strong>Tips:</strong></p>
+<p>To generate a list of probability of action set, which sum to 1, we can use Dirichlet distribution, e.g.</p>
+<pre><code class="language-python">p=numpy.random.dirichlet(np.ones(n_actions))
+</code></pre>
+<p><img src="/rl/dirichlet.png" alt="Dirichlet"></p>
+<h1>epsilon -Greedy</h1>
+<p>\begin{aligned}\max &amp;: p=1-\epsilon+\frac{\epsilon}{|A|}\ \mathrm{others}&amp;: p=\frac{\epsilon}{|A|}\end{aligned}</p>
+<p>i.e, random chose with \epsilon and chose the best with 1-\epsilon</p>
+<p><img src="/rl/e_greedy.png" alt="epsilon-greedy"></p>
+<p>with code</p>
+<pre><code class="language-python">p[max_value_index]=1-epsilon
+p+=epsilon/n
+</code></pre>
+<h1>epsilon - Soft</h1>
+<p>the only requirement of \epsilon  -  Soft is each probability greater than \epsilon /|A|, Dirichlet is useful here.</p>
+<p><img src="/rl/e_soft.png" alt="epsilon-greedy"></p>
+<pre><code class="language-python">p=np.random.dirichlet(np.ones(n))*(1-epsilon)
+p+=epsilon/n
+</code></pre>
+</article>
+</body>
+</html>

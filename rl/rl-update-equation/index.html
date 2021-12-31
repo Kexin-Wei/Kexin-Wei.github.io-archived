@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>4. RL - Value Update Comparison</title>
+</head>
+<body>
+    <h1></h1>
+<article><p>In this post, we will compare the state value update or state-action value update equation in fundamental rl methods.</p>
+<h1>Monte Carlo</h1>
+<p>V(s)\leftarrow V(s)+\frac{1}{N}\left[G_t-V(s)\right]</p>
+<p>recall that, monte carlo update use average V(s)=\sum G_t/N. After simple transformation, we will have the error form equation:point_up_2:.</p>
+<p>and the corresponding state-action value update is:</p>
+<p>Q(s,a)\leftarrow Q(s,a)+\frac{1}{N}\left[G_t-Q(s,a)\right]</p>
+<h1>Temporal Difference</h1>
+<p>TD is driven from \alpha - Monte Carlo, but replace the G_t with R_t+\gamma V(s'), since we want a instant update per step rather than till terminal.</p>
+<p>V(s)\leftarrow V(s)+\alpha \left[R_t + \gamma V(s') -V(s)\right]</p>
+<p>The state-action one is simply change the V(s) to Q(s,a), and becomes <strong>Sarsa</strong> (omitted).</p>
+<h1>Q-learning</h1>
+<p>Q-learning is a <strong>off-policy</strong> method, where the update ignores the policy while other <strong>on-policy</strong> only use the state-action value determinted by \pi(a|s). Recall that, even s and a are connected in Q(s,a), but the s' is determineted by environment, and a is chosen by \pi(a|s).</p>
+<p>Q(s,a)\leftarrow Q(s,a)+\alpha[R_t+\gamma Q_{max}(s',a')-Q(s,a)]</p>
+</article>
+</body>
+</html>
