@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Installation Guide for TP-link AC1300 Adapter - Archer T3U in Ubuntu 20</title>
+</head>
+<body>
+    <h1></h1>
+<article><h1>Devices</h1>
+<ul>
+<li>TP-link AC1300 Mini Wireless MU-MIMO USB Adapter - Archer T3U</li>
+<li>One offline PC: Ubuntu 20 - 5.11.0 - 27 - generic, new installed</li>
+<li>One online PC: Ubuntu 20 - 5.11.0 - 38 - generic</li>
+</ul>
+<h1>Solution</h1>
+<p>following instruction from <a href="https://community.tp-link.com/en/home/forum/topic/208022">tp-link community</a></p>
+<pre><code class="language-bash">git clone https://github.com/cilynx/rtl88x2bu.git
+cd rtl88x2bu
+VER=$(sed -n 's/\PACKAGE_VERSION=&quot;\(.*\)&quot;/\1/p' dkms.conf)
+sudo rsync -rvhP ./ /usr/src/rtl88x2bu-${VER}
+sudo dkms add -m rtl88x2bu -v ${VER}
+sudo dkms build -m rtl88x2bu -v ${VER}
+sudo dkms install -m rtl88x2bu -v ${VER}
+sudo modprobe 88x2bu
+</code></pre>
+<p>from this, we know we need to prepare git repository (download from online pc), dkms package (apt-offline)</p>
+<h1>Steps</h1>
+<h2>1. install <code>apt-offline</code></h2>
+<h3>installl in online PC</h3>
+<p>run <code>sudo apt install apt-offline</code></p>
+<h3>install in offline PC</h3>
+<ol>
+<li>download <code>.deb</code> file with right ubuntu version from https://pkgs.org/download/apt-offline
+<ul>
+<li>click into the link, find the link from <code>Download</code> (e.g. http://archive.ubuntu.com/ubuntu/pool/universe/a/apt-offline/apt-offline_1.8.2-1_all.deb)</li>
+<li>download this file use <code>wget</code></li>
+</ul>
+</li>
+<li>check its <code>requires</code> at the same page
+<ul>
+<li>check if the package in <code>requires</code> exists in the offline PC</li>
+<li>if not, download the <code>.deb</code> like the <code>apt-offline</code></li>
+</ul>
+</li>
+<li>use a thumb driver to copy them and mount it to offline PC</li>
+<li>run <code>sudo dpkg -i *.deb</code> in the folder with the <code>.deb</code> you just downloaded</li>
+<li>if error occurs in installation, may need to restart this step</li>
+</ol>
+<h2>2. Update, Upgrade, Install <code>dkms</code></h2>
+<h3>Update</h3>
+<ol>
+<li>after installing <code>apt-offline</code>, run <code>sudo apt-offline set update.sig --update</code> to get the <code>.sig</code> file.</li>
+<li>move the <code>.sig</code> file from offline PC to online PC using thumb drive</li>
+<li>run <code>sudo apt-offline get update.sig --threads 2 --bundle update.zip</code> with 2 threading</li>
+<li>move the <code>update.zip</code> to offline PC</li>
+<li>run <code>sudo apt-offline install update.zip</code> and <code>sudo apt update</code></li>
+</ol>
+<h3>Upgrade</h3>
+<ol>
+<li>after update done,  run <code>sudo apt-offline set upgrade.sig --upgrade</code> to get the <code>.sig</code> file.</li>
+<li>move the <code>.sig</code> file from offline PC to online PC using thumb drive</li>
+<li>run <code>sudo apt-offline get upgrade.sig --threads 2 --bundle upgrade.zip</code> with 2 threading</li>
+<li>move the <code>upgrade.zip</code> to offline PC</li>
+<li>run <code>sudo apt-offline install upgrade.zip</code> and <code>sudo apt upgrade</code></li>
+<li>a error may occur waring about <code>--fix-missing</code></li>
+<li>run <code>sudo apt upgrade --fix-missing</code></li>
+</ol>
+<h3>3. Install dkms</h3>
+<ol>
+<li>in offline PC, run <code>sudo apt-offline set dkms.sig --install-package dkms</code></li>
+<li>move the <code>.sig</code> file from offline PC to online PC using thumb drive</li>
+<li>run <code>sudo apt-offline get dkms.sig --threads 2 --bundle dkms.zip</code> with 2 threading</li>
+<li>move the <code>dkms.zip</code> to offline PC</li>
+<li>run <code>sudo apt-offline install dkms.zip</code> and <code>sudo apt install dkms</code></li>
+</ol>
+<h3>4. Git pull</h3>
+<ol>
+<li>in online PC, run <code>git clone https://github.com/cilynx/rtl88x2bu.git</code></li>
+<li>mv the download folder to offlin PC</li>
+</ol>
+<h3>5. Follow the instruction</h3>
+<pre><code>1. cd rtl88x2bu
+2. VER=$(sed -n 's/\PACKAGE_VERSION=&quot;\(.*\)&quot;/\1/p' dkms.conf)
+3. sudo rsync -rvhP ./ /usr/src/rtl88x2bu-${VER}
+4. sudo dkms add -m rtl88x2bu -v ${VER}
+5. sudo dkms build -m rtl88x2bu -v ${VER}
+6. sudo dkms install -m rtl88x2bu -v ${VER}
+7. sudo modprobe 88x2bu
+</code></pre>
+<h2>3. Plugin Adapter</h2>
+<p>after finish 1 and 2, just plug in the adapter, and it can work now</p>
+</article>
+</body>
+</html>

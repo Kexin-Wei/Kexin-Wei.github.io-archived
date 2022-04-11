@@ -1,5 +1,5 @@
 ---
-title: "AI"
+title: "AI Projects that I want to do"
 date: 2021-07-08T17:38:25+08:00
 description: "Artificial Intelligent Thought Sparks"
 ---
